@@ -17,7 +17,14 @@
   </div>
 
   <div class="wrap">
-    <canvas id="game" width="640" height="420"></canvas>
+    <div class="gameStage">
+      <canvas id="game" width="640" height="420"></canvas>
+      <div id="dialogue" class="dialogue dialogueOverlay hidden">
+        <div id="dlgSpeaker" class="dlgSpeaker"></div>
+        <div id="dlgLine" class="dlgLine"></div>
+        <div id="dlgChoices" class="dlgChoices"></div>
+      </div>
+    </div>
 
     <div class="bottomDock">
       <div class="dockTop">
@@ -58,11 +65,6 @@
           </label>
           <button id="btnStartDialogue" class="iconBtn" data-tip="Start selected dialogue">▶ Start</button>
           <button id="btnRandomDialogue" class="iconBtn" data-tip="Pick a random conversation">🎲 Random</button>
-        </div>
-        <div id="dialogue" class="dialogue hidden">
-          <div id="dlgSpeaker" class="dlgSpeaker"></div>
-          <div id="dlgLine" class="dlgLine"></div>
-          <div id="dlgChoices" class="dlgChoices"></div>
         </div>
       </div>
 
