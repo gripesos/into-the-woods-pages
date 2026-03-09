@@ -49,15 +49,30 @@ canvas {
 
 .bottomDock {
   border: 1px solid var(--border);
-  background: var(--panel);
+  background: linear-gradient(180deg, #121927, #0f1522);
   border-radius: 12px;
-  padding: 8px;
-  min-height: 200px;
+  padding: 10px;
+  min-height: 220px;
 }
 
-.dockTop { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
-.menuPanel { display: none; }
-.menuPanel.active { display: block; }
+.dockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.dockTitle { font-weight: 700; letter-spacing: .2px; }
+.dockTitle span { color: var(--muted); font-weight: 500; margin-left: 8px; font-size: 12px; }
+.dockActions { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.dockGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 10px;
+}
+.dockCol { min-width: 0; }
+.dockCol--controls { display: grid; gap: 8px; align-content: start; }
 
 .iconBtn, .fileBtn {
   position: relative;
@@ -65,10 +80,12 @@ canvas {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 8px 12px;
+  padding: 8px 10px;
+  min-height: 34px;
   cursor: pointer;
 }
-.iconBtn:hover, .fileBtn:hover, .menuTab.active { border-color: var(--accent); }
+.iconBtn:hover, .fileBtn:hover { border-color: var(--accent); }
+.iconBtn.danger:hover { border-color: #cf5d79; }
 .fileBtn input { display: none; }
 
 .iconBtn[data-tip]:hover::after, .fileBtn[data-tip]:hover::after {
@@ -107,7 +124,7 @@ canvas {
 }
 .msg { color: var(--muted); }
 .status { color: #c8d6f3; font-size: 12px; }
-.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 
 .hidden { display:none; }
 .dlgSpeaker { color:#bfd3ff; margin-bottom:6px; font-weight:700; }
@@ -158,4 +175,10 @@ canvas {
   font-weight: 700;
   cursor: pointer;
   margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .dockGrid { grid-template-columns: 1fr; }
+  .wrap { height: 100vh; }
+  canvas, .gameStage { max-height: calc(100vh - 330px); }
 }

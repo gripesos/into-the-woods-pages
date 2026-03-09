@@ -1362,18 +1362,6 @@ function handleSceneClick(x, y) {
 }
 
 function setupUi() {
-  const tabs = [...document.querySelectorAll('.menuTab')];
-  const panels = [...document.querySelectorAll('.menuPanel')];
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      const panel = document.getElementById(tab.dataset.panel);
-      if (panel) panel.classList.add('active');
-    });
-  });
-
   if (elBtnStartIntro) {
     elBtnStartIntro.addEventListener('click', () => {
       AudioBus.resume();

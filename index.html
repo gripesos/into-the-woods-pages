@@ -27,53 +27,46 @@
     </div>
 
     <div class="bottomDock">
-      <div class="dockTop">
-        <button class="iconBtn menuTab active" data-panel="panel-play" data-tip="Quick gameplay info">🎮 Play</button>
-        <button class="iconBtn menuTab" data-panel="panel-style" data-tip="Art style controls">🎨 Style</button>
-        <button class="iconBtn menuTab" data-panel="panel-dialogue" data-tip="Dialogue testing controls">💬 Dialogue</button>
-        <button class="iconBtn menuTab" data-panel="panel-system" data-tip="Save and system actions">⚙️ System</button>
+      <div class="dockHeader">
+        <div class="dockTitle">Into the Woods <span>Engine v1.0</span></div>
+        <div class="dockActions">
+          <button id="btnCycleStyle" class="iconBtn" data-tip="Cycle through styles">🎨</button>
+          <button id="btnReroll" class="iconBtn" data-tip="Pick alternate art variation">🎲</button>
+          <button id="btnRandomDialogue" class="iconBtn" data-tip="Random dialogue">💬</button>
+          <button id="btnSave" class="iconBtn" data-tip="Download save file">💾</button>
+          <label class="fileBtn iconBtn" data-tip="Load savegame.json">📂 <input id="fileLoad" type="file" accept="application/json" /></label>
+          <button id="btnReset" class="iconBtn danger" data-tip="Clear local save and reload">♻️</button>
+        </div>
       </div>
 
-      <div id="panel-play" class="menuPanel active">
-        <div id="msg" class="msg">Engine v1.0 ready.</div>
-        <div id="status" class="status"></div>
-        <div id="chapterPanel" class="chapterPanel chapterPanel--expanded" aria-live="polite">
-          <div class="chapterPanelHeader">
-            <strong id="chapterTitle">Chapter: n/a</strong>
-            <span id="chapterModeHint" class="chapterHint">C=toggle</span>
+      <div class="dockGrid">
+        <div class="dockCol">
+          <div id="msg" class="msg">Engine v1.0 ready.</div>
+          <div id="status" class="status"></div>
+        </div>
+        <div class="dockCol dockCol--controls">
+          <div class="row">
+            <label class="styleLabel">Style
+              <select id="styleSelect"></select>
+            </label>
+            <button id="btnApplyStyle" class="iconBtn" data-tip="Apply selected style">Apply</button>
           </div>
-          <div id="chapterObjective" class="chapterObjective">Objective: n/a</div>
-          <div id="chapterFlags" class="chapterFlags">Unlocks: n/a</div>
+          <div class="row">
+            <label class="styleLabel">Dialogue
+              <select id="dialogueSelect"></select>
+            </label>
+            <button id="btnStartDialogue" class="iconBtn" data-tip="Start selected dialogue">Start</button>
+          </div>
         </div>
       </div>
 
-      <div id="panel-style" class="menuPanel">
-        <div class="row">
-          <label class="styleLabel">Style
-            <select id="styleSelect"></select>
-          </label>
-          <button id="btnApplyStyle" class="iconBtn" data-tip="Apply selected style">✅ Apply</button>
-          <button id="btnCycleStyle" class="iconBtn" data-tip="Cycle through styles">🔁 Next</button>
-          <button id="btnReroll" class="iconBtn" data-tip="Pick alternate art variation">🎲 Reroll Art</button>
+      <div id="chapterPanel" class="chapterPanel chapterPanel--expanded" aria-live="polite">
+        <div class="chapterPanelHeader">
+          <strong id="chapterTitle">Chapter: n/a</strong>
+          <span id="chapterModeHint" class="chapterHint">C=toggle</span>
         </div>
-      </div>
-
-      <div id="panel-dialogue" class="menuPanel">
-        <div class="row">
-          <label class="styleLabel">Dialogue Lab
-            <select id="dialogueSelect"></select>
-          </label>
-          <button id="btnStartDialogue" class="iconBtn" data-tip="Start selected dialogue">▶ Start</button>
-          <button id="btnRandomDialogue" class="iconBtn" data-tip="Pick a random conversation">🎲 Random</button>
-        </div>
-      </div>
-
-      <div id="panel-system" class="menuPanel">
-        <div class="row">
-          <button id="btnSave" class="iconBtn" data-tip="Download local save file">💾 Save</button>
-          <label class="fileBtn iconBtn" data-tip="Load savegame.json">📂 Load <input id="fileLoad" type="file" accept="application/json" /></label>
-          <button id="btnReset" class="iconBtn" data-tip="Clear local save and reload">♻️ Reset</button>
-        </div>
+        <div id="chapterObjective" class="chapterObjective">Objective: n/a</div>
+        <div id="chapterFlags" class="chapterFlags">Unlocks: n/a</div>
       </div>
     </div>
   </div>
