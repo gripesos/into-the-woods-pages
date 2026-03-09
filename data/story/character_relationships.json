@@ -1,0 +1,196 @@
+{
+  "id": "itw_character_relationships_v0_4",
+  "characters": [
+    {
+      "id": "father",
+      "role": "playable_parent_investigator",
+      "core_drive": "Protect daughters while understanding what happened to Mother.",
+      "baseline_state": "overextended_but_present"
+    },
+    {
+      "id": "clara",
+      "role": "older_daughter_analyst",
+      "core_drive": "Turn fear into maps, proofs, and plans.",
+      "baseline_state": "guarded_competent"
+    },
+    {
+      "id": "mina",
+      "role": "younger_daughter_intuitive",
+      "core_drive": "Make sense of forest patterns through metaphor and feeling.",
+      "baseline_state": "open_sensitive"
+    },
+    {
+      "id": "mother",
+      "role": "absent_researcher_memory_axis",
+      "core_drive": "Protect Brindlewood routes from exploitation while preserving family record.",
+      "baseline_state": "offscreen_guiding_presence"
+    },
+    {
+      "id": "ranger_ivo",
+      "role": "local_ranger_pragmatist",
+      "core_drive": "Keep people safe and avoid repeating past land-management mistakes.",
+      "baseline_state": "skeptical_neutral"
+    },
+    {
+      "id": "contractor_voss",
+      "role": "industrial_contractor_pressure",
+      "core_drive": "Secure extraction access through legal and narrative shortcuts.",
+      "baseline_state": "polite_adversarial"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "father",
+      "to": "clara",
+      "bond": "family",
+      "trust_start": 0.62,
+      "trust_arc": [
+        "Clara doubts Father's willingness to follow complex clues.",
+        "Father validates her map logic in field decisions.",
+        "By mid-game, Clara consults Father before acting alone."
+      ],
+      "tensions": [
+        "Control vs collaboration",
+        "Speed of action vs evidence gathering"
+      ],
+      "pivot_events": ["main_01_hearth_and_marks", "side_04_table_of_three"]
+    },
+    {
+      "from": "father",
+      "to": "mina",
+      "bond": "family",
+      "trust_start": 0.74,
+      "trust_arc": [
+        "Mina fears adults will dismiss her symbolic language.",
+        "Father repeats her clues verbatim in planning scenes.",
+        "Mina offers higher-confidence hints after emotional reassurance."
+      ],
+      "tensions": [
+        "Literal instructions vs metaphorical clues",
+        "Safety caution vs exploratory curiosity"
+      ],
+      "pivot_events": ["side_02_lost_scarf", "main_02_sleeping_road"]
+    },
+    {
+      "from": "clara",
+      "to": "mina",
+      "bond": "siblings",
+      "trust_start": 0.58,
+      "trust_arc": [
+        "Clara initially filters Mina's imagery as noise.",
+        "Shared clue-board scenes translate image into test cases.",
+        "Late game: Clara treats Mina's phrasing as early-warning data."
+      ],
+      "tensions": [
+        "Precision vs intuition",
+        "Older-sibling protectiveness vs younger-sibling autonomy"
+      ],
+      "pivot_events": ["side_04_table_of_three", "main_03_moonwell_echo"]
+    },
+    {
+      "from": "father",
+      "to": "mother",
+      "bond": "spouses",
+      "trust_start": 0.81,
+      "trust_arc": [
+        "Father carries unresolved guilt over last argument before disappearance.",
+        "Recovered notes reveal Mother trusted him to complete stewardship plan.",
+        "Final arc resolves guilt into active responsibility."
+      ],
+      "tensions": [
+        "Practical survival tasks vs long-term ecological duty",
+        "Unsaid grief vs visible leadership"
+      ],
+      "pivot_events": ["main_03_moonwell_echo", "main_05_root_choir"]
+    },
+    {
+      "from": "clara",
+      "to": "mother",
+      "bond": "parent_child_memory",
+      "trust_start": 0.69,
+      "trust_arc": [
+        "Clara idealizes Mother's certainty.",
+        "Field notes reveal uncertainty and revisions.",
+        "Clara accepts doubt as part of rigorous care."
+      ],
+      "tensions": [
+        "Hero worship vs realistic legacy",
+        "Need for clear answers vs incomplete records"
+      ],
+      "pivot_events": ["main_04_windfall_truth"]
+    },
+    {
+      "from": "mina",
+      "to": "mother",
+      "bond": "parent_child_memory",
+      "trust_start": 0.77,
+      "trust_arc": [
+        "Mina feels Mother still 'talks' through woods.",
+        "Family reframes this as memory carried in places and routines.",
+        "Mina keeps wonder without being dismissed as fantasy-only."
+      ],
+      "tensions": [
+        "Comforting imagination vs factual reconstruction"
+      ],
+      "pivot_events": ["main_03_moonwell_echo", "main_05_root_choir"]
+    },
+    {
+      "from": "father",
+      "to": "ranger_ivo",
+      "bond": "allies_in_progress",
+      "trust_start": 0.46,
+      "trust_arc": [
+        "Ivo suspects family is emotionally compromised.",
+        "Joint field tasks prove disciplined methods.",
+        "Ivo provides testimony and logistics support in final act."
+      ],
+      "tensions": [
+        "Bureaucratic caution vs urgent family need",
+        "Institutional neutrality vs moral action"
+      ],
+      "pivot_events": ["side_03_ranger_cache", "main_04_windfall_truth"]
+    },
+    {
+      "from": "father",
+      "to": "contractor_voss",
+      "bond": "conflict",
+      "trust_start": 0.12,
+      "trust_arc": [
+        "Voss frames extraction as jobs-and-safety compromise.",
+        "Evidence links Voss to permit manipulation and selective omission.",
+        "Conflict resolves through public accountability, not vigilante revenge."
+      ],
+      "tensions": [
+        "Short-term utility vs long-term ecology",
+        "Narrative spin vs transparent records"
+      ],
+      "pivot_events": ["main_04_windfall_truth", "main_05_root_choir"]
+    },
+    {
+      "from": "ranger_ivo",
+      "to": "contractor_voss",
+      "bond": "professional_friction",
+      "trust_start": 0.3,
+      "trust_arc": [
+        "Ivo initially gives Voss procedural benefit of the doubt.",
+        "Cache maps and permit dates expose pattern mismatches.",
+        "Ivo shifts from passive oversight to active reporting."
+      ],
+      "tensions": [
+        "Administrative process vs field reality"
+      ],
+      "pivot_events": ["side_03_ranger_cache", "main_04_windfall_truth"]
+    }
+  ],
+  "party_dynamics": {
+    "family_unit": {
+      "starting_mode": "fragile_coordination",
+      "target_mode": "co_regulated_investigation",
+      "mechanical_effects": [
+        "Higher-quality clue synthesis after shared table scenes.",
+        "Reduced hint ambiguity when both daughters are consulted before route choice.",
+        "Extra reconciliation dialogue after failed puzzles."
+      ]
+    }
+  }
+}

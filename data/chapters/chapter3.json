@@ -1,0 +1,14 @@
+{
+  "id": "chapter3",
+  "title": "Windfall Threshold",
+  "scenes": [
+    "ranger_station",
+    "windfall_orchard",
+    "moonwell_hollow"
+  ],
+  "unlockFlags": [
+    "foundStationLedger",
+    "moonwellAttuned"
+  ],
+  "objectiveSummary": "Cross the orchard threshold and prepare the family for the deeper forest gate."
+}

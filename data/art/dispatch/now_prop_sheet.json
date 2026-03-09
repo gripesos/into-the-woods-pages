@@ -1,0 +1,37 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "id": "rq_add_003",
+      "bucket": "NOW",
+      "type": "prop_sheet",
+      "priority": "P0",
+      "scene": "three_circles_glyph_set",
+      "style_tags": [
+        "ink_noir",
+        "moonlit_mystery"
+      ],
+      "resolution": "2048x2048",
+      "description": "Glyph exploration sheet: three circles and one line in carved bark, charcoal notebook sketch, and reflected water form.",
+      "prompt_seed": "symbol design sheet, hand-etched wood and graphite variants, narrative puzzle readability, minimal ornament",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_013",
+      "bucket": "NOW",
+      "type": "prop_sheet",
+      "priority": "P0",
+      "scene": "forest_interactables_core_props",
+      "style_tags": [
+        "moonlit_mystery",
+        "cozy_classic"
+      ],
+      "resolution": "2048x2048",
+      "description": "Core prop atlas: old lantern post, dry wood bundle, mark-tree bark section, moss sample trays.",
+      "prompt_seed": "adventure game prop atlas, consistent paintover style, clean silhouettes for hotspot interaction",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

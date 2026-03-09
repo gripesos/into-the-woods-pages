@@ -1,0 +1,56 @@
+{
+  "id": "windfall_orchard",
+  "background": "assets/bg/requisition_now/bg_bg_forest_trail_v1_640x360.png",
+  "backgrounds": [
+    "assets/bg/requisition_now/bg_bg_forest_trail_v1_640x360.png",
+    "assets/bg/requisition_now/bg_bg_cabin_day_v1_640x360.png",
+    "assets/bg/requisition_now/bg_bg_cabin_night_v1_640x360.png"
+  ],
+  "spawn": {
+    "x": 520,
+    "y": 304
+  },
+  "walkable": {
+    "type": "rect",
+    "x": 0,
+    "y": 220,
+    "w": 640,
+    "h": 140
+  },
+  "hotspots": [
+    {
+      "id": "orchard_cart",
+      "rect": [
+        392,
+        206,
+        96,
+        84
+      ],
+      "text": "A broken harvest cart is packed with windfallen apples."
+    },
+    {
+      "id": "orchard_gate",
+      "rect": [
+        86,
+        146,
+        82,
+        136
+      ],
+      "text": "The iron gate hums like a plucked string."
+    },
+    {
+      "id": "orchard_to_station",
+      "rect": [
+        568,
+        164,
+        66,
+        152
+      ],
+      "action": "goto:ranger_station",
+      "text": "The service road returns to the ranger station.",
+      "approachX": 600,
+      "walkToText": "You walk back up the road to the ranger station."
+    }
+  ],
+  "npcs": []
+}

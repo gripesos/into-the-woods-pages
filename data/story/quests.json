@@ -1,0 +1,190 @@
+{
+  "id": "itw_quest_pack_v0_4",
+  "quests": [
+    {
+      "id": "main_01_hearth_and_marks",
+      "type": "main",
+      "summary": "Stabilize the cabin hearth and verify whether the notebook symbol matches the forest mark-tree carving.",
+      "prerequisites": [],
+      "steps": [
+        "Pick up the notebook in the cabin.",
+        "Collect dry wood from the forest woodpile.",
+        "Use dry wood on the cabin fireplace.",
+        "Use notebook on the mark-tree carving.",
+        "Speak with both daughters about the symbol."
+      ],
+      "rewards": {
+        "flags": ["quest_main_01_complete", "hearth_stable", "glyph_match_confirmed"],
+        "items": [],
+        "unlocks": ["quest_main_02_sleeping_road", "journal_page_01"]
+      },
+      "narrative_impact": "The family establishes a shared investigative rhythm: practical action, pattern checking, and emotional reassurance around the fire."
+    },
+    {
+      "id": "main_02_sleeping_road",
+      "type": "main",
+      "summary": "Discover how the Sleeper Path reveals itself by combining child intuition, map notes, and low-impact movement.",
+      "prerequisites": ["quest_main_01_complete"],
+      "steps": [
+        "Ask Mina where the road feels 'sleepy'.",
+        "Mark three likely route nodes in Clara's notebook overlay.",
+        "Traverse the verge without running or disturbing marked moss patches.",
+        "Light the old lantern at the post and inspect fog edges.",
+        "Confirm the temporary route before dawn."
+      ],
+      "rewards": {
+        "flags": ["quest_main_02_complete", "sleeper_path_known"],
+        "items": ["lantern_wick"],
+        "unlocks": ["moonwell_access", "quest_main_03_moonwell_echo"]
+      },
+      "narrative_impact": "Reframes 'magic path' as ecological responsiveness; Father begins trusting the daughters' different ways of seeing."
+    },
+    {
+      "id": "main_03_moonwell_echo",
+      "type": "main",
+      "summary": "At Moonwell Hollow, reconstruct a reflected symbol sequence to recover a missing segment of Mother's route notes.",
+      "prerequisites": ["quest_main_02_complete"],
+      "steps": [
+        "Reach Moonwell Hollow using the Sleeper Path.",
+        "Align reflected tree marks in the water surface.",
+        "Place three token stones in correct order.",
+        "Record the echo pattern in notebook margins.",
+        "Return to cabin and compare findings with Clara."
+      ],
+      "rewards": {
+        "flags": ["quest_main_03_complete", "route_fragment_recovered"],
+        "items": ["mother_route_fragment_a"],
+        "unlocks": ["quest_main_04_windfall_truth"]
+      },
+      "narrative_impact": "Confirms Mother encoded directions as ecological observations, not treasure clues."
+    },
+    {
+      "id": "main_04_windfall_truth",
+      "type": "main",
+      "summary": "Investigate Windfall Orchard to uncover why Mother rerouted map data and who stood to profit from the original routes.",
+      "prerequisites": ["quest_main_03_complete"],
+      "steps": [
+        "Inspect grafted trees for carved inventory marks.",
+        "Find the weathered field ledger near the collapsed shed.",
+        "Cross-reference ledger symbols with notebook route marks.",
+        "Interview Ranger Ivo about old access permits.",
+        "Confront Voss with contradictory route evidence."
+      ],
+      "rewards": {
+        "flags": ["quest_main_04_complete", "permit_fraud_exposed"],
+        "items": ["windfall_ledger"],
+        "unlocks": ["quest_main_05_root_choir"]
+      },
+      "narrative_impact": "Moves conflict from superstition to human accountability; stakes shift toward protecting living systems and family legacy."
+    },
+    {
+      "id": "main_05_root_choir",
+      "type": "main",
+      "summary": "Enter the Root Choir and assemble the final route memory to reveal Mother's protective intent.",
+      "prerequisites": ["quest_main_04_complete"],
+      "steps": [
+        "Descend into root caverns after rainfall window.",
+        "Use footstep rhythm puzzle to trigger lichen glow sequence.",
+        "Speak key phrases from Mother's field notes at resonance points.",
+        "Assemble all route fragments at the central root dais.",
+        "Choose dissemination plan: private archive or public stewardship council."
+      ],
+      "rewards": {
+        "flags": ["quest_main_05_complete", "ending_branch_unlocked"],
+        "items": ["mother_final_testament"],
+        "unlocks": ["epilogue_sequence", "new_game_plus_field_journal"]
+      },
+      "narrative_impact": "Resolution emphasizes reciprocity and communal care over domination; family grief transforms into shared stewardship."
+    },
+    {
+      "id": "side_01_borrowed_fire",
+      "type": "side",
+      "summary": "Practice the old 'Borrowed Fire' ritual by restoring ember moss patches after using forest fuel.",
+      "prerequisites": ["quest_main_01_complete"],
+      "steps": [
+        "Collect ember moss safely from marked stones.",
+        "Use moss to relight lantern and stove during storm night.",
+        "Return to same stones with ash-compost mixture.",
+        "Water patches and observe regrowth the next day."
+      ],
+      "rewards": {
+        "flags": ["side_borrowed_fire_complete", "forest_trust_plus"],
+        "items": ["charcoal_crayon"],
+        "unlocks": ["alt_dialogue_hearth_night"]
+      },
+      "narrative_impact": "Makes reciprocity rule tangible and deepens the daughters' trust in Father's follow-through."
+    },
+    {
+      "id": "side_02_lost_scarf",
+      "type": "side",
+      "summary": "Help Mina recover her scarf from a snagged branch while teaching safe movement through dense undergrowth.",
+      "prerequisites": [],
+      "steps": [
+        "Track thread scraps from cabin path to thicket edge.",
+        "Use branch hook tool to retrieve scarf without tearing lichen beds.",
+        "Return scarf and select reassuring dialogue option.",
+        "Sketch the thicket route in the notebook."
+      ],
+      "rewards": {
+        "flags": ["side_lost_scarf_complete", "mina_confidence_plus"],
+        "items": ["woven_scarf"],
+        "unlocks": ["mina_hint_variant_02"]
+      },
+      "narrative_impact": "Small domestic recovery scene reinforces emotional safety and opens gentler clue language from Mina."
+    },
+    {
+      "id": "side_03_ranger_cache",
+      "type": "side",
+      "summary": "Assist Ranger Ivo in reopening an old supply cache without disturbing nesting grounds.",
+      "prerequisites": ["quest_main_02_complete"],
+      "steps": [
+        "Meet Ivo at the split marker at dusk.",
+        "Clear fallen branches around cache hatch by hand tools only.",
+        "Relocate nearby nestlings to designated brush shelter.",
+        "Open cache and log historic route map scraps."
+      ],
+      "rewards": {
+        "flags": ["side_ranger_cache_complete", "ivo_trust_plus"],
+        "items": ["survey_compass", "route_scrap_b"],
+        "unlocks": ["ivo_testimony_option"]
+      },
+      "narrative_impact": "Converts Ivo from cautious observer into practical ally, widening social support for the family."
+    },
+    {
+      "id": "side_04_table_of_three",
+      "type": "side",
+      "summary": "Build a shared clue board at the cabin table where each family member contributes one verified and one uncertain observation.",
+      "prerequisites": ["quest_main_01_complete"],
+      "steps": [
+        "Place recovered clues on the table board.",
+        "Choose one note from Father, Clara, and Mina each.",
+        "Mark confidence levels with pin colors.",
+        "Resolve one contradiction through follow-up inspection."
+      ],
+      "rewards": {
+        "flags": ["side_table_three_complete", "family_sync_plus"],
+        "items": ["tri_pin_board"],
+        "unlocks": ["clue_merge_ui_bonus"]
+      },
+      "narrative_impact": "Turns family intimacy into a literal investigation mechanic and reduces friction in later decision scenes."
+    },
+    {
+      "id": "side_05_stream_apology",
+      "type": "side",
+      "summary": "Reopen a blocked streamlet feeding Moonwell and witness how hydrology changes the visibility of clue patterns.",
+      "prerequisites": ["quest_main_03_complete"],
+      "steps": [
+        "Locate the debris choke point upstream.",
+        "Remove rusted grating and plastic remnants.",
+        "Rebuild bank edge with stones and root weave.",
+        "Return at moonrise to inspect changed reflection grid."
+      ],
+      "rewards": {
+        "flags": ["side_stream_apology_complete", "moonwell_clarity_plus"],
+        "items": ["polished_stream_stone"],
+        "unlocks": ["moonwell_fast_route"]
+      },
+      "narrative_impact": "Demonstrates that healing the environment directly improves truth-finding, reinforcing core theme of care as method."
+    }
+  ]
+}

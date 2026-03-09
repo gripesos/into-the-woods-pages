@@ -1,0 +1,98 @@
+{
+  "id": "forest",
+  "background": "assets/bg/forest.png",
+  "backgrounds": [
+    "assets/bg/forest.png",
+    "assets/bg/variants/forest/forest_var1_00001_.png",
+    "assets/bg/variants/forest/forest_var2_00001_.png",
+    "assets/bg/variants/forest/forest_var3_00001_.png",
+    "assets/bg/variants/forest/forest_var4_00001_.png",
+    "assets/bg/variants/forest/forest_var5_00001_.png",
+    "assets/bg/variants/forest/forest_var6_00001_.png",
+    "assets/bg/variants/forest/forest_var7_00001_.png",
+    "assets/bg/variants/forest/forest_var8_00001_.png",
+    "assets/bg/variants/forest/forest_var9_00001_.png"
+  ],
+  "spawn": {
+    "x": 90,
+    "y": 304
+  },
+  "walkable": {
+    "type": "rect",
+    "x": 0,
+    "y": 225,
+    "w": 640,
+    "h": 135
+  },
+  "hotspots": [
+    {
+      "id": "woodpile",
+      "rect": [
+        176,
+        226,
+        64,
+        78
+      ],
+      "action": "pickup:dry_wood"
+    },
+    {
+      "id": "lantern",
+      "rect": [
+        292,
+        214,
+        34,
+        64
+      ],
+      "text": "An old lantern, empty and cold."
+    },
+    {
+      "id": "marktree",
+      "rect": [
+        450,
+        150,
+        60,
+        132
+      ],
+      "text": "A carved mark in the bark: three circles and a line."
+    },
+    {
+      "id": "cabin_return",
+      "rect": [
+        16,
+        170,
+        72,
+        146
+      ],
+      "action": "goto:cabin",
+      "approachX": 54,
+      "walkToText": "You head back toward the cabin path."
+    },
+    {
+      "id": "trail_signpost",
+      "rect": [
+        556,
+        186,
+        62,
+        126
+      ],
+      "action": "goto:ranger_station",
+      "text": "A weathered sign points toward an old ranger station.",
+      "approachX": 588,
+      "walkToText": "You walk toward the signpost trail."
+    },
+    {
+      "id": "hollow_path",
+      "rect": [
+        342,
+        184,
+        54,
+        128
+      ],
+      "action": "goto:moonwell_hollow",
+      "text": "A narrow path dips into a moonlit hollow.",
+      "approachX": 366,
+      "walkToText": "You move toward the hollow path."
+    }
+  ],
+  "npcs": []
+}

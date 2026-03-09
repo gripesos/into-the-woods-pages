@@ -1,0 +1,22 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "npc_mateus_v1",
+      "type": "npc_sprite",
+      "priority": "P2",
+      "scene": "yard|forest",
+      "style_tags": [
+        "pixel-art",
+        "ambiguous",
+        "working-class"
+      ],
+      "resolution": "512x512",
+      "description": "Mateus sprite set with neutral, evasive, and pressured expressions.",
+      "prompt_seed": "contract driver mechanic character sprite, morally conflicted, retro adventure look",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    }
+  ]
+}

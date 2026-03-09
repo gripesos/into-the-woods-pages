@@ -1,0 +1,133 @@
+{
+  "id": "cabin",
+  "background": "assets/bg/cabin.png",
+  "backgrounds": [
+    "assets/bg/cabin.png",
+    "assets/bg/variants/cabin/cabin_var1_00001_.png",
+    "assets/bg/variants/cabin/cabin_var2_00001_.png",
+    "assets/bg/variants/cabin/cabin_var3_00001_.png",
+    "assets/bg/variants/cabin/cabin_var4_00001_.png",
+    "assets/bg/variants/cabin/cabin_var5_00001_.png",
+    "assets/bg/variants/cabin/cabin_var6_00001_.png",
+    "assets/bg/variants/cabin/cabin_var7_00001_.png",
+    "assets/bg/variants/cabin/cabin_var8_00001_.png",
+    "assets/bg/variants/cabin/cabin_var9_00001_.png"
+  ],
+  "spawn": {
+    "x": 300,
+    "y": 304
+  },
+  "walkable": {
+    "type": "rect",
+    "x": 0,
+    "y": 210,
+    "w": 640,
+    "h": 150
+  },
+  "hotspots": [
+    {
+      "id": "fireplace",
+      "rect": [
+        22,
+        170,
+        72,
+        112
+      ],
+      "text": "The fire is weak. It needs dry wood."
+    },
+    {
+      "id": "notebook",
+      "rect": [
+        366,
+        234,
+        40,
+        26
+      ],
+      "action": "pickup:notebook"
+    },
+    {
+      "id": "table",
+      "rect": [
+        326,
+        198,
+        148,
+        30
+      ],
+      "text": "A drawing: circles in the woods and a dark doorway."
+    },
+    {
+      "id": "door",
+      "rect": [
+        270,
+        108,
+        58,
+        124
+      ],
+      "action": "goto:forest",
+      "approachX": 300,
+      "walkToText": "You walk to the cabin door."
+    }
+  ],
+  "npcs": [
+    {
+      "id": "younger",
+      "rect": [
+        84,
+        188,
+        58,
+        116
+      ],
+      "text": "Younger daughter: The trees are whispering the same shape as my drawing.",
+      "visual": {
+        "layoutScene": "cabin",
+        "layoutNpcId": "younger",
+        "states": {
+          "idle": {
+            "x": 60,
+            "y": 198,
+            "w": 96,
+            "h": 96,
+            "bobScale": 1.5
+          },
+          "talk": {
+            "x": 60,
+            "y": 198,
+            "w": 96,
+            "h": 96,
+            "bobScale": 2.4
+          }
+        }
+      }
+    },
+    {
+      "id": "older",
+      "rect": [
+        452,
+        192,
+        66,
+        112
+      ],
+      "text": "Older daughter: Three circles, one line. It's a map key, I think.",
+      "visual": {
+        "layoutScene": "cabin",
+        "layoutNpcId": "older",
+        "states": {
+          "idle": {
+            "x": 430,
+            "y": 198,
+            "w": 96,
+            "h": 96,
+            "bobScale": 1.2
+          },
+          "talk": {
+            "x": 430,
+            "y": 198,
+            "w": 96,
+            "h": 96,
+            "bobScale": 2.0
+          }
+        }
+      }
+    }
+  ]
+}

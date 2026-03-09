@@ -1,0 +1,242 @@
+{
+  "defaultStyleId": "cozy_classic",
+  "styles": [
+    {
+      "id": "cozy_classic",
+      "label": "Cozy Classic",
+      "description": "Balanced warm cabin + readable forest tones. Good baseline.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/cozy_classic/cabin_refmatch_v1.png",
+          "assets/bg/cabin.png",
+          "assets/bg/variants/cabin/cabin_var1_00001_.png",
+          "assets/bg/variants/cabin/cabin_var4_00001_.png",
+          "assets/bg/variants/cabin/cabin_var7_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/cozy_classic/forest_refmatch_v1.png",
+          "assets/bg/forest.png",
+          "assets/bg/variants/forest/forest_var1_00001_.png",
+          "assets/bg/variants/forest/forest_var5_00001_.png",
+          "assets/bg/variants/forest/forest_var7_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/cozy_classic/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/cozy_classic/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/cozy_classic/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 5,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/younger_talk_4f.png"
+        }
+      }
+    },
+    {
+      "id": "moonlit_mystery",
+      "label": "Moonlit Mystery",
+      "description": "Cool nocturnal mood with stronger blue cast and slower character rhythm.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/moonlit_mystery/cabin_refmatch_v1.png",
+          "assets/bg/variants/cabin/cabin_var2_00001_.png",
+          "assets/bg/variants/cabin/cabin_var3_00001_.png",
+          "assets/bg/variants/cabin/cabin_var5_00001_.png",
+          "assets/bg/variants/cabin/cabin_var6_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/moonlit_mystery/forest_refmatch_v1.png",
+          "assets/bg/variants/forest/forest_var2_00001_.png",
+          "assets/bg/variants/forest/forest_var3_00001_.png",
+          "assets/bg/variants/forest/forest_var6_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/moonlit_mystery/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/moonlit_mystery/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/moonlit_mystery/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 4,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/styles/moonlit_mystery/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/styles/moonlit_mystery/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/styles/moonlit_mystery/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/styles/moonlit_mystery/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/styles/moonlit_mystery/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/styles/moonlit_mystery/younger_talk_4f.png"
+        }
+      }
+    },
+    {
+      "id": "warm_hearth",
+      "label": "Warm Hearth",
+      "description": "Golden interior, warm highlights, and slightly faster/energetic character motion.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/warm_hearth/cabin_refmatch_v1.png",
+          "assets/bg/variants/cabin/cabin_var7_00001_.png",
+          "assets/bg/variants/cabin/cabin_var4_00001_.png",
+          "assets/bg/variants/cabin/cabin_var1_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/warm_hearth/forest_refmatch_v1.png",
+          "assets/bg/variants/forest/forest_var7_00001_.png",
+          "assets/bg/variants/forest/forest_var5_00001_.png",
+          "assets/bg/variants/forest/forest_var1_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/warm_hearth/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/warm_hearth/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/warm_hearth/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 6,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/styles/warm_hearth/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/styles/warm_hearth/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/styles/warm_hearth/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/styles/warm_hearth/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/styles/warm_hearth/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/styles/warm_hearth/younger_talk_4f.png"
+        }
+      }
+    },
+    {
+      "id": "ink_noir",
+      "label": "Ink Noir",
+      "description": "High-contrast desaturated style for eerie story beats.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/ink_noir/cabin_refmatch_v1.png",
+          "assets/bg/variants/cabin/cabin_var6_00001_.png",
+          "assets/bg/variants/cabin/cabin_var2_00001_.png",
+          "assets/bg/variants/cabin/cabin_var3_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/ink_noir/forest_refmatch_v1.png",
+          "assets/bg/variants/forest/forest_var6_00001_.png",
+          "assets/bg/variants/forest/forest_var4_00001_.png",
+          "assets/bg/variants/forest/forest_var3_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/ink_noir/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/ink_noir/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/ink_noir/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 4,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/styles/ink_noir/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/styles/ink_noir/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/styles/ink_noir/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/styles/ink_noir/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/styles/ink_noir/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/styles/ink_noir/younger_talk_4f.png"
+        }
+      }
+    },
+    {
+      "id": "pastel_storybook",
+      "label": "Pastel Storybook",
+      "description": "Soft pastel palette for calmer scenes and memory flashback vibes.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/pastel_storybook/cabin_refmatch_v1.png",
+          "assets/bg/variants/cabin/cabin_var4_00001_.png",
+          "assets/bg/variants/cabin/cabin_var5_00001_.png",
+          "assets/bg/variants/cabin/cabin_var1_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/pastel_storybook/forest_refmatch_v1.png",
+          "assets/bg/variants/forest/forest_var4_00001_.png",
+          "assets/bg/variants/forest/forest_var1_00001_.png",
+          "assets/bg/variants/forest/forest_var5_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/pastel_storybook/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/pastel_storybook/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/pastel_storybook/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 5,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/styles/pastel_storybook/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/styles/pastel_storybook/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/styles/pastel_storybook/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/styles/pastel_storybook/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/styles/pastel_storybook/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/styles/pastel_storybook/younger_talk_4f.png"
+        }
+      }
+    },
+    {
+      "id": "twilight_whispers",
+      "label": "Twilight Whispers",
+      "description": "Retro dusk blend with low-contrast cabin glow and hush-toned forest mist.",
+      "sceneArt": {
+        "cabin": [
+          "assets/bg/styles/twilight_whispers/cabin_refmatch_v1.png",
+          "assets/bg/variants/cabin/cabin_var8_00001_.png",
+          "assets/bg/variants/cabin/cabin_var9_00001_.png",
+          "assets/bg/variants/cabin/cabin_var4_00001_.png"
+        ],
+        "forest": [
+          "assets/bg/styles/twilight_whispers/forest_refmatch_v1.png",
+          "assets/bg/variants/forest/forest_var8_00001_.png",
+          "assets/bg/variants/forest/forest_var9_00001_.png",
+          "assets/bg/variants/forest/forest_var6_00001_.png"
+        ],
+        "ranger_station": [
+          "assets/bg/styles/twilight_whispers/ranger_station_refmatch_v1.png"
+        ],
+        "moonwell_hollow": [
+          "assets/bg/styles/twilight_whispers/moonwell_hollow_refmatch_v1.png"
+        ],
+        "windfall_orchard": [
+          "assets/bg/styles/twilight_whispers/windfall_orchard_refmatch_v1.png"
+        ]
+      },
+      "npc": {
+        "fps": 5,
+        "sheets": {
+          "older_idle": "assets/sprites/npc/styles/twilight_whispers/older_idle_4f.png",
+          "younger_idle": "assets/sprites/npc/styles/twilight_whispers/younger_idle_4f.png",
+          "older_walk": "assets/sprites/npc/styles/twilight_whispers/older_walk_4f.png",
+          "younger_walk": "assets/sprites/npc/styles/twilight_whispers/younger_walk_4f.png",
+          "older_talk": "assets/sprites/npc/styles/twilight_whispers/older_talk_4f.png",
+          "younger_talk": "assets/sprites/npc/styles/twilight_whispers/younger_talk_4f.png"
+        }
+      }
+    }
+  ]
+}

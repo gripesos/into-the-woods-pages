@@ -1,0 +1,42 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "id": "prop_clue_pack_v1",
+      "type": "prop",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": [
+        "inventory-icons",
+        "evidence-core",
+        "pixel-art"
+      ],
+      "resolution": "256x256 each",
+      "description": "Notebook, chalk bundle, broken compass, tree marker closeup, survey stake, cassette tape.",
+      "prompt_seed": "adventure game inventory props with strong silhouettes and narrative wear",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "prop_evidence_board_v1",
+      "type": "prop",
+      "priority": "P1",
+      "scene": "cabin",
+      "style_tags": [
+        "story-prop",
+        "red-string",
+        "investigation"
+      ],
+      "resolution": "1024x1024",
+      "description": "Pinboard asset with strings, notes, and photo placeholders used for progression feedback.",
+      "prompt_seed": "investigation board prop with tactile paper layers, mystery storytelling",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "ui_notebook_overlay_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    }
+  ]
+}

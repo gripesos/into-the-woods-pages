@@ -1,0 +1,14 @@
+{
+  "id": "chapter1",
+  "title": "Embers and Markings",
+  "scenes": [
+    "cabin",
+    "forest"
+  ],
+  "unlockFlags": [
+    "talkedOlder",
+    "talkedYounger",
+    "treeMarked"
+  ],
+  "objectiveSummary": "Stabilize the cabin, gather clues in the forest, and identify the ring-mark trail."
+}

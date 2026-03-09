@@ -1,0 +1,23 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_016",
+      "bucket": "LATER",
+      "type": "vfx_concept",
+      "priority": "P2",
+      "scene": "lichen_resonance_waveforms",
+      "style_tags": [
+        "ink_noir",
+        "twilight_whispers"
+      ],
+      "resolution": "2048x1024",
+      "description": "Concept pass for lichen glow reacting to footsteps and spoken phrases.",
+      "prompt_seed": "organic waveform light pulses, low-frequency pattern motifs, interactive state layers",
+      "dependencies": [
+        "rq_add_015"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_020",
+      "bucket": "LATER",
+      "type": "cutscene_board",
+      "priority": "P2",
+      "scene": "storm_night_lantern_lesson",
+      "style_tags": [
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "resolution": "2048x1152",
+      "description": "Storyboard panels for storm night where family relights lantern and reconciles conflicting clues.",
+      "prompt_seed": "retro adventure storyboard, rain on window, warm interior contrast, family teamwork beats",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_011"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

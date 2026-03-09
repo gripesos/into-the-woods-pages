@@ -1,0 +1,185 @@
+{
+  "id": "cabin_dialogue",
+  "conversations": {
+    "older_intro": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Older daughter",
+          "line": "Three circles, one line. I still think it's a key, not just a doodle.",
+          "choices": [
+            { "text": "Ask what the key means", "next": "n1" },
+            { "text": "Ask if she is scared", "next": "n2" },
+            { "text": "Ask what she needs from me", "next": "n3" },
+            { "text": "Let's continue later", "next": null }
+          ]
+        },
+        "n1": {
+          "speaker": "Older daughter",
+          "line": "Maybe three places in the woods and one route connecting them. We should compare with the tree mark.",
+          "actions": [
+            { "type": "setFlag", "flag": "talkedOlder", "value": true },
+            { "type": "setFlag", "flag": "symbolTheoryActive", "value": true },
+            { "type": "showText", "text": "Clara circles three points on her notebook map." }
+          ],
+          "choices": [
+            { "text": "Promise we'll verify each point", "next": "n4" },
+            { "text": "Tell her to slow down", "next": "n5" }
+          ]
+        },
+        "n2": {
+          "speaker": "Older daughter",
+          "line": "A little. But it's the good kind of scared. Like we're close to a discovery.",
+          "actions": [
+            { "type": "setFlag", "flag": "talkedOlder", "value": true }
+          ],
+          "choices": [
+            { "text": "Reassure her we'll do this together", "next": "n4" },
+            { "text": "Suggest taking a break tonight", "next": "n5" }
+          ]
+        },
+        "n3": {
+          "speaker": "Older daughter",
+          "line": "Don't treat me like glass. Double-check me, sure—but don't dismiss me before looking.",
+          "actions": [
+            { "type": "setFlag", "flag": "talkedOlder", "value": true },
+            { "type": "showText", "text": "She slides the notebook over, waiting for your answer." }
+          ],
+          "choices": [
+            { "text": "Agree to review clues as a team", "next": "n4" },
+            { "text": "Say safety comes first, no arguments", "next": "n5" }
+          ]
+        },
+        "n4": {
+          "speaker": "Older daughter",
+          "line": "Okay. Team rules then: if one of us sees a pattern, all of us verify it.",
+          "actions": [
+            { "type": "setFlag", "flag": "olderTrustUp", "value": true },
+            { "type": "showText", "text": "Clara's shoulders ease for the first time tonight." }
+          ],
+          "next": null
+        },
+        "n5": {
+          "speaker": "Older daughter",
+          "line": "Right... slow down. That's what everyone says before they ignore the problem.",
+          "actions": [
+            { "type": "setFlag", "flag": "olderTrustDown", "value": true }
+          ],
+          "next": null
+        }
+      }
+    },
+    "younger_intro": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Younger daughter",
+          "line": "The trees are whispering the same shape as my drawing.",
+          "choices": [
+            { "text": "What shape?", "next": "n1" },
+            { "text": "Show me where", "next": "n2" },
+            { "text": "Ask what the whisper sounds like", "next": "n3" },
+            { "text": "Okay, thanks", "next": null }
+          ]
+        },
+        "n1": {
+          "speaker": "Younger daughter",
+          "line": "Three moons and a road. But the road is sleepy.",
+          "actions": [
+            { "type": "setFlag", "flag": "talkedYounger", "value": true }
+          ],
+          "choices": [
+            { "text": "Ask what sleepy means", "next": "n4" },
+            { "text": "Smile and write it down", "next": "n5" }
+          ]
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "Near the old tree. The one that looks at us.",
+          "actions": [
+            { "type": "setFlag", "flag": "talkedYounger", "value": true },
+            { "type": "showText", "text": "She points toward the darker part of the trail." }
+          ],
+          "choices": [
+            { "text": "Invite her to guide tomorrow's route", "next": "n5" },
+            { "text": "Tell her she should stay by the cabin", "next": "n6" }
+          ]
+        },
+        "n3": {
+          "speaker": "Younger daughter",
+          "line": "Like a big bee trapped in a bottle, far underground.",
+          "actions": [
+            { "type": "setFlag", "flag": "heardUndergroundHum", "value": true }
+          ],
+          "choices": [
+            { "text": "Thank her for noticing", "next": "n5" },
+            { "text": "Say it's probably just wind", "next": "n6" }
+          ]
+        },
+        "n4": {
+          "speaker": "Younger daughter",
+          "line": "Sleepy means hidden. It's moving, but pretending not to.",
+          "actions": [
+            { "type": "showText", "text": "You sketch the phrase in the margin: 'moving, pretending still.'" }
+          ],
+          "next": null
+        },
+        "n5": {
+          "speaker": "Younger daughter",
+          "line": "If we all listen at once, the forest gets less scary.",
+          "actions": [
+            { "type": "setFlag", "flag": "youngerTrustUp", "value": true }
+          ],
+          "next": null
+        },
+        "n6": {
+          "speaker": "Younger daughter",
+          "line": "When people say 'don't worry,' it usually means they are worried alone.",
+          "actions": [
+            { "type": "setFlag", "flag": "youngerTrustDown", "value": true }
+          ],
+          "next": null
+        }
+      }
+    },
+    "father_night_checkin": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Father",
+          "line": "I checked the locks twice. Habit, I guess.",
+          "choices": [
+            { "text": "Ask what he is really afraid of", "next": "n1" },
+            { "text": "Show him the latest map clues", "next": "n2" },
+            { "text": "Tell him to rest", "next": "n3" }
+          ]
+        },
+        "n1": {
+          "speaker": "Father",
+          "line": "I'm afraid of choosing wrong and calling it protection.",
+          "actions": [
+            { "type": "setFlag", "flag": "fatherOpenedUp", "value": true }
+          ],
+          "next": null
+        },
+        "n2": {
+          "speaker": "Father",
+          "line": "These lines... they're survey logic, not superstition. Someone planned this.",
+          "actions": [
+            { "type": "setFlag", "flag": "fatherLinkedSurvey", "value": true },
+            { "type": "showText", "text": "Tomás traces the route with a grease-stained finger." }
+          ],
+          "next": null
+        },
+        "n3": {
+          "speaker": "Father",
+          "line": "Rest can wait. If the forest is changing overnight, we move at dawn.",
+          "actions": [
+            { "type": "setFlag", "flag": "planDawnSearch", "value": true }
+          ],
+          "next": null
+        }
+      }
+    }
+  }
+}

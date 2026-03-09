@@ -1,0 +1,25 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "fx_storm_rain_overlay_v1",
+      "type": "fx",
+      "priority": "P2",
+      "scene": "forest|tunnel",
+      "style_tags": [
+        "weather",
+        "dramatic",
+        "gameplay-clarity"
+      ],
+      "resolution": "1920x1080 overlay",
+      "description": "Rain and lightning overlay tuned for legibility during climax sequences.",
+      "prompt_seed": "stylized storm overlay for pixel adventure game with readable foreground",
+      "dependencies": [
+        "bg_forest_trail_v1",
+        "bg_river_lock_tunnel_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    }
+  ]
+}

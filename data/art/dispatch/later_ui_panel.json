@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_022",
+      "bucket": "LATER",
+      "type": "ui_panel",
+      "priority": "P3",
+      "scene": "route_fragment_assembly_ui",
+      "style_tags": [
+        "cozy_classic",
+        "ink_noir"
+      ],
+      "resolution": "1920x1080",
+      "description": "Puzzle UI for assembling route fragments with confidence markers and source provenance tags.",
+      "prompt_seed": "investigation board UI, draggable clue fragments, notebook aesthetic with clean readability",
+      "dependencies": [
+        "rq_add_006",
+        "rq_add_014"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "chapters": [
+    { "id": "chapter1", "file": "chapter1.json", "order": 1 },
+    { "id": "chapter2", "file": "chapter2.json", "order": 2 },
+    { "id": "chapter3", "file": "chapter3.json", "order": 3 }
+  ]
+}

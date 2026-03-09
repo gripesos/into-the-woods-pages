@@ -1,0 +1,300 @@
+{
+  "count": 16,
+  "entries": [
+    {
+      "id": "bg_drained_marsh_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "drained_marsh",
+      "style_tags": [
+        "ecological-damage",
+        "somber",
+        "retro-sierra"
+      ],
+      "resolution": "1920x1080",
+      "description": "Marshland turned mudflat with exposed roots and absent wildlife signs.",
+      "prompt_seed": "once-lush marsh now drained, environmental storytelling, classic adventure game composition",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_river_lock_tunnel_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": [
+        "industrial",
+        "claustrophobic",
+        "wet-surfaces"
+      ],
+      "resolution": "1920x1080",
+      "description": "Maintenance tunnel with valves, conduit lines, and floodgate key access point.",
+      "prompt_seed": "underground maintenance tunnel in forest lock system, tense adventure tone",
+      "dependencies": [
+        "prop_floodgate_key_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_015",
+      "bucket": "LATER",
+      "type": "background",
+      "priority": "P2",
+      "scene": "root_choir_cavern_master",
+      "style_tags": [
+        "ink_noir",
+        "moonlit_mystery"
+      ],
+      "resolution": "2560x1440",
+      "description": "Late-game root cavern with bioluminescent lichen choir arcs and central dais.",
+      "prompt_seed": "subterranean root cathedral, glowing lichen, awe not horror, readable ritual focal point",
+      "dependencies": [
+        "rq_add_009"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_017",
+      "bucket": "LATER",
+      "type": "background_variant_pack",
+      "priority": "P2",
+      "scene": "cabin_emotional_progression",
+      "style_tags": [
+        "warm_hearth",
+        "cozy_classic"
+      ],
+      "resolution": "1920x1080",
+      "description": "Five cabin mood variants from cold/uncertain to warm/synchronized investigation space.",
+      "prompt_seed": "same room continuity set, evolving lighting and clutter storytelling, intimate domestic arc",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_006"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_018",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "mother_field_journal_flashback",
+      "style_tags": [
+        "pastel_storybook",
+        "twilight_whispers"
+      ],
+      "resolution": "1536x2048",
+      "description": "Mother memory-vignette poses for journal overlays, careful field gestures and route marking.",
+      "prompt_seed": "documentary-like memory portraits, gentle grain, practical botanist posture",
+      "dependencies": [
+        "rq_add_003",
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_019",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "contractor_voss_dialogue_sheet",
+      "style_tags": [
+        "ink_noir",
+        "cozy_classic"
+      ],
+      "resolution": "1536x2048",
+      "description": "Voss expression sheet balancing civility, deflection, and pressure without cartoon villain framing.",
+      "prompt_seed": "subtle antagonist design, polished field contractor attire, nuanced facial acting",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_020",
+      "bucket": "LATER",
+      "type": "cutscene_board",
+      "priority": "P2",
+      "scene": "storm_night_lantern_lesson",
+      "style_tags": [
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "resolution": "2048x1152",
+      "description": "Storyboard panels for storm night where family relights lantern and reconciles conflicting clues.",
+      "prompt_seed": "retro adventure storyboard, rain on window, warm interior contrast, family teamwork beats",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_011"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "fx_storm_rain_overlay_v1",
+      "type": "fx",
+      "priority": "P2",
+      "scene": "forest|tunnel",
+      "style_tags": [
+        "weather",
+        "dramatic",
+        "gameplay-clarity"
+      ],
+      "resolution": "1920x1080 overlay",
+      "description": "Rain and lightning overlay tuned for legibility during climax sequences.",
+      "prompt_seed": "stylized storm overlay for pixel adventure game with readable foreground",
+      "dependencies": [
+        "bg_forest_trail_v1",
+        "bg_river_lock_tunnel_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "npc_mateus_v1",
+      "type": "npc_sprite",
+      "priority": "P2",
+      "scene": "yard|forest",
+      "style_tags": [
+        "pixel-art",
+        "ambiguous",
+        "working-class"
+      ],
+      "resolution": "512x512",
+      "description": "Mateus sprite set with neutral, evasive, and pressured expressions.",
+      "prompt_seed": "contract driver mechanic character sprite, morally conflicted, retro adventure look",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "prop_floodgate_key_v1",
+      "type": "prop",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": [
+        "inventory",
+        "rusted-metal",
+        "legacy-infrastructure"
+      ],
+      "resolution": "256x256",
+      "description": "Heavy iron floodgate key item icon with aged tag and corrosion details.",
+      "prompt_seed": "old industrial key icon, tactile metal wear, readable silhouette",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_016",
+      "bucket": "LATER",
+      "type": "vfx_concept",
+      "priority": "P2",
+      "scene": "lichen_resonance_waveforms",
+      "style_tags": [
+        "ink_noir",
+        "twilight_whispers"
+      ],
+      "resolution": "2048x1024",
+      "description": "Concept pass for lichen glow reacting to footsteps and spoken phrases.",
+      "prompt_seed": "organic waveform light pulses, low-frequency pattern motifs, interactive state layers",
+      "dependencies": [
+        "rq_add_015"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_023",
+      "bucket": "LATER",
+      "type": "background",
+      "priority": "P3",
+      "scene": "stream_restoration_before_after",
+      "style_tags": [
+        "pastel_storybook",
+        "moonlit_mystery"
+      ],
+      "resolution": "2560x1440",
+      "description": "Before/after pair showing blocked streamlet and restored flow feeding Moonwell clarity.",
+      "prompt_seed": "environmental repair comparison shot, same camera framing, ecological consequence visible",
+      "dependencies": [
+        "rq_add_008"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_024",
+      "bucket": "LATER",
+      "type": "marketing_keyart",
+      "priority": "P3",
+      "scene": "family_against_brindlewood_keyart",
+      "style_tags": [
+        "cozy_classic",
+        "moonlit_mystery",
+        "twilight_whispers"
+      ],
+      "resolution": "3840x2160",
+      "description": "Key art: Father and daughters at cabin threshold, lantern glow, three-circle glyph hidden in treeline.",
+      "prompt_seed": "indie narrative adventure key art, heartfelt family composition, ecological mystery atmosphere",
+      "dependencies": [
+        "rq_add_004",
+        "rq_add_005",
+        "rq_add_011",
+        "rq_add_002"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_021",
+      "bucket": "LATER",
+      "type": "prop_sheet",
+      "priority": "P3",
+      "scene": "windfall_ledger_variants",
+      "style_tags": [
+        "ink_noir"
+      ],
+      "resolution": "2048x2048",
+      "description": "Ledger prop variants showing weathering stages, marginal notes, and permit stamp overlays.",
+      "prompt_seed": "forensic document prop design, legible handwriting layers, archival paper textures",
+      "dependencies": [
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "ui_signal_decoder_v1",
+      "type": "ui_motif",
+      "priority": "P3",
+      "scene": "global",
+      "style_tags": [
+        "mini-game-ui",
+        "analog-dial",
+        "audio-clue"
+      ],
+      "resolution": "1600x900",
+      "description": "Radio tuning interface motif for decoding pulse timings and static bands.",
+      "prompt_seed": "retro analog signal decoder interface, tactile knobs, mystery puzzle",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "fx_hum_anomaly_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_022",
+      "bucket": "LATER",
+      "type": "ui_panel",
+      "priority": "P3",
+      "scene": "route_fragment_assembly_ui",
+      "style_tags": [
+        "cozy_classic",
+        "ink_noir"
+      ],
+      "resolution": "1920x1080",
+      "description": "Puzzle UI for assembling route fragments with confidence markers and source provenance tags.",
+      "prompt_seed": "investigation board UI, draggable clue fragments, notebook aesthetic with clean readability",
+      "dependencies": [
+        "rq_add_006",
+        "rq_add_014"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

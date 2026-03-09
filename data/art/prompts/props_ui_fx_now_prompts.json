@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "pack": "props_ui_fx_now",
+    "generated_for": "NOW requisitions",
+    "entry_count": 9,
+    "style_guide": {
+      "palette": [
+        "moonlit indigo #1A2238",
+        "moss #4E6A4A",
+        "aged paper #DCC9A3",
+        "ember accent #C7774A",
+        "chalk white #E9E6DF"
+      ],
+      "linework": "clean silhouettes, inked edges, readable at 64px",
+      "lighting": "soft moonlight + warm practical highlights",
+      "rendering": "2D painterly with light texture; avoid photorealism"
+    }
+  },
+  "entries": [
+    {
+      "id": "prop_clue_pack_v1",
+      "bucket": "NOW",
+      "priority": "P0",
+      "type": "prop",
+      "scene": "cabin|forest",
+      "dependencies": [],
+      "source": "requisitions.json",
+      "prompt": "Create prop concept art for id prop_clue_pack_v1 (cabin|forest). Description: Notebook, chalk bundle, broken compass, tree marker closeup, survey stake, cassette tape.. Style tags: inventory-icons, evidence-core, pixel-art. Resolution target: 256x256 each. Seed direction: adventure game inventory props with strong silhouettes and narrative wear. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "256x256 each",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "prop_clue_pack_v1_final.png",
+          "placeholder": "prop_clue_pack_v1_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/props/requisition_now/prop_clue_pack_v1_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "prop_evidence_board_v1",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "prop",
+      "scene": "cabin",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "ui_notebook_overlay_v1"
+      ],
+      "source": "requisitions.json",
+      "prompt": "Create prop concept art for id prop_evidence_board_v1 (cabin). Description: Pinboard asset with strings, notes, and photo placeholders used for progression feedback.. Style tags: story-prop, red-string, investigation. Resolution target: 1024x1024. Seed direction: investigation board prop with tactile paper layers, mystery storytelling. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: prop_clue_pack_v1, ui_notebook_overlay_v1.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "1024x1024",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "prop_evidence_board_v1_final.png",
+          "placeholder": "prop_evidence_board_v1_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/props/requisition_now/prop_evidence_board_v1_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "rq_add_003",
+      "bucket": "NOW",
+      "priority": "P0",
+      "type": "prop_sheet",
+      "scene": "three_circles_glyph_set",
+      "dependencies": [],
+      "source": "requisitions_addendum.json",
+      "prompt": "Create prop_sheet concept art for id rq_add_003 (three_circles_glyph_set). Description: Glyph exploration sheet: three circles and one line in carved bark, charcoal notebook sketch, and reflected water form.. Style tags: ink_noir, moonlit_mystery. Resolution target: 2048x2048. Seed direction: symbol design sheet, hand-etched wood and graphite variants, narrative puzzle readability, minimal ornament. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "2048x2048",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "rq_add_003_final.png",
+          "placeholder": "rq_add_003_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/props/requisition_now/rq_add_003_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "rq_add_013",
+      "bucket": "NOW",
+      "priority": "P0",
+      "type": "prop_sheet",
+      "scene": "forest_interactables_core_props",
+      "dependencies": [],
+      "source": "requisitions_addendum.json",
+      "prompt": "Create prop_sheet concept art for id rq_add_013 (forest_interactables_core_props). Description: Core prop atlas: old lantern post, dry wood bundle, mark-tree bark section, moss sample trays.. Style tags: moonlit_mystery, cozy_classic. Resolution target: 2048x2048. Seed direction: adventure game prop atlas, consistent paintover style, clean silhouettes for hotspot interaction. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "2048x2048",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "rq_add_013_final.png",
+          "placeholder": "rq_add_013_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/props/requisition_now/rq_add_013_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "rq_add_014",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "ui_icon_set",
+      "scene": "ecology_reciprocity_icons",
+      "dependencies": [
+        "rq_add_006"
+      ],
+      "source": "requisitions_addendum.json",
+      "prompt": "Create ui_icon_set concept art for id rq_add_014 (ecology_reciprocity_icons). Description: Icon set for reciprocity actions: take, return, mend, observe, confirm.. Style tags: cozy_classic. Resolution target: 1024x1024. Seed direction: minimal iconography with hand-ink charm, readable at small sizes, thematic consistency with notebook art. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: rq_add_006.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "1024x1024",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "rq_add_014_final.png",
+          "placeholder": "rq_add_014_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/ui/requisition_now/rq_add_014_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "ui_notebook_overlay_v1",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "ui_motif",
+      "scene": "global",
+      "dependencies": [
+        "prop_clue_pack_v1"
+      ],
+      "source": "requisitions.json",
+      "prompt": "Create ui_motif concept art for id ui_notebook_overlay_v1 (global). Description: Notebook-style clue overlay with map pins, symbol slots, and handwritten margin area.. Style tags: diegetic-ui, paper-texture, investigation. Resolution target: 1600x900. Seed direction: diegetic notebook interface, retro adventure clarity, hand-drawn annotations. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: prop_clue_pack_v1.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "1600x900",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": false,
+        "naming": {
+          "final": "ui_notebook_overlay_v1_final.png",
+          "placeholder": "ui_notebook_overlay_v1_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/ui/requisition_now/ui_notebook_overlay_v1_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "rq_add_006",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "ui_panel",
+      "scene": "family_clue_board_interface",
+      "dependencies": [
+        "rq_add_003"
+      ],
+      "source": "requisitions_addendum.json",
+      "prompt": "Create ui_panel concept art for id rq_add_006 (family_clue_board_interface). Description: Interface concept for table-of-three clue board with pin colors and confidence labels.. Style tags: cozy_classic, warm_hearth. Resolution target: 1920x1080. Seed direction: diegetic corkboard UI, handwritten tags, tactile paper scraps, retro game readable hierarchy. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: rq_add_003.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "1920x1080",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": false,
+        "naming": {
+          "final": "rq_add_006_final.png",
+          "placeholder": "rq_add_006_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/ui/requisition_now/rq_add_006_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "fx_hum_anomaly_v1",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "fx",
+      "scene": "forest",
+      "dependencies": [
+        "bg_forest_trail_v1"
+      ],
+      "source": "requisitions.json",
+      "prompt": "Create fx concept art for id fx_hum_anomaly_v1 (forest). Description: Low-frequency hum visual cue: faint concentric distortion near ground roots.. Style tags: subtle-vfx, environmental-clue, diegetic. Resolution target: 1024x1024 sprite sheet. Seed direction: minimalist environmental distortion effect for hidden machinery resonance. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: bg_forest_trail_v1.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "1024x1024 sprite sheet",
+        "export_layers": [
+          "core",
+          "glow",
+          "distortion_mask"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "fx_hum_anomaly_v1_final.png",
+          "placeholder": "fx_hum_anomaly_v1_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/fx/requisition_now/fx_hum_anomaly_v1_placeholder.png",
+        "status": "generated"
+      }
+    },
+    {
+      "id": "rq_add_009",
+      "bucket": "NOW",
+      "priority": "P1",
+      "type": "vfx_concept",
+      "scene": "water_reflection_symbol_states",
+      "dependencies": [
+        "rq_add_008",
+        "rq_add_003"
+      ],
+      "source": "requisitions_addendum.json",
+      "prompt": "Create vfx_concept concept art for id rq_add_009 (water_reflection_symbol_states). Description: State sheet for reflection puzzle phases: misaligned, nearly aligned, correct triad.. Style tags: ink_noir. Resolution target: 2048x1024. Seed direction: puzzle state visualization, minimalistic water distortion frames, high contrast symbol legibility. Visual language: 2D painterly with light texture; avoid photorealism; clean silhouettes, inked edges, readable at 64px; soft moonlight + warm practical highlights. Palette accents: moonlit indigo #1A2238, moss #4E6A4A, aged paper #DCC9A3, ember accent #C7774A, chalk white #E9E6DF. Keep transparent background for isolated elements when applicable and preserve strong silhouette readability. Honor dependencies context from: rq_add_008, rq_add_003.",
+      "negative_prompt": "no modern UI gradients, no neon sci-fi motifs, no blurry details, no tiny unreadable symbols, no watermark/text artifacts",
+      "output_spec": {
+        "resolution": "2048x1024",
+        "export_layers": [
+          "base_color",
+          "line",
+          "shadow",
+          "highlight"
+        ],
+        "transparent_background": true,
+        "naming": {
+          "final": "rq_add_009_final.png",
+          "placeholder": "rq_add_009_placeholder.png"
+        }
+      },
+      "placeholder_asset": {
+        "path": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/fx/requisition_now/rq_add_009_placeholder.png",
+        "status": "generated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_021",
+      "bucket": "LATER",
+      "type": "prop_sheet",
+      "priority": "P3",
+      "scene": "windfall_ledger_variants",
+      "style_tags": [
+        "ink_noir"
+      ],
+      "resolution": "2048x2048",
+      "description": "Ledger prop variants showing weathering stages, marginal notes, and permit stamp overlays.",
+      "prompt_seed": "forensic document prop design, legible handwriting layers, archival paper textures",
+      "dependencies": [
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

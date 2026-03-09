@@ -1,0 +1,189 @@
+{
+  "id": "chapter_dialogue",
+  "conversations": {
+    "ranger_station_signal_log": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "The station logbook is open to tonight, ink still wet.",
+          "choices": [
+            {
+              "text": "Read the latest entry",
+              "next": "n1"
+            },
+            {
+              "text": "Ask Older daughter to inspect",
+              "next": "n2"
+            }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Logbook",
+          "line": "\"Signal 7-3-7 repeated from Moonwell Hollow. Do not answer after dusk.\"",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "setFlag",
+              "flag": "foundStationLedger",
+              "value": true
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "Older daughter",
+          "line": "These route notes map cleanly to the tree marks. We can chart a safer line.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "showText",
+              "text": "You copy a patrol route into the notebook."
+            }
+          ]
+        }
+      }
+    },
+    "moonwell_hollow_echo": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "At the moonwell, the water repeats your footsteps before you move.",
+          "choices": [
+            {
+              "text": "Touch the water",
+              "next": "n1"
+            },
+            {
+              "text": "Step away",
+              "next": "n2"
+            }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Younger daughter",
+          "line": "It's warm... like someone left a handprint in the light.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "setFlag",
+              "flag": "moonwellAttuned",
+              "value": true
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "Narrator",
+          "line": "The ripples settle into three circles and a line.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "showText",
+              "text": "Pattern confirmed: same sigil across all routes."
+            }
+          ]
+        }
+      }
+    },
+    "windfall_orchard_gate": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "The orchard gate vibrates with distant bell tones.",
+          "choices": [
+            {
+              "text": "Test the latch",
+              "next": "n1"
+            },
+            {
+              "text": "Inspect nearby apples",
+              "next": "n2"
+            }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Older daughter",
+          "line": "It unlocks from the station side. We need a route token or proper sequence.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "setFlag",
+              "flag": "orchardGateKnownLocked",
+              "value": true
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "These apples are split by frost, but still warm inside. Weird.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "showText",
+              "text": "You pocket one marked seed for later."
+            }
+          ]
+        }
+      }
+    },
+    "ranger_station_radio_whisper": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Radio",
+          "line": "\"...family of three, return before first bell...\"",
+          "choices": [
+            {
+              "text": "Respond over static",
+              "next": "n1"
+            },
+            {
+              "text": "Cut the power",
+              "next": "n2"
+            }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Narrator",
+          "line": "Static folds into a map coordinate scratched into your memory.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "setFlag",
+              "flag": "heardRadioCoordinate",
+              "value": true
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "Narrator",
+          "line": "The room goes quiet, but the whisper continues from outside.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            {
+              "type": "showText",
+              "text": "Silence here does not mean safety."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

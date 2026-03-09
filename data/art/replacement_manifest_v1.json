@@ -1,0 +1,115 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-03-01T06:16:00-03:00",
+  "baseNote": "Paths are repo-root relative to /home/catmaster/Documents/Ideas/intothewoods",
+  "entries": [
+    {
+      "id": "prop-rq-add-013",
+      "type": "prop",
+      "placeholderPath": "engine/assets/props/requisition_now/rq_add_013_placeholder.png",
+      "preferredFinalPath": "engine/assets/props/requisition_now/rq_add_013.png",
+      "fallbackPaths": [
+        "assets/props/final/rq_add_013.png",
+        "exports/props/rq_add_013.png"
+      ],
+      "status": "planned",
+      "notes": "Wire to final prop once exported."
+    },
+    {
+      "id": "prop-clue-pack-v1",
+      "type": "prop",
+      "placeholderPath": "engine/assets/props/requisition_now/prop_clue_pack_v1_placeholder.png",
+      "preferredFinalPath": "engine/assets/props/requisition_now/prop_clue_pack_v1.png",
+      "fallbackPaths": [
+        "assets/props/final/prop_clue_pack_v1.png",
+        "exports/props/prop_clue_pack_v1.png"
+      ],
+      "status": "planned",
+      "notes": "Evidence clue pack production art pending."
+    },
+    {
+      "id": "prop-rq-add-003",
+      "type": "prop",
+      "placeholderPath": "engine/assets/props/requisition_now/rq_add_003_placeholder.png",
+      "preferredFinalPath": "engine/assets/props/requisition_now/rq_add_003.png",
+      "fallbackPaths": [
+        "assets/props/final/rq_add_003.png",
+        "exports/props/rq_add_003.png"
+      ],
+      "status": "planned",
+      "notes": "Keep placeholder until replacement sprite arrives."
+    },
+    {
+      "id": "prop-evidence-board-v1",
+      "type": "prop",
+      "placeholderPath": "engine/assets/props/requisition_now/prop_evidence_board_v1_placeholder.png",
+      "preferredFinalPath": "engine/assets/props/requisition_now/prop_evidence_board_v1.png",
+      "fallbackPaths": [
+        "assets/props/final/prop_evidence_board_v1.png",
+        "exports/props/prop_evidence_board_v1.png"
+      ],
+      "status": "planned",
+      "notes": "Board texture and pin details not finalized yet."
+    },
+    {
+      "id": "ui-notebook-overlay-v1",
+      "type": "ui",
+      "placeholderPath": "engine/assets/ui/requisition_now/ui_notebook_overlay_v1_placeholder.png",
+      "preferredFinalPath": "engine/assets/ui/requisition_now/ui_notebook_overlay_v1.png",
+      "fallbackPaths": [
+        "assets/ui/final/ui_notebook_overlay_v1.png",
+        "exports/ui/ui_notebook_overlay_v1.png"
+      ],
+      "status": "planned",
+      "notes": "Final UI readability pass pending."
+    },
+    {
+      "id": "ui-rq-add-014",
+      "type": "ui",
+      "placeholderPath": "engine/assets/ui/requisition_now/rq_add_014_placeholder.png",
+      "preferredFinalPath": "engine/assets/ui/requisition_now/rq_add_014.png",
+      "fallbackPaths": [
+        "assets/ui/final/rq_add_014.png",
+        "exports/ui/rq_add_014.png"
+      ],
+      "status": "planned",
+      "notes": "UI micro-icon set still in concept stage."
+    },
+    {
+      "id": "ui-rq-add-006",
+      "type": "ui",
+      "placeholderPath": "engine/assets/ui/requisition_now/rq_add_006_placeholder.png",
+      "preferredFinalPath": "engine/assets/ui/requisition_now/rq_add_006.png",
+      "fallbackPaths": [
+        "assets/ui/final/rq_add_006.png",
+        "exports/ui/rq_add_006.png"
+      ],
+      "status": "planned",
+      "notes": "Replace when final panel/icons ship."
+    },
+    {
+      "id": "fx-rq-add-009",
+      "type": "fx",
+      "placeholderPath": "engine/assets/fx/requisition_now/rq_add_009_placeholder.png",
+      "preferredFinalPath": "engine/assets/fx/requisition_now/rq_add_009.png",
+      "fallbackPaths": [
+        "assets/fx/final/rq_add_009.png",
+        "exports/fx/rq_add_009.png"
+      ],
+      "status": "planned",
+      "notes": "FX sheet draft only; awaiting final comp."
+    },
+    {
+      "id": "fx-hum-anomaly-v1",
+      "type": "fx",
+      "placeholderPath": "engine/assets/fx/requisition_now/fx_hum_anomaly_v1_placeholder.png",
+      "preferredFinalPath": "engine/assets/fx/requisition_now/fx_hum_anomaly_v1.png",
+      "fallbackPaths": [
+        "assets/fx/final/fx_hum_anomaly_v1.png",
+        "exports/fx/fx_hum_anomaly_v1.png"
+      ],
+      "status": "planned",
+      "notes": "Need production anomaly pass with timing markers."
+    }
+  ]
+}

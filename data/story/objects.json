@@ -1,0 +1,113 @@
+{
+  "id": "itw_objects",
+  "objects": [
+    {
+      "id": "obj_notebook_map",
+      "name": "Clara's Field Notebook",
+      "scene": "cabin",
+      "description": "A graph-paper notebook filled with symbols, dates, and bark rubbings.",
+      "narrative_use": "Tracks clue progression and ties family observations together.",
+      "gameplay_use": "Unlocks new dialogue options after discovering related marks.",
+      "art_notes": "Worn green cover, pencil smudges, folded corner tabs."
+    },
+    {
+      "id": "obj_chalk_bundle",
+      "name": "Lia's Chalk Bundle",
+      "scene": "cabin",
+      "description": "Short colored chalk sticks wrapped in cloth.",
+      "narrative_use": "Represents Lia's intuitive way of marking patterns.",
+      "gameplay_use": "Player can mark routes and compare with discovered sigils.",
+      "art_notes": "Soft pastel tones, powder residue on cloth knot."
+    },
+    {
+      "id": "obj_broken_compass",
+      "name": "Broken Compass",
+      "scene": "forest",
+      "description": "Needle drifts toward one valley regardless of orientation.",
+      "narrative_use": "Hints at magnetic interference near hidden machinery.",
+      "gameplay_use": "Points to anomaly zones and optional side clues.",
+      "art_notes": "Brass case, cracked glass, moss specks on rim."
+    },
+    {
+      "id": "obj_tree_marker",
+      "name": "Fresh Tree Marker",
+      "scene": "forest",
+      "description": "Three circles and a line carved into bark over old growth rings.",
+      "narrative_use": "Primary recurring symbol of the mystery thread.",
+      "gameplay_use": "Scannable clue that updates map overlays.",
+      "art_notes": "High contrast sap bleed, deliberate geometric cuts."
+    },
+    {
+      "id": "obj_tin_radio",
+      "name": "Cabin Tin Radio",
+      "scene": "cabin",
+      "description": "Battery radio that picks up static pulses at night.",
+      "narrative_use": "Conveys unseen activity and mounting tension.",
+      "gameplay_use": "Tuning minigame reveals coded timing hints.",
+      "art_notes": "Retro 80s body, dented speaker grill, amber dial."
+    },
+    {
+      "id": "obj_survey_stake",
+      "name": "Survey Stake",
+      "scene": "marsh_edge",
+      "description": "Plastic-tipped stake hidden under leaf litter.",
+      "narrative_use": "Proof of planned industrial mapping.",
+      "gameplay_use": "Collectible evidence item for confrontation scenes.",
+      "art_notes": "Fluorescent tip, mud caking, barcode sticker fragment."
+    },
+    {
+      "id": "obj_ranger_map_case",
+      "name": "Inês's Map Tube",
+      "scene": "ranger_station",
+      "description": "Weatherproof tube holding old contour maps.",
+      "narrative_use": "Bridges folklore paths to formal survey routes.",
+      "gameplay_use": "Unlocks legacy map layer in interface.",
+      "art_notes": "Scuffed polymer shell, hand-painted initials IR."
+    },
+    {
+      "id": "obj_pollinator_jar",
+      "name": "Silent Pollinator Jar",
+      "scene": "forest",
+      "description": "Sampling jar with no bees in a usually active area.",
+      "narrative_use": "Visual cue of ecological imbalance.",
+      "gameplay_use": "Used in evidence board to trigger ecology exposition.",
+      "art_notes": "Glass jar, mesh lid, faded field label."
+    },
+    {
+      "id": "obj_floodgate_key",
+      "name": "Old Floodgate Key",
+      "scene": "river_lock",
+      "description": "Heavy iron key from pre-dam maintenance era.",
+      "narrative_use": "Connects family history to land infrastructure.",
+      "gameplay_use": "Opens locked maintenance hatch in late chapter.",
+      "art_notes": "Oxidized metal, tag with hand-inked number 14."
+    },
+    {
+      "id": "obj_cassette_log",
+      "name": "Maintenance Cassette",
+      "scene": "cabin",
+      "description": "Old tape with recorded notes from a former worker.",
+      "narrative_use": "Delivers backstory and confirms deliberate cover-up.",
+      "gameplay_use": "Playback segments unlock dialogue branches.",
+      "art_notes": "Clear shell cassette, handwritten date, magnetic wear."
+    },
+    {
+      "id": "obj_fiber_cable",
+      "name": "Buried Fiber Cable",
+      "scene": "under_roots",
+      "description": "Industrial cable running beneath root systems.",
+      "narrative_use": "Hard evidence of hidden operation scale.",
+      "gameplay_use": "Interact to disable alarm route in climax.",
+      "art_notes": "Matte black sheath, clipped warning tags, damp soil."
+    },
+    {
+      "id": "obj_family_photo",
+      "name": "Sunfaded Family Photo",
+      "scene": "cabin",
+      "description": "An older photo from a summer before the loss.",
+      "narrative_use": "Anchors emotional stakes and shared memory.",
+      "gameplay_use": "Optional examine triggers trust-building dialogue.",
+      "art_notes": "Polaroid border, color fade, thumbtack hole at top."
+    }
+  ]
+}

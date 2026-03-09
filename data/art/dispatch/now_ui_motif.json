@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "ui_notebook_overlay_v1",
+      "type": "ui_motif",
+      "priority": "P1",
+      "scene": "global",
+      "style_tags": [
+        "diegetic-ui",
+        "paper-texture",
+        "investigation"
+      ],
+      "resolution": "1600x900",
+      "description": "Notebook-style clue overlay with map pins, symbol slots, and handwritten margin area.",
+      "prompt_seed": "diegetic notebook interface, retro adventure clarity, hand-drawn annotations",
+      "dependencies": [
+        "prop_clue_pack_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    }
+  ]
+}

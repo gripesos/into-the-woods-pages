@@ -1,0 +1,25 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "ui_signal_decoder_v1",
+      "type": "ui_motif",
+      "priority": "P3",
+      "scene": "global",
+      "style_tags": [
+        "mini-game-ui",
+        "analog-dial",
+        "audio-clue"
+      ],
+      "resolution": "1600x900",
+      "description": "Radio tuning interface motif for decoding pulse timings and static bands.",
+      "prompt_seed": "retro analog signal decoder interface, tactile knobs, mystery puzzle",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "fx_hum_anomaly_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    }
+  ]
+}

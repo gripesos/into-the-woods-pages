@@ -1,0 +1,102 @@
+{
+  "project": "/home/catmaster/Documents/Ideas/intothewoods",
+  "generated_at": "2026-03-01T09:21:18Z",
+  "checks": {
+    "json_total": 58,
+    "json_pass": 58,
+    "json_fail": 0,
+    "dialogue_checks": 22,
+    "event_checks": 21,
+    "style_checks": 6,
+    "requisition_checks": 80,
+    "png_checks": 9,
+    "runtime_checks": 13
+  },
+  "summary": {
+    "total_findings": 0,
+    "severity_counts": {
+      "blocker": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "fixed_issues": 0,
+    "overall_status": "PASS",
+    "pass_like_count": 267
+  },
+  "runtime_fetch": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 2053,
+      "ok": true
+    },
+    {
+      "path": "/src/main.js",
+      "status": 200,
+      "bytes": 43855,
+      "ok": true
+    },
+    {
+      "path": "/data/events/interactions.json",
+      "status": 200,
+      "bytes": 9640,
+      "ok": true
+    },
+    {
+      "path": "/data/styles/style_catalog.json",
+      "status": 200,
+      "bytes": 10212,
+      "ok": true
+    },
+    {
+      "path": "/data/scenes/cabin.json",
+      "status": 200,
+      "bytes": 2688,
+      "ok": true
+    },
+    {
+      "path": "/data/scenes/forest.json",
+      "status": 200,
+      "bytes": 2102,
+      "ok": true
+    },
+    {
+      "path": "/data/scenes/moonwell_hollow.json",
+      "status": 200,
+      "bytes": 1137,
+      "ok": true
+    },
+    {
+      "path": "/data/scenes/ranger_station.json",
+      "status": 200,
+      "bytes": 1500,
+      "ok": true
+    },
+    {
+      "path": "/data/scenes/windfall_orchard.json",
+      "status": 200,
+      "bytes": 1184,
+      "ok": true
+    },
+    {
+      "path": "/data/dialogue/cabin_dialogue.json",
+      "status": 200,
+      "bytes": 7058,
+      "ok": true
+    },
+    {
+      "path": "/data/dialogue/forest_dialogue.json",
+      "status": 200,
+      "bytes": 16626,
+      "ok": true
+    },
+    {
+      "path": "/data/dialogue/chapter_dialogue.json",
+      "status": 200,
+      "bytes": 4984,
+      "ok": true
+    }
+  ],
+  "findings": []
+}

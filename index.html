@@ -1,22 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Into the Woods</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;max-width:780px;margin:64px auto;padding:0 20px;line-height:1.6}
-    h1{margin-bottom:.2rem}
-    .muted{color:#555}
-    .card{border:1px solid #e5e5e5;border-radius:12px;padding:16px;background:#fafafa}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Into the Woods — Engine v1.0</title>
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
-  <h1>Into the Woods</h1>
-  <p class="muted">GitHub Pages is live ✅</p>
-  <div class="card">
-    <p>This is the published GitHub Pages site for the project.</p>
-    <p>Next step: replace this landing page with the actual playable web build.</p>
+  <div class="wrap">
+    <canvas id="game" width="640" height="420"></canvas>
+    <div id="msg" class="msg">Engine v1.0 ready. Chapter panel + refmatch styles online. C=chapter, D=debug, R=reroll, S=style, G=random dialogue.</div>
+    <div id="status" class="status"></div>
+    <div id="chapterPanel" class="chapterPanel chapterPanel--expanded" aria-live="polite">
+      <div class="chapterPanelHeader">
+        <strong id="chapterTitle">Chapter: n/a</strong>
+        <span id="chapterModeHint" class="chapterHint">C=toggle</span>
+      </div>
+      <div id="chapterObjective" class="chapterObjective">Objective: n/a</div>
+      <div id="chapterFlags" class="chapterFlags">Unlocks: n/a</div>
+    </div>
+    <div id="dialogue" class="dialogue hidden">
+      <div id="dlgSpeaker" class="dlgSpeaker"></div>
+      <div id="dlgLine" class="dlgLine"></div>
+      <div id="dlgChoices" class="dlgChoices"></div>
+    </div>
+    <div class="row">
+      <label class="styleLabel">Style
+        <select id="styleSelect"></select>
+      </label>
+      <button id="btnApplyStyle">Apply Style</button>
+      <button id="btnCycleStyle">Next Style</button>
+      <button id="btnReroll">Reroll Art</button>
+    </div>
+    <div class="row">
+      <label class="styleLabel">Dialogue Lab
+        <select id="dialogueSelect"></select>
+      </label>
+      <button id="btnStartDialogue">Start Selected Dialogue</button>
+      <button id="btnRandomDialogue">Random Dialogue</button>
+    </div>
+    <div class="row">
+      <button id="btnSave">Save (download savegame.json)</button>
+      <label class="fileBtn">Load savegame.json <input id="fileLoad" type="file" accept="application/json" /></label>
+      <button id="btnReset">Reset</button>
+    </div>
   </div>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

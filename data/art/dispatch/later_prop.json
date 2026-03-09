@@ -1,0 +1,22 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "prop_floodgate_key_v1",
+      "type": "prop",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": [
+        "inventory",
+        "rusted-metal",
+        "legacy-infrastructure"
+      ],
+      "resolution": "256x256",
+      "description": "Heavy iron floodgate key item icon with aged tag and corrosion details.",
+      "prompt_seed": "old industrial key icon, tactile metal wear, readable silhouette",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    }
+  ]
+}

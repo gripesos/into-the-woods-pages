@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "generated_for": "NOW requisitions",
+  "entries": [
+    {
+      "id": "npc_family_set_v1",
+      "type": "npc_sprite",
+      "scene": "cabin|forest",
+      "style_tags": ["pixel-art", "expressive-idle", "family-drama", "cozy_classic"],
+      "prompt_seed": "retro adventure sprites, readable silhouettes, subtle emotional acting; family unit pack for Tomas, Clara, and Lia; unified palette and per-character silhouette contrast",
+      "expression_targets": [
+        "neutral_attentive",
+        "talking_soft",
+        "worried_scan",
+        "reassuring_half_smile"
+      ],
+      "pose_targets": [
+        "idle_front",
+        "talk_side",
+        "point_route",
+        "hands_to_chest_concern"
+      ],
+      "sheet_targets": [
+        "tomas_sheet_4x4_512",
+        "clara_sheet_4x4_512",
+        "lia_sheet_4x4_512"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "npc_ines_v1",
+      "type": "npc_sprite",
+      "scene": "ranger_station|forest",
+      "style_tags": ["pixel-art", "aged-ranger", "grounded", "cozy_classic"],
+      "prompt_seed": "retired female ranger sprite, weathered but resilient, classic adventure aesthetic; include cane handling and map-tube interaction with clean readability",
+      "expression_targets": [
+        "stern_guarded",
+        "supportive_soft",
+        "focused_assessment",
+        "quiet_resolve"
+      ],
+      "pose_targets": [
+        "idle_weighted_cane",
+        "gesture_with_map_tube",
+        "point_path_with_cane",
+        "listen_then_nod"
+      ],
+      "sheet_targets": [
+        "ines_sheet_4x4_512"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rq_add_004",
+      "type": "character_pose",
+      "scene": "clara_field_analysis_posepack",
+      "style_tags": ["cozy_classic", "field_notes", "investigation"],
+      "prompt_seed": "teen investigator in practical layers, retro adventure portrait proportions, expressive but restrained acting; prioritize hand readability for notebook and mark-tracing actions",
+      "expression_targets": [
+        "focused_reading",
+        "discovery_spark",
+        "quiet_concern"
+      ],
+      "pose_targets": [
+        "notebook_checking",
+        "kneel_by_tree_mark",
+        "pointing_route_overlay"
+      ],
+      "sheet_targets": [
+        "clara_posepack_3up_1536x2048"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rq_add_005",
+      "type": "character_pose",
+      "scene": "mina_intuitive_posepack",
+      "style_tags": ["pastel_storybook", "moonlit_mystery", "cozy_classic"],
+      "prompt_seed": "younger child expressive hands, gentle storybook facial emotion, mystery without fear, silhouette clarity; scarf and listening gesture are anchor motifs",
+      "expression_targets": [
+        "curious_listening",
+        "sleepy_uncertain",
+        "hopeful_point"
+      ],
+      "pose_targets": [
+        "listening_to_trees",
+        "scarf_clutch",
+        "sleepy_road_point"
+      ],
+      "sheet_targets": [
+        "mina_posepack_3up_1536x2048"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rq_add_011",
+      "type": "character_pose",
+      "scene": "father_reassure_and_record",
+      "style_tags": ["cozy_classic", "warm_hearth", "family_drama"],
+      "prompt_seed": "tired but kind parent protagonist, practical outdoor clothing, intimate small gestures, retro adventure actor sheet; emphasize protective body language and lantern lighting",
+      "expression_targets": [
+        "patient_listening",
+        "tired_focus",
+        "gentle_reassurance"
+      ],
+      "pose_targets": [
+        "kneel_to_listen",
+        "write_notes_by_fire",
+        "lantern_guide"
+      ],
+      "sheet_targets": [
+        "father_posepack_3up_1536x2048"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "rq_add_012",
+      "type": "character_pose",
+      "scene": "ranger_ivo_intro_and_ally",
+      "style_tags": ["cozy_classic", "ink_noir", "ranger_realism"],
+      "prompt_seed": "park ranger practical realism, reserved facial acting, shift from caution to solidarity; same costume continuity across two emotional phases",
+      "expression_targets": [
+        "skeptical_checkpoint",
+        "measured_assessment",
+        "cooperative_ally"
+      ],
+      "pose_targets": [
+        "checkpoint_stance",
+        "arms_folded_briefing",
+        "open_hand_guidance"
+      ],
+      "sheet_targets": [
+        "ivo_posepack_3up_1536x2048"
+      ],
+      "dependencies": []
+    }
+  ]
+}

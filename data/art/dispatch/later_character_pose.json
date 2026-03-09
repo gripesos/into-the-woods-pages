@@ -1,0 +1,40 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "id": "rq_add_018",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "mother_field_journal_flashback",
+      "style_tags": [
+        "pastel_storybook",
+        "twilight_whispers"
+      ],
+      "resolution": "1536x2048",
+      "description": "Mother memory-vignette poses for journal overlays, careful field gestures and route marking.",
+      "prompt_seed": "documentary-like memory portraits, gentle grain, practical botanist posture",
+      "dependencies": [
+        "rq_add_003",
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_019",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "contractor_voss_dialogue_sheet",
+      "style_tags": [
+        "ink_noir",
+        "cozy_classic"
+      ],
+      "resolution": "1536x2048",
+      "description": "Voss expression sheet balancing civility, deflection, and pressure without cartoon villain framing.",
+      "prompt_seed": "subtle antagonist design, polished field contractor attire, nuanced facial acting",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

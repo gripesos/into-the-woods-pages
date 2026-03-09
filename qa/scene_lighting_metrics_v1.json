@@ -1,0 +1,428 @@
+{
+  "version": "v1",
+  "styles_root": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles",
+  "scene_count": 5,
+  "file_count": 30,
+  "adjusted_file_count": 28,
+  "scenes": [
+    {
+      "scene": "cabin_refmatch_v1.png",
+      "styles": [
+        "cozy_classic",
+        "ink_noir",
+        "moonlit_mystery",
+        "pastel_storybook",
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "before": {
+        "mean_of_style_means": 0.09495413924256961,
+        "std_of_style_means": 0.026755180375331897,
+        "style_luminance_means": {
+          "cozy_classic": 0.12118099629878998,
+          "ink_noir": 0.06342209875583649,
+          "moonlit_mystery": 0.0763116106390953,
+          "pastel_storybook": 0.09541226923465729,
+          "twilight_whispers": 0.07516096532344818,
+          "warm_hearth": 0.1382368952035904
+        }
+      },
+      "after": {
+        "mean_of_style_means": 0.09030476336677869,
+        "std_of_style_means": 0.014010311674973156,
+        "style_luminance_means": {
+          "cozy_classic": 0.10159878432750702,
+          "ink_noir": 0.07222571969032288,
+          "moonlit_mystery": 0.08419791609048843,
+          "pastel_storybook": 0.0839376226067543,
+          "twilight_whispers": 0.0847679004073143,
+          "warm_hearth": 0.11510063707828522
+        }
+      },
+      "target_scene_luminance": 0.0858619399368763,
+      "outliers_corrected": [
+        {
+          "style": "cozy_classic",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/cozy_classic/cabin_refmatch_v1.png",
+          "before_mean": 0.121181,
+          "after_mean": 0.101599,
+          "zscore_before": 0.980253,
+          "applied_scale": 0.85
+        },
+        {
+          "style": "ink_noir",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/ink_noir/cabin_refmatch_v1.png",
+          "before_mean": 0.063422,
+          "after_mean": 0.072226,
+          "zscore_before": -1.17854,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "moonlit_mystery",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/moonlit_mystery/cabin_refmatch_v1.png",
+          "before_mean": 0.076312,
+          "after_mean": 0.084198,
+          "zscore_before": -0.696782,
+          "applied_scale": 1.125149
+        },
+        {
+          "style": "pastel_storybook",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/pastel_storybook/cabin_refmatch_v1.png",
+          "before_mean": 0.095412,
+          "after_mean": 0.083938,
+          "zscore_before": 0.017123,
+          "applied_scale": 0.899905
+        },
+        {
+          "style": "twilight_whispers",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/twilight_whispers/cabin_refmatch_v1.png",
+          "before_mean": 0.075161,
+          "after_mean": 0.084768,
+          "zscore_before": -0.739788,
+          "applied_scale": 1.142374
+        },
+        {
+          "style": "warm_hearth",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/warm_hearth/cabin_refmatch_v1.png",
+          "before_mean": 0.138237,
+          "after_mean": 0.115101,
+          "zscore_before": 1.617734,
+          "applied_scale": 0.85
+        }
+      ],
+      "processed_files": 6
+    },
+    {
+      "scene": "forest_refmatch_v1.png",
+      "styles": [
+        "cozy_classic",
+        "ink_noir",
+        "moonlit_mystery",
+        "pastel_storybook",
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "before": {
+        "mean_of_style_means": 0.1660750756661097,
+        "std_of_style_means": 0.04683701486428369,
+        "style_luminance_means": {
+          "cozy_classic": 0.2148820161819458,
+          "ink_noir": 0.1018223911523819,
+          "moonlit_mystery": 0.13550876080989838,
+          "pastel_storybook": 0.16149814426898956,
+          "twilight_whispers": 0.144375741481781,
+          "warm_hearth": 0.23836340010166168
+        }
+      },
+      "after": {
+        "mean_of_style_means": 0.15907696758707365,
+        "std_of_style_means": 0.026973092628060247,
+        "style_luminance_means": {
+          "cozy_classic": 0.1809324026107788,
+          "ink_noir": 0.1158035472035408,
+          "moonlit_mystery": 0.15117451548576355,
+          "pastel_storybook": 0.16149814426898956,
+          "twilight_whispers": 0.144375741481781,
+          "warm_hearth": 0.20067745447158813
+        }
+      },
+      "target_scene_luminance": 0.15293694287538528,
+      "outliers_corrected": [
+        {
+          "style": "cozy_classic",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/cozy_classic/forest_refmatch_v1.png",
+          "before_mean": 0.214882,
+          "after_mean": 0.180932,
+          "zscore_before": 1.042059,
+          "applied_scale": 0.85
+        },
+        {
+          "style": "ink_noir",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/ink_noir/forest_refmatch_v1.png",
+          "before_mean": 0.101822,
+          "after_mean": 0.115804,
+          "zscore_before": -1.371836,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "moonlit_mystery",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/moonlit_mystery/forest_refmatch_v1.png",
+          "before_mean": 0.135509,
+          "after_mean": 0.151175,
+          "zscore_before": -0.65261,
+          "applied_scale": 1.128613
+        },
+        {
+          "style": "warm_hearth",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/warm_hearth/forest_refmatch_v1.png",
+          "before_mean": 0.238363,
+          "after_mean": 0.200677,
+          "zscore_before": 1.543402,
+          "applied_scale": 0.85
+        }
+      ],
+      "processed_files": 4
+    },
+    {
+      "scene": "moonwell_hollow_refmatch_v1.png",
+      "styles": [
+        "cozy_classic",
+        "ink_noir",
+        "moonlit_mystery",
+        "pastel_storybook",
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "before": {
+        "mean_of_style_means": 0.14445352057615915,
+        "std_of_style_means": 0.048579107455981894,
+        "style_luminance_means": {
+          "cozy_classic": 0.1947523057460785,
+          "ink_noir": 0.07700231671333313,
+          "moonlit_mystery": 0.11066769063472748,
+          "pastel_storybook": 0.14372104406356812,
+          "twilight_whispers": 0.12231495976448059,
+          "warm_hearth": 0.21826280653476715
+        }
+      },
+      "after": {
+        "mean_of_style_means": 0.13715111836791039,
+        "std_of_style_means": 0.03035021826080704,
+        "style_luminance_means": {
+          "cozy_classic": 0.16380567848682404,
+          "ink_noir": 0.08747748285531998,
+          "moonlit_mystery": 0.12559300661087036,
+          "pastel_storybook": 0.13092167675495148,
+          "twilight_whispers": 0.1316325068473816,
+          "warm_hearth": 0.18347635865211487
+        }
+      },
+      "target_scene_luminance": 0.13301800191402435,
+      "outliers_corrected": [
+        {
+          "style": "cozy_classic",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/cozy_classic/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.194752,
+          "after_mean": 0.163806,
+          "zscore_before": 1.0354,
+          "applied_scale": 0.85
+        },
+        {
+          "style": "ink_noir",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/ink_noir/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.077002,
+          "after_mean": 0.087477,
+          "zscore_before": -1.388482,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "moonlit_mystery",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/moonlit_mystery/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.110668,
+          "after_mean": 0.125593,
+          "zscore_before": -0.695481,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "pastel_storybook",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/pastel_storybook/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.143721,
+          "after_mean": 0.130922,
+          "zscore_before": -0.015078,
+          "applied_scale": 0.925529
+        },
+        {
+          "style": "twilight_whispers",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/twilight_whispers/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.122315,
+          "after_mean": 0.131633,
+          "zscore_before": -0.455722,
+          "applied_scale": 1.087504
+        },
+        {
+          "style": "warm_hearth",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/warm_hearth/moonwell_hollow_refmatch_v1.png",
+          "before_mean": 0.218263,
+          "after_mean": 0.183476,
+          "zscore_before": 1.519363,
+          "applied_scale": 0.85
+        }
+      ],
+      "processed_files": 6
+    },
+    {
+      "scene": "ranger_station_refmatch_v1.png",
+      "styles": [
+        "cozy_classic",
+        "ink_noir",
+        "moonlit_mystery",
+        "pastel_storybook",
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "before": {
+        "mean_of_style_means": 0.08727621225019296,
+        "std_of_style_means": 0.023770532377435306,
+        "style_luminance_means": {
+          "cozy_classic": 0.1099245697259903,
+          "ink_noir": 0.0609242282807827,
+          "moonlit_mystery": 0.0724857896566391,
+          "pastel_storybook": 0.08672427386045456,
+          "twilight_whispers": 0.06694608181715012,
+          "warm_hearth": 0.126652330160141
+        }
+      },
+      "after": {
+        "mean_of_style_means": 0.08308416232466698,
+        "std_of_style_means": 0.011988391672604596,
+        "style_luminance_means": {
+          "cozy_classic": 0.09204526990652084,
+          "ink_noir": 0.06932899355888367,
+          "moonlit_mystery": 0.07809607684612274,
+          "pastel_storybook": 0.07763828337192535,
+          "twilight_whispers": 0.07616651803255081,
+          "warm_hearth": 0.10522983223199844
+        }
+      },
+      "target_scene_luminance": 0.07960503175854683,
+      "outliers_corrected": [
+        {
+          "style": "cozy_classic",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/cozy_classic/ranger_station_refmatch_v1.png",
+          "before_mean": 0.109925,
+          "after_mean": 0.092045,
+          "zscore_before": 0.952791,
+          "applied_scale": 0.85
+        },
+        {
+          "style": "ink_noir",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/ink_noir/ranger_station_refmatch_v1.png",
+          "before_mean": 0.060924,
+          "after_mean": 0.069329,
+          "zscore_before": -1.108599,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "moonlit_mystery",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/moonlit_mystery/ranger_station_refmatch_v1.png",
+          "before_mean": 0.072486,
+          "after_mean": 0.078096,
+          "zscore_before": -0.622217,
+          "applied_scale": 1.098216
+        },
+        {
+          "style": "pastel_storybook",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/pastel_storybook/ranger_station_refmatch_v1.png",
+          "before_mean": 0.086724,
+          "after_mean": 0.077638,
+          "zscore_before": -0.023219,
+          "applied_scale": 0.917909
+        },
+        {
+          "style": "twilight_whispers",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/twilight_whispers/ranger_station_refmatch_v1.png",
+          "before_mean": 0.066946,
+          "after_mean": 0.076167,
+          "zscore_before": -0.855266,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "warm_hearth",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/warm_hearth/ranger_station_refmatch_v1.png",
+          "before_mean": 0.126652,
+          "after_mean": 0.10523,
+          "zscore_before": 1.65651,
+          "applied_scale": 0.85
+        }
+      ],
+      "processed_files": 6
+    },
+    {
+      "scene": "windfall_orchard_refmatch_v1.png",
+      "styles": [
+        "cozy_classic",
+        "ink_noir",
+        "moonlit_mystery",
+        "pastel_storybook",
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "before": {
+        "mean_of_style_means": 0.11463155845801036,
+        "std_of_style_means": 0.03895468584756909,
+        "style_luminance_means": {
+          "cozy_classic": 0.15384648740291595,
+          "ink_noir": 0.06391039490699768,
+          "moonlit_mystery": 0.08854478597640991,
+          "pastel_storybook": 0.11422364413738251,
+          "twilight_whispers": 0.09125491976737976,
+          "warm_hearth": 0.17600911855697632
+        }
+      },
+      "after": {
+        "mean_of_style_means": 0.10863895217577617,
+        "std_of_style_means": 0.02385274285028999,
+        "style_luminance_means": {
+          "cozy_classic": 0.12914957106113434,
+          "ink_noir": 0.072574183344841,
+          "moonlit_mystery": 0.10010392963886261,
+          "pastel_storybook": 0.1008656844496727,
+          "twilight_whispers": 0.10164105147123337,
+          "warm_hearth": 0.14749929308891296
+        }
+      },
+      "target_scene_luminance": 0.10273928195238113,
+      "outliers_corrected": [
+        {
+          "style": "cozy_classic",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/cozy_classic/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.153846,
+          "after_mean": 0.12915,
+          "zscore_before": 1.006681,
+          "applied_scale": 0.85
+        },
+        {
+          "style": "ink_noir",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/ink_noir/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.06391,
+          "after_mean": 0.072574,
+          "zscore_before": -1.302056,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "moonlit_mystery",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/moonlit_mystery/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.088545,
+          "after_mean": 0.100104,
+          "zscore_before": -0.66967,
+          "applied_scale": 1.15
+        },
+        {
+          "style": "pastel_storybook",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/pastel_storybook/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.114224,
+          "after_mean": 0.100866,
+          "zscore_before": -0.010472,
+          "applied_scale": 0.899457
+        },
+        {
+          "style": "twilight_whispers",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/twilight_whispers/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.091255,
+          "after_mean": 0.101641,
+          "zscore_before": -0.600098,
+          "applied_scale": 1.125849
+        },
+        {
+          "style": "warm_hearth",
+          "file": "/home/catmaster/Documents/Ideas/intothewoods/engine/assets/bg/styles/warm_hearth/windfall_orchard_refmatch_v1.png",
+          "before_mean": 0.176009,
+          "after_mean": 0.147499,
+          "zscore_before": 1.575614,
+          "applied_scale": 0.85
+        }
+      ],
+      "processed_files": 6
+    }
+  ]
+}

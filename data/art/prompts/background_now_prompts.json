@@ -1,0 +1,74 @@
+[
+  {
+    "id": "bg_cabin_day_v1",
+    "scene": "cabin",
+    "style_tags": ["retro-sierra", "pixel-art", "warm-interior", "family-intimacy"],
+    "prompt_seed": "cozy but tense woodland cabin, 90s adventure game composition, narrative props on table",
+    "negative_prompt": "photorealistic, ultra-modern furniture, sci-fi UI, blurry hotspots, text overlays, watermark",
+    "notes": "Engine-ready derived from existing cabin base using warm daylight grade and clarity pass. External hi-res concept still recommended for 1920x1080 master paint-over."
+  },
+  {
+    "id": "bg_cabin_night_v1",
+    "scene": "cabin",
+    "style_tags": ["retro-sierra", "pixel-art", "blue-hour", "mystery"],
+    "prompt_seed": "nighttime cabin interior with warm lamp contrast and ominous forest outside, classic point and click mood",
+    "negative_prompt": "daylight lighting, neon cyberpunk palette, noisy grain blocks, unreadable silhouettes, logo",
+    "notes": "Derived night variant from cabin base with cool shadows, vignette, and subtle noise for tension. Needs external hi-res pass for richer window silhouettes."
+  },
+  {
+    "id": "bg_forest_trail_v1",
+    "scene": "forest",
+    "style_tags": ["retro-sierra", "lush-forest", "eco-mystery", "parallax-ready"],
+    "prompt_seed": "dense temperate forest trail, atmospheric depth, discoverable adventure game layout",
+    "negative_prompt": "desert biome, hard sci-fi structures, overexposed highlights, flat depth, typography",
+    "notes": "Engine-ready trail base boosted for depth/readability. External hi-res concept should add layered midground elements for parallax planning."
+  },
+  {
+    "id": "rq_add_001",
+    "scene": "cabin_hearthline_night_variant",
+    "style_tags": ["cozy_classic", "warm_hearth"],
+    "prompt_seed": "retro sierra adventure room, painterly pixel warmth, family-safe mystery ambience, tungsten glow on timber, subtle storyboard readability",
+    "negative_prompt": "cold sterile lighting, horror gore, excessive bloom, illegible clue board, watermark",
+    "notes": "Deterministic cabin transform with localized hearth glow proxy. External hi-res generation needed for daughter silhouettes and narrative props detail."
+  },
+  {
+    "id": "rq_add_002",
+    "scene": "brindlewood_verge_moss_bands",
+    "style_tags": ["moonlit_mystery"],
+    "prompt_seed": "moonlit woodland with readable interactable landmarks, wet bark specular highlights, retro adventure composition",
+    "negative_prompt": "sunny noon look, urban scene, washed blacks, indistinct landmarking, text",
+    "notes": "Forest-derived moonlit plate with lantern proxy highlight. External hi-res concept should explicitly paint geometric moss banding around trunks."
+  },
+  {
+    "id": "rq_add_007",
+    "scene": "sleeper_path_fog_reveal",
+    "style_tags": ["twilight_whispers", "moonlit_mystery"],
+    "prompt_seed": "dusk forest path reveal, soft fog depth layers, interactive path readability, contemplative mood",
+    "negative_prompt": "harsh midday shadows, dense opaque fog hiding path, modern signage, compression artifacts, logo",
+    "notes": "Forest base with controlled fog overlay and softened contrast for hidden-path reveal. External hi-res should paint stepping stones and trail cueing."
+  },
+  {
+    "id": "bg_ranger_station_v1",
+    "scene": "ranger_station",
+    "style_tags": ["retro-sierra", "archive-room", "documentary-mystery"],
+    "prompt_seed": "old ranger office archive room, investigative mood, classic point-and-click framing",
+    "negative_prompt": "futuristic lab, bright toy palette, cluttered unreadable prop areas, text overlays, watermark",
+    "notes": "Cabin-derived fallback grade to provide immediate in-engine placeholder framing. External hi-res generation required to introduce map wall, cabinets, and console specifics."
+  },
+  {
+    "id": "rq_add_008",
+    "scene": "moonwell_hollow_wide",
+    "style_tags": ["moonlit_mystery", "ink_noir"],
+    "prompt_seed": "moon basin clearing, silver water mirror, ecological puzzle staging, classic adventure wide shot",
+    "negative_prompt": "daylight pastoral, cartoon flat shading, over-sharpened edges, unreadable puzzle geography, branding",
+    "notes": "Forest-derived noir moon grade with reflective basin proxy band. External hi-res generation strongly recommended for true wide composition source (target 2560x1440 master)."
+  },
+  {
+    "id": "rq_add_010",
+    "scene": "windfall_orchard_ruin",
+    "style_tags": ["twilight_whispers", "pastel_storybook"],
+    "prompt_seed": "abandoned orchard narrative set, bittersweet overgrowth, family mystery mood, interactable points clear",
+    "negative_prompt": "industrial setting, heavy horror tones, neon saturation, muddy silhouettes, text watermark",
+    "notes": "Forest-based pastel-twilight conversion with ruin-zone proxy patch. External hi-res should add grafted trunks, collapsed shed, and ledger clue anchor."
+  }
+]

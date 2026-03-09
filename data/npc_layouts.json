@@ -1,0 +1,20 @@
+{
+  "version": "itw-npc-layout-v1",
+  "scenes": {
+    "cabin": {
+      "younger": {
+        "states": {
+          "idle": { "x": 60, "y": 198, "w": 96, "h": 96, "bobScale": 1.5 },
+          "talk": { "x": 60, "y": 198, "w": 96, "h": 96, "bobScale": 2.4 }
+        }
+      },
+      "older": {
+        "states": {
+          "idle": { "x": 430, "y": 198, "w": 96, "h": 96, "bobScale": 1.2 },
+          "talk": { "x": 430, "y": 198, "w": 96, "h": 96, "bobScale": 2.0 }
+        }
+      }
+    },
+    "forest": {}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "npcAnimations": {
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "frameCount": 4,
+    "sheets": {
+      "older_idle": "assets/sprites/npc/older_idle_4f.png",
+      "younger_idle": "assets/sprites/npc/younger_idle_4f.png",
+      "older_walk": "assets/sprites/npc/older_walk_4f.png",
+      "younger_walk": "assets/sprites/npc/younger_walk_4f.png",
+      "older_talk": "assets/sprites/npc/older_talk_4f.png",
+      "younger_talk": "assets/sprites/npc/younger_talk_4f.png"
+    }
+  }
+}

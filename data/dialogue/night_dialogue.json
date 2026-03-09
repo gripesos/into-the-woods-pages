@@ -1,0 +1,264 @@
+{
+  "id": "night_dialogue",
+  "conversations": {
+    "night_dream_doorway": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "In sleep, you stand before a door made of woven shadows.",
+          "choices": [
+            { "text": "Knock", "next": "n1" },
+            { "text": "Open without asking", "next": "n2" },
+            { "text": "Wake yourself up", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Dream Keeper",
+          "line": "Politeness is rare here. You may ask one question before dawn.",
+          "choices": [
+            { "text": "Ask about the ring symbol", "next": "n4" },
+            { "text": "Ask who watches the family", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Dream Keeper",
+          "line": "So eager. Then carry this burden too: every answer costs a memory.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "dreamDoorForced", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "You jolt awake with dirt under your nails and no idea why.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Sleep interrupted." }
+          ]
+        },
+        "n4": {
+          "speaker": "Dream Keeper",
+          "line": "It is not a lock. It is a vow between places that forgot each other.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "learnedRingIsVow", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Dream Keeper",
+          "line": "A patient thing beneath the roots. It has your voice but older.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "learnedRootWatcher", "value": true }
+          ]
+        }
+      }
+    },
+    "night_bedside_whisper": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Younger daughter",
+          "line": "I woke up because the ceiling whispered my name twice.",
+          "choices": [
+            { "text": "Comfort her", "next": "n1" },
+            { "text": "Ask what it said", "next": "n2" },
+            { "text": "Tell her it's just wind", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Younger daughter",
+          "line": "Can we leave a lamp on? Just the small one.",
+          "choices": [
+            { "text": "Leave lamp on", "next": "n4" },
+            { "text": "Teach a breathing trick", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "It said: 'Don't step where the moon is missing.'",
+          "choices": [
+            { "text": "Write this warning down", "next": "n6" },
+            { "text": "Don't dwell on it", "next": "n7" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n3": {
+          "speaker": "Younger daughter",
+          "line": "Maybe. But wind never uses my full name.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "Amber light softens the room; her shoulders unclench.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "nightLampOn", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Narrator",
+          "line": "You count breaths together until the walls sound ordinary again.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Trust increased." }
+          ]
+        },
+        "n6": {
+          "speaker": "Older daughter",
+          "line": "Moon is missing... maybe a clearing with broken canopy.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "recordedMoonMissingHint", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "You tuck the words away, but they return with the dawn.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    },
+    "night_firefly_oracle": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "At midnight, a swarm of fireflies arranges itself into a face over the campfire.",
+          "choices": [
+            { "text": "Ask for guidance", "next": "n1" },
+            { "text": "Ask for a safe route", "next": "n2" },
+            { "text": "Disperse the swarm", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Firefly Oracle",
+          "line": "Guidance: stop trying to outrun grief. Walk with it and choose clearly.",
+          "choices": [
+            { "text": "Accept the counsel", "next": "n4" },
+            { "text": "Demand specifics", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Firefly Oracle",
+          "line": "Before sunrise, take the path where no birds answer.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "oracleSilentBirdPath", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "The swarm scatters, then spells one final word: LATER.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "The fire burns steadier, as if relieved you listened.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "acceptedOracleCounsel", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Firefly Oracle",
+          "line": "Specifics: at first light, do not split up, no matter what calls your names.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "oracleNoSplitRule", "value": true }
+          ]
+        }
+      }
+    },
+    "night_sleepwalker_intercept": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "You wake to find Older daughter sleepwalking toward the tree line.",
+          "choices": [
+            { "text": "Call her name loudly", "next": "n1" },
+            { "text": "Gently guide her back", "next": "n2" },
+            { "text": "Follow silently", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Older daughter",
+          "line": "What? Why am I outside? I dreamed a door was counting down.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "interruptedSleepwalk", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Narrator",
+          "line": "She turns with closed eyes, trusting your hand back to camp.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Bond strengthened." }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "She stops at a stump and whispers numbers in reverse.",
+          "choices": [
+            { "text": "Memorize the numbers", "next": "n4" },
+            { "text": "Wake her now", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "You note: 9, 6, 4, 1. The sequence pulses in your ears.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "learnedReverseSequence", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Older daughter",
+          "line": "I thought I heard Mom's voice ahead of me.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    }
+  }
+}

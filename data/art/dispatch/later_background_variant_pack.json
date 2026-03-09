@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_017",
+      "bucket": "LATER",
+      "type": "background_variant_pack",
+      "priority": "P2",
+      "scene": "cabin_emotional_progression",
+      "style_tags": [
+        "warm_hearth",
+        "cozy_classic"
+      ],
+      "resolution": "1920x1080",
+      "description": "Five cabin mood variants from cold/uncertain to warm/synchronized investigation space.",
+      "prompt_seed": "same room continuity set, evolving lighting and clutter storytelling, intimate domestic arc",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_006"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

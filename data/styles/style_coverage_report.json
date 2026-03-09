@@ -1,0 +1,177 @@
+{
+  "activeScenes": [
+    "cabin",
+    "forest",
+    "ranger_station",
+    "moonwell_hollow",
+    "windfall_orchard"
+  ],
+  "totalStyles": 6,
+  "totalRemasterImages": 30,
+  "styles": {
+    "cozy_classic": {
+      "cabin": {
+        "count": 5,
+        "primary": "assets/bg/styles/cozy_classic/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 5,
+        "primary": "assets/bg/styles/cozy_classic/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/cozy_classic/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/cozy_classic/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/cozy_classic/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    },
+    "moonlit_mystery": {
+      "cabin": {
+        "count": 5,
+        "primary": "assets/bg/styles/moonlit_mystery/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 4,
+        "primary": "assets/bg/styles/moonlit_mystery/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/moonlit_mystery/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/moonlit_mystery/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/moonlit_mystery/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    },
+    "warm_hearth": {
+      "cabin": {
+        "count": 4,
+        "primary": "assets/bg/styles/warm_hearth/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 4,
+        "primary": "assets/bg/styles/warm_hearth/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/warm_hearth/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/warm_hearth/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/warm_hearth/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    },
+    "ink_noir": {
+      "cabin": {
+        "count": 4,
+        "primary": "assets/bg/styles/ink_noir/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 4,
+        "primary": "assets/bg/styles/ink_noir/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/ink_noir/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/ink_noir/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/ink_noir/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    },
+    "pastel_storybook": {
+      "cabin": {
+        "count": 4,
+        "primary": "assets/bg/styles/pastel_storybook/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 4,
+        "primary": "assets/bg/styles/pastel_storybook/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/pastel_storybook/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/pastel_storybook/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/pastel_storybook/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    },
+    "twilight_whispers": {
+      "cabin": {
+        "count": 4,
+        "primary": "assets/bg/styles/twilight_whispers/cabin_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "forest": {
+        "count": 4,
+        "primary": "assets/bg/styles/twilight_whispers/forest_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "ranger_station": {
+        "count": 1,
+        "primary": "assets/bg/styles/twilight_whispers/ranger_station_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "moonwell_hollow": {
+        "count": 1,
+        "primary": "assets/bg/styles/twilight_whispers/moonwell_hollow_refmatch_v1.png",
+        "primaryExists": true
+      },
+      "windfall_orchard": {
+        "count": 1,
+        "primary": "assets/bg/styles/twilight_whispers/windfall_orchard_refmatch_v1.png",
+        "primaryExists": true
+      }
+    }
+  },
+  "missing": [],
+  "missingCount": 0
+}

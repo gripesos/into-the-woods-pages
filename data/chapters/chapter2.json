@@ -1,0 +1,14 @@
+{
+  "id": "chapter2",
+  "title": "Signals Through the Pines",
+  "scenes": [
+    "forest",
+    "ranger_station",
+    "moonwell_hollow"
+  ],
+  "unlockFlags": [
+    "questMainDone",
+    "heardMarktreeArchive"
+  ],
+  "objectiveSummary": "Follow marked routes to the abandoned station and decode moonwell symbols."
+}

@@ -1,0 +1,163 @@
+{
+  "count": 9,
+  "entries": [
+    {
+      "id": "bg_cabin_day_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": [
+        "retro-sierra",
+        "pixel-art",
+        "warm-interior",
+        "family-intimacy"
+      ],
+      "resolution": "1920x1080",
+      "description": "Main cabin interior daytime variant with table clue hub, window to tree line, readable interactable hotspots.",
+      "prompt_seed": "cozy but tense woodland cabin, 90s adventure game composition, narrative props on table",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_cabin_night_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": [
+        "retro-sierra",
+        "pixel-art",
+        "blue-hour",
+        "mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Night cabin variant with lamp glow, deep blue exterior, subtle silhouettes at window.",
+      "prompt_seed": "nighttime cabin interior with warm lamp contrast and ominous forest outside, classic point and click mood",
+      "dependencies": [
+        "bg_cabin_day_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_forest_trail_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "forest",
+      "style_tags": [
+        "retro-sierra",
+        "lush-forest",
+        "eco-mystery",
+        "parallax-ready"
+      ],
+      "resolution": "1920x1080",
+      "description": "Primary forest trail with landmark tree, layered depth, clue placement zones.",
+      "prompt_seed": "dense temperate forest trail, atmospheric depth, discoverable adventure game layout",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_001",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin_hearthline_night_variant",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1920x1080",
+      "description": "Cabin interior at blue-hour night with newly stoked fire, clue board on table, daughters in soft silhouette.",
+      "prompt_seed": "retro sierra adventure room, painterly pixel warmth, family-safe mystery ambience, tungsten glow on timber, subtle storyboard readability",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_002",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "brindlewood_verge_moss_bands",
+      "style_tags": [
+        "moonlit_mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Forest verge with visible geometric moss bands around trunks and distant lantern post.",
+      "prompt_seed": "moonlit woodland with readable interactable landmarks, wet bark specular highlights, retro adventure composition",
+      "dependencies": [
+        "rq_add_013"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_007",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "sleeper_path_fog_reveal",
+      "style_tags": [
+        "twilight_whispers",
+        "moonlit_mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Hidden deer-track path emerging in low fog with barely visible stepping stones.",
+      "prompt_seed": "dusk forest path reveal, soft fog depth layers, interactive path readability, contemplative mood",
+      "dependencies": [
+        "rq_add_002"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "bg_ranger_station_v1",
+      "type": "background",
+      "priority": "P1",
+      "scene": "ranger_station",
+      "style_tags": [
+        "retro-sierra",
+        "archive-room",
+        "documentary-mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Interior ranger station archive with map wall, filing cabinets, and weather console.",
+      "prompt_seed": "old ranger office archive room, investigative mood, classic point-and-click framing",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_008",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P1",
+      "scene": "moonwell_hollow_wide",
+      "style_tags": [
+        "moonlit_mystery",
+        "ink_noir"
+      ],
+      "resolution": "2560x1440",
+      "description": "Moonwell Hollow basin with reflective water film and ringed fungi geometry.",
+      "prompt_seed": "moon basin clearing, silver water mirror, ecological puzzle staging, classic adventure wide shot",
+      "dependencies": [
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_010",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P1",
+      "scene": "windfall_orchard_ruin",
+      "style_tags": [
+        "twilight_whispers",
+        "pastel_storybook"
+      ],
+      "resolution": "1920x1080",
+      "description": "Overgrown orchard ruins with grafted trunks, collapsed shed, and ledger clue location.",
+      "prompt_seed": "abandoned orchard narrative set, bittersweet overgrowth, family mystery mood, interactable points clear",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

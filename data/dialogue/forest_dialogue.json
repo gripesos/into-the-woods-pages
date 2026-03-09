@@ -1,0 +1,493 @@
+{
+  "id": "forest_dialogue",
+  "conversations": {
+    "forest_crossroads_omen": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "At the split trail, the wind circles one stone three times and goes still.",
+          "choices": [
+            { "text": "Inspect the stone", "next": "n1" },
+            { "text": "Listen to the wind", "next": "n2" },
+            { "text": "Mark this place and move on", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Older daughter",
+          "line": "There are carved rings here. Same symbol as our notebook page.",
+          "choices": [
+            { "text": "Trace the rings", "next": "n4" },
+            { "text": "Pocket a rubbing and leave", "next": "n5" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "foundRingStone", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "It says: 'left for memory, right for hunger.' I don't like the right path.",
+          "choices": [
+            { "text": "Take left path", "next": "n6" },
+            { "text": "Take right path anyway", "next": "n7" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Leaves tremble although the air is calm." }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "You tie a red thread to a branch. The knot tightens by itself.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "crossroadsMarked", "value": true }
+          ]
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "Your finger catches a groove; hidden chalk dust glows pale blue.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "ringStoneActivated", "value": true },
+            { "type": "showText", "text": "A faint trail of blue motes points north." }
+          ]
+        },
+        "n5": {
+          "speaker": "Older daughter",
+          "line": "We'll compare this rubbing with the cabin wall later.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "tookRingRubbing", "value": true }
+          ]
+        },
+        "n6": {
+          "speaker": "Narrator",
+          "line": "The left path smells of rain and old books. Your breathing steadies.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "trustedWhisper", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "The right path swallows sound. Even footsteps feel borrowed.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "defiedWhisper", "value": true }
+          ]
+        }
+      }
+    },
+    "forest_mirror_pond": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "At a moonlit pond, your reflections lag one heartbeat behind.",
+          "choices": [
+            { "text": "Speak to your reflection", "next": "n1" },
+            { "text": "Throw a pebble", "next": "n2" },
+            { "text": "Ask the girls what they see", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Reflection",
+          "line": "Don't cross the silent bridge before dawn. It only opens once.",
+          "choices": [
+            { "text": "Ask where the bridge is", "next": "n4" },
+            { "text": "Step back quietly", "next": "n5" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "heardBridgeWarning", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Narrator",
+          "line": "Ripples form concentric words: WAIT, WAIT, WAIT.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "The pebble never resurfaces." },
+            { "type": "setFlag", "flag": "pondRejectedPebble", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Younger daughter",
+          "line": "I see us older. We are smiling, but not at each other.",
+          "choices": [
+            { "text": "Ask Older daughter to compare notes", "next": "n6" },
+            { "text": "End this topic", "next": "n7" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Reflection",
+          "line": "Where the trees forget their names. Follow the trunks with no bark.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "bridgeHintNoBark", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Narrator",
+          "line": "The reflection smiles first. Then catches up to you.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n6": {
+          "speaker": "Older daughter",
+          "line": "Mine shows us holding lanterns shaped like cages.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "pondFutureVision", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "You close the notebook before anyone writes what they fear.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    },
+    "forest_fox_bargain": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Silver Fox",
+          "line": "One truth for one safe mile. Pay in memory, not coin.",
+          "choices": [
+            { "text": "Offer a happy memory", "next": "n1" },
+            { "text": "Offer a painful memory", "next": "n2" },
+            { "text": "Refuse the bargain", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Silver Fox",
+          "line": "Then keep your left hand closed at the fallen gate. It likes open palms.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "foxDealHappy", "value": true },
+            { "type": "showText", "text": "You struggle to recall the face in that memory." }
+          ]
+        },
+        "n2": {
+          "speaker": "Silver Fox",
+          "line": "Good. Pain weighs enough to buy honesty. Avoid the bells at noon.",
+          "choices": [
+            { "text": "Ask what the bells do", "next": "n4" },
+            { "text": "Accept and continue", "next": "n5" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "foxDealPain", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Silver Fox",
+          "line": "Then walk loud. Predators prefer quiet heroes.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "foxRefused", "value": true }
+          ]
+        },
+        "n4": {
+          "speaker": "Silver Fox",
+          "line": "They ring from under the soil. Roots remember everyone who answers.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "learnedRootBells", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Narrator",
+          "line": "The fox vanishes between blinks, leaving pawprints full of ash.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    },
+    "forest_hollow_tree_archive": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "Inside the hollow cedar, shelves of bark-scrolls breathe like lungs.",
+          "choices": [
+            { "text": "Read the newest scroll", "next": "n1" },
+            { "text": "Search for your family name", "next": "n2" },
+            { "text": "Leave an entry", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Narrator",
+          "line": "Today's entry predicts a storm made of whispers, not rain.",
+          "choices": [
+            { "text": "Warn the daughters", "next": "n4" },
+            { "text": "Ignore the omen", "next": "n5" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "readWhisperStorm", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Older daughter",
+          "line": "Our name appears three times, each with different endings.",
+          "choices": [
+            { "text": "Copy all endings", "next": "n6" },
+            { "text": "Burn this page", "next": "n7" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n3": {
+          "speaker": "Younger daughter",
+          "line": "Can I write that we're trying? Maybe the tree likes trying.",
+          "choices": [
+            { "text": "Let her write", "next": "n8" },
+            { "text": "Write it yourself", "next": "n9" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "You close every loose buckle. A storm of voices won't catch you unready.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "preparedForWhisperStorm", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Narrator",
+          "line": "You roll the scroll shut and pretend destiny is polite enough to wait.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n6": {
+          "speaker": "Older daughter",
+          "line": "If all endings exist, maybe we can choose the least cruel one.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "copiedFamilyEndings", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "The bark chars, but the letters glow brighter through the ash.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Some knowledge does not consent to fire." }
+          ]
+        },
+        "n8": {
+          "speaker": "Narrator",
+          "line": "Her handwriting curls into tiny roots. The shelf hums approvingly.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "youngerWroteArchive", "value": true }
+          ]
+        },
+        "n9": {
+          "speaker": "Narrator",
+          "line": "You write: 'We are still here.' The ink dries like frost.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "playerWroteArchive", "value": true }
+          ]
+        }
+      }
+    },
+    "forest_lantern_clearing": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "Twelve lanterns hang in a circle, each burning a different color of dusk.",
+          "choices": [
+            { "text": "Light the black lantern", "next": "n1" },
+            { "text": "Light the gold lantern", "next": "n2" },
+            { "text": "Leave them untouched", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Older daughter",
+          "line": "Black fire shows hidden paths. Or hidden mistakes.",
+          "choices": [
+            { "text": "Follow revealed path", "next": "n4" },
+            { "text": "Extinguish and retreat", "next": "n5" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "litBlackLantern", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "Gold fire smells like home. I want to stay here forever.",
+          "choices": [
+            { "text": "Snap her out of it", "next": "n6" },
+            { "text": "Sit together briefly", "next": "n7" }
+          ],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "litGoldLantern", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "As you turn away, one lantern swings toward you like a nod.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "A path of soot appears, leading to a gate that wasn't there before.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "unlockedSootGate", "value": true },
+            { "type": "showText", "text": "New route discovered: Soot Gate Trail." }
+          ]
+        },
+        "n5": {
+          "speaker": "Older daughter",
+          "line": "Good call. Curiosity is useful, but panic is expensive.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n6": {
+          "speaker": "Narrator",
+          "line": "You clap once; the golden warmth fractures, and the clearing returns.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "resistedGoldenLure", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "For one minute, you remember a dinner table untouched by fear.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Morale rises." }
+          ]
+        }
+      }
+    },
+    "forest_root_bells": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "From beneath the earth, bells ring in uneven intervals.",
+          "choices": [
+            { "text": "Answer the bells", "next": "n1" },
+            { "text": "Cover everyone's ears", "next": "n2" },
+            { "text": "Count the rhythm", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Voice Below",
+          "line": "Name your oldest regret and we will shorten your road.",
+          "choices": [
+            { "text": "Name a regret", "next": "n4" },
+            { "text": "Stay silent", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Younger daughter",
+          "line": "Thank you. I hate sounds that ask questions.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "protectedFromBells", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Older daughter",
+          "line": "It's seven, then three, then seven again. That's a map cadence.",
+          "choices": [
+            { "text": "Record cadence", "next": "n6" },
+            { "text": "Ignore pattern", "next": "n7" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "The soil sighs. Vines retract, revealing a shorter passage.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "paidRegretToll", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Voice Below",
+          "line": "Then your road remains the long one.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n6": {
+          "speaker": "Narrator",
+          "line": "You write 7-3-7 beside the ring symbol in your notebook.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "recordedBellCadence", "value": true }
+          ]
+        },
+        "n7": {
+          "speaker": "Narrator",
+          "line": "The pattern fades from memory before you take three steps.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    }
+  }
+}

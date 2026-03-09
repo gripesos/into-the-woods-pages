@@ -1,0 +1,23 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_006",
+      "bucket": "NOW",
+      "type": "ui_panel",
+      "priority": "P1",
+      "scene": "family_clue_board_interface",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1920x1080",
+      "description": "Interface concept for table-of-three clue board with pin colors and confidence labels.",
+      "prompt_seed": "diegetic corkboard UI, handwritten tags, tactile paper scraps, retro game readable hierarchy",
+      "dependencies": [
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

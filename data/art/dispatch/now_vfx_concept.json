@@ -1,0 +1,23 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_009",
+      "bucket": "NOW",
+      "type": "vfx_concept",
+      "priority": "P1",
+      "scene": "water_reflection_symbol_states",
+      "style_tags": [
+        "ink_noir"
+      ],
+      "resolution": "2048x1024",
+      "description": "State sheet for reflection puzzle phases: misaligned, nearly aligned, correct triad.",
+      "prompt_seed": "puzzle state visualization, minimalistic water distortion frames, high contrast symbol legibility",
+      "dependencies": [
+        "rq_add_008",
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

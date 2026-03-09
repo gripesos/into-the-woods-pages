@@ -1,0 +1,176 @@
+{
+  "version": "v1",
+  "config": {
+    "scenes_dir": "/home/catmaster/Documents/Ideas/intothewoods/engine/data/scenes",
+    "scene_width": 640,
+    "scene_height": 360,
+    "max_hotspot_scene_area_pct": 12.0,
+    "max_hotspot_screen_area_pct": 12.0,
+    "include_suggestions": true
+  },
+  "summary": {
+    "scenes_scanned": 5,
+    "total_hotspot_hotspot_overlaps": 1,
+    "total_hotspot_entity_overlaps": 2,
+    "total_oversized_hotspots": 0,
+    "total_transition_missing_approachX": 0,
+    "total_invalid_rects": 0
+  },
+  "scenes": [
+    {
+      "scene_id": "cabin",
+      "counts": {
+        "hotspots": 4,
+        "entities": 2,
+        "hotspot_hotspot_overlaps": 1,
+        "hotspot_entity_overlaps": 2,
+        "oversized_hotspots": 0,
+        "transition_hotspots_missing_approachX": 0,
+        "invalid_rects": 0
+      },
+      "hotspot_hotspot_overlaps": [
+        {
+          "a_hotspot_id": "table",
+          "b_hotspot_id": "door",
+          "intersection_rect": [
+            326,
+            198,
+            2,
+            30
+          ],
+          "intersection_area": 60,
+          "pct_of_a": 1.351,
+          "pct_of_b": 0.834,
+          "pct_of_scene": 0.026,
+          "suggested_shrink_a_rect": [
+            328,
+            198,
+            146,
+            30
+          ],
+          "suggested_shrink_b_rect": [
+            270,
+            108,
+            56,
+            124
+          ]
+        }
+      ],
+      "hotspot_entity_overlaps": [
+        {
+          "hotspot_id": "fireplace",
+          "entity_id": "younger",
+          "intersection_rect": [
+            84,
+            188,
+            10,
+            94
+          ],
+          "intersection_area": 940,
+          "pct_of_hotspot": 11.657,
+          "pct_of_entity": 13.971,
+          "pct_of_scene": 0.408,
+          "engine_precedence_note": "hotspot evaluated before entity in current click resolution",
+          "suggested_shrink_hotspot_rect": [
+            22,
+            170,
+            62,
+            112
+          ]
+        },
+        {
+          "hotspot_id": "table",
+          "entity_id": "older",
+          "intersection_rect": [
+            452,
+            198,
+            22,
+            30
+          ],
+          "intersection_area": 660,
+          "pct_of_hotspot": 14.865,
+          "pct_of_entity": 8.929,
+          "pct_of_scene": 0.286,
+          "engine_precedence_note": "hotspot evaluated before entity in current click resolution",
+          "suggested_shrink_hotspot_rect": [
+            326,
+            198,
+            126,
+            30
+          ]
+        }
+      ],
+      "oversized_hotspots": [],
+      "transition_missing_approachX": [],
+      "invalid_rects": []
+    },
+    {
+      "scene_id": "forest",
+      "counts": {
+        "hotspots": 6,
+        "entities": 0,
+        "hotspot_hotspot_overlaps": 0,
+        "hotspot_entity_overlaps": 0,
+        "oversized_hotspots": 0,
+        "transition_hotspots_missing_approachX": 0,
+        "invalid_rects": 0
+      },
+      "hotspot_hotspot_overlaps": [],
+      "hotspot_entity_overlaps": [],
+      "oversized_hotspots": [],
+      "transition_missing_approachX": [],
+      "invalid_rects": []
+    },
+    {
+      "scene_id": "moonwell_hollow",
+      "counts": {
+        "hotspots": 3,
+        "entities": 0,
+        "hotspot_hotspot_overlaps": 0,
+        "hotspot_entity_overlaps": 0,
+        "oversized_hotspots": 0,
+        "transition_hotspots_missing_approachX": 0,
+        "invalid_rects": 0
+      },
+      "hotspot_hotspot_overlaps": [],
+      "hotspot_entity_overlaps": [],
+      "oversized_hotspots": [],
+      "transition_missing_approachX": [],
+      "invalid_rects": []
+    },
+    {
+      "scene_id": "ranger_station",
+      "counts": {
+        "hotspots": 4,
+        "entities": 0,
+        "hotspot_hotspot_overlaps": 0,
+        "hotspot_entity_overlaps": 0,
+        "oversized_hotspots": 0,
+        "transition_hotspots_missing_approachX": 0,
+        "invalid_rects": 0
+      },
+      "hotspot_hotspot_overlaps": [],
+      "hotspot_entity_overlaps": [],
+      "oversized_hotspots": [],
+      "transition_missing_approachX": [],
+      "invalid_rects": []
+    },
+    {
+      "scene_id": "windfall_orchard",
+      "counts": {
+        "hotspots": 3,
+        "entities": 0,
+        "hotspot_hotspot_overlaps": 0,
+        "hotspot_entity_overlaps": 0,
+        "oversized_hotspots": 0,
+        "transition_hotspots_missing_approachX": 0,
+        "invalid_rects": 0
+      },
+      "hotspot_hotspot_overlaps": [],
+      "hotspot_entity_overlaps": [],
+      "oversized_hotspots": [],
+      "transition_missing_approachX": [],
+      "invalid_rects": []
+    }
+  ]
+}

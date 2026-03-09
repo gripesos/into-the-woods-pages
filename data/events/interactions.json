@@ -1,0 +1,444 @@
+{
+  "hotspots": {
+    "cabin:notebook": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "hasItem",
+                "item": "notebook"
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "giveItem",
+              "item": "notebook"
+            },
+            {
+              "type": "playSfx",
+              "name": "pickup"
+            },
+            {
+              "type": "showText",
+              "text": "Picked up notebook."
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "Nothing else to take here."
+            }
+          ]
+        }
+      ]
+    },
+    "forest:woodpile": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "hasItem",
+                "item": "dry_wood"
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "giveItem",
+              "item": "dry_wood"
+            },
+            {
+              "type": "playSfx",
+              "name": "pickup"
+            },
+            {
+              "type": "showText",
+              "text": "Picked up dry wood."
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "Nothing else useful here."
+            }
+          ]
+        }
+      ]
+    },
+    "cabin:door": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "forest",
+          "text": "You step into the woods."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "forest:cabin_return": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "cabin",
+          "text": "Back inside the cabin."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "cabin:fireplace": {
+      "onClick": [
+        {
+          "type": "showText",
+          "text": "The fire is weak. It needs dry wood."
+        }
+      ]
+    },
+    "forest:marktree": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "flagEquals",
+                "flag": "heardMarktreeArchive",
+                "value": true
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "setFlag",
+              "flag": "heardMarktreeArchive",
+              "value": true
+            },
+            {
+              "type": "startDialogue",
+              "id": "forest_hollow_tree_archive"
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "A carved mark in the bark: three circles and a line."
+            }
+          ]
+        }
+      ]
+    },
+    "forest:lantern": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "flagEquals",
+                "flag": "heardLanternClearing",
+                "value": true
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "setFlag",
+              "flag": "heardLanternClearing",
+              "value": true
+            },
+            {
+              "type": "startDialogue",
+              "id": "forest_lantern_clearing"
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "An old lantern, empty and cold."
+            }
+          ]
+        }
+      ]
+    },
+    "forest:trail_signpost": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "ranger_station",
+          "text": "You follow the sign toward the ranger station."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "forest:hollow_path": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "moonwell_hollow",
+          "text": "You descend the hollow path under pale moonlight."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "ranger_station:station_trail_back": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "forest",
+          "text": "You return to the forest trail."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "ranger_station:station_orchard_route": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "windfall_orchard",
+          "text": "You take the service road down to the orchard."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "windfall_orchard:orchard_to_station": {
+      "onClick": [
+        {
+          "type": "gotoScene",
+          "scene": "ranger_station",
+          "text": "Back up the road to the ranger station."
+        },
+        {
+          "type": "playSfx",
+          "name": "transition"
+        }
+      ]
+    },
+    "ranger_station:station_board": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "flagEquals",
+                "flag": "heardStationSignalLog",
+                "value": true
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "setFlag",
+              "flag": "heardStationSignalLog",
+              "value": true
+            },
+            {
+              "type": "startDialogue",
+              "id": "ranger_station_signal_log"
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "Route notes: 7-3-7 cadence marked beside Moonwell Hollow."
+            }
+          ]
+        }
+      ]
+    },
+    "ranger_station:station_radio": {
+      "onClick": [
+        {
+          "if": [
+            {
+              "op": "not",
+              "cond": {
+                "op": "flagEquals",
+                "flag": "heardStationRadio",
+                "value": true
+              }
+            }
+          ],
+          "then": [
+            {
+              "type": "setFlag",
+              "flag": "heardStationRadio",
+              "value": true
+            },
+            {
+              "type": "startDialogue",
+              "id": "ranger_station_radio_whisper"
+            }
+          ],
+          "else": [
+            {
+              "type": "showText",
+              "text": "Only static now, but it sounds almost deliberate."
+            }
+          ]
+        }
+      ]
+    },
+    "moonwell_hollow:moonwell_pool": {
+      "onClick": [
+        {
+          "type": "startDialogue",
+          "id": "moonwell_hollow_echo"
+        }
+      ]
+    },
+    "windfall_orchard:orchard_gate": {
+      "onClick": [
+        {
+          "type": "startDialogue",
+          "id": "windfall_orchard_gate"
+        }
+      ]
+    }
+  },
+  "entities": {
+    "cabin:older": {
+      "onClick": [
+        {
+          "type": "startDialogue",
+          "id": "older_intro"
+        }
+      ]
+    },
+    "cabin:younger": {
+      "onClick": [
+        {
+          "type": "startDialogue",
+          "id": "younger_intro"
+        }
+      ]
+    }
+  },
+  "useRules": {
+    "dry_wood|cabin:fireplace": [
+      {
+        "type": "setFlag",
+        "flag": "fireStoked",
+        "value": true
+      },
+      {
+        "type": "playSfx",
+        "name": "warmth"
+      },
+      {
+        "type": "showText",
+        "text": "You feed dry wood to the fire. The room warms up."
+      }
+    ],
+    "notebook|forest:marktree": [
+      {
+        "type": "setFlag",
+        "flag": "treeMarked",
+        "value": true
+      },
+      {
+        "type": "playSfx",
+        "name": "match"
+      },
+      {
+        "type": "showText",
+        "text": "You compare the notebook sketch to the carving. They match."
+      }
+    ],
+    "notebook|forest:lantern": [
+      {
+        "type": "setFlag",
+        "flag": "lanternLit",
+        "value": true
+      },
+      {
+        "type": "playSfx",
+        "name": "light"
+      },
+      {
+        "type": "showText",
+        "text": "You tear a page and light the lantern."
+      }
+    ]
+  },
+  "questChecks": [
+    {
+      "id": "main_chain",
+      "if": [
+        {
+          "op": "hasItem",
+          "item": "notebook"
+        },
+        {
+          "op": "hasItem",
+          "item": "dry_wood"
+        },
+        {
+          "op": "flagEquals",
+          "flag": "talkedOlder",
+          "value": true
+        },
+        {
+          "op": "flagEquals",
+          "flag": "talkedYounger",
+          "value": true
+        },
+        {
+          "op": "flagEquals",
+          "flag": "treeMarked",
+          "value": true
+        },
+        {
+          "op": "flagEquals",
+          "flag": "fireStoked",
+          "value": true
+        },
+        {
+          "op": "not",
+          "cond": {
+            "op": "flagEquals",
+            "flag": "questMainDone",
+            "value": true
+          }
+        }
+      ],
+      "then": [
+        {
+          "type": "setFlag",
+          "flag": "questMainDone",
+          "value": true
+        },
+        {
+          "type": "playSfx",
+          "name": "quest"
+        },
+        {
+          "type": "showText",
+          "text": "Quest complete v0.3: clues aligned, fire restored, family ready to go deeper tomorrow."
+        }
+      ]
+    }
+  ]
+}

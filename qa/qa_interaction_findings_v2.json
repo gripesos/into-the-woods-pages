@@ -1,0 +1,575 @@
+{
+  "summary": {
+    "total_cases": 25,
+    "passed": 25,
+    "failed": 0,
+    "all_passed": true
+  },
+  "transition_hotspots": [
+    "cabin:door",
+    "forest:cabin_return",
+    "forest:hollow_path",
+    "forest:trail_signpost",
+    "moonwell_hollow:moonwell_to_forest",
+    "ranger_station:station_orchard_route",
+    "ranger_station:station_trail_back",
+    "windfall_orchard:orchard_to_station"
+  ],
+  "immediate_hotspots": [
+    "cabin:fireplace",
+    "cabin:notebook",
+    "cabin:table",
+    "forest:lantern",
+    "forest:marktree",
+    "forest:woodpile",
+    "moonwell_hollow:moonwell_pool",
+    "moonwell_hollow:moonwell_stones",
+    "ranger_station:station_board",
+    "ranger_station:station_radio",
+    "windfall_orchard:orchard_cart",
+    "windfall_orchard:orchard_gate"
+  ],
+  "overlaps": [
+    {
+      "scene": "cabin",
+      "kind": "hotspot-hotspot",
+      "a": "table",
+      "b": "door",
+      "intersection_rect": [
+        326,
+        198,
+        2,
+        30
+      ],
+      "smaller_rect_wins": "table"
+    },
+    {
+      "scene": "cabin",
+      "kind": "hotspot-entity",
+      "a": "fireplace",
+      "b": "younger",
+      "intersection_rect": [
+        84,
+        188,
+        10,
+        94
+      ],
+      "engine_precedence": "hotspot_first_then_entity"
+    },
+    {
+      "scene": "cabin",
+      "kind": "hotspot-entity",
+      "a": "table",
+      "b": "older",
+      "intersection_rect": [
+        452,
+        198,
+        22,
+        30
+      ],
+      "engine_precedence": "hotspot_first_then_entity"
+    }
+  ],
+  "cases": [
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 380,
+        "y": 245
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "notebook",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "notebook",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Notebook pickup center."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 40,
+        "y": 200
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "fireplace",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "fireplace",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Fireplace center-ish."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 305,
+        "y": 160
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "door",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "door",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Door center."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 327,
+        "y": 210
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "table",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "table",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Door/table overlap; smaller rect should win table."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 95,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "entity",
+        "target_id": "younger",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "entity",
+        "target_id": "younger",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Younger NPC center."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 90,
+        "y": 230
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "fireplace",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "fireplace",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Fireplace/younger overlap; hotspot precedence over entity."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 460,
+        "y": 210
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "table",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "table",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Table/older overlap; hotspot precedence over entity."
+    },
+    {
+      "scene": "cabin",
+      "coord": {
+        "x": 20,
+        "y": 340
+      },
+      "expected": {
+        "target_kind": "none",
+        "target_id": null,
+        "trigger_mode": "none"
+      },
+      "actual": {
+        "target_kind": "none",
+        "target_id": null,
+        "transition_hotspot": false,
+        "trigger_mode": "none"
+      },
+      "pass": true,
+      "note": "Walkable floor no target."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 200,
+        "y": 250
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "woodpile",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "woodpile",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Woodpile center."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 305,
+        "y": 230
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "lantern",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "lantern",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Lantern center."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 470,
+        "y": 210
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "marktree",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "marktree",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Marktree center."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 50,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "cabin_return",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "cabin_return",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Return path transition."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 585,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "trail_signpost",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "trail_signpost",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Signpost transition."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 365,
+        "y": 230
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "hollow_path",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "hollow_path",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Hollow path transition."
+    },
+    {
+      "scene": "forest",
+      "coord": {
+        "x": 260,
+        "y": 330
+      },
+      "expected": {
+        "target_kind": "none",
+        "target_id": null,
+        "trigger_mode": "none"
+      },
+      "actual": {
+        "target_kind": "none",
+        "target_id": null,
+        "transition_hotspot": false,
+        "trigger_mode": "none"
+      },
+      "pass": true,
+      "note": "Floor no target."
+    },
+    {
+      "scene": "ranger_station",
+      "coord": {
+        "x": 410,
+        "y": 180
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "station_board",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "station_board",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Board center."
+    },
+    {
+      "scene": "ranger_station",
+      "coord": {
+        "x": 510,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "station_radio",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "station_radio",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Radio center."
+    },
+    {
+      "scene": "ranger_station",
+      "coord": {
+        "x": 40,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "station_trail_back",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "station_trail_back",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Back-to-forest transition."
+    },
+    {
+      "scene": "ranger_station",
+      "coord": {
+        "x": 600,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "station_orchard_route",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "station_orchard_route",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "To-orchard transition."
+    },
+    {
+      "scene": "moonwell_hollow",
+      "coord": {
+        "x": 300,
+        "y": 210
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_pool",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_pool",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Pool center."
+    },
+    {
+      "scene": "moonwell_hollow",
+      "coord": {
+        "x": 150,
+        "y": 230
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_stones",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_stones",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Stones center."
+    },
+    {
+      "scene": "moonwell_hollow",
+      "coord": {
+        "x": 30,
+        "y": 230
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_to_forest",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "moonwell_to_forest",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "Back-to-forest transition."
+    },
+    {
+      "scene": "windfall_orchard",
+      "coord": {
+        "x": 430,
+        "y": 240
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_cart",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_cart",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Cart center."
+    },
+    {
+      "scene": "windfall_orchard",
+      "coord": {
+        "x": 120,
+        "y": 210
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_gate",
+        "trigger_mode": "immediate"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_gate",
+        "transition_hotspot": false,
+        "trigger_mode": "immediate"
+      },
+      "pass": true,
+      "note": "Gate center."
+    },
+    {
+      "scene": "windfall_orchard",
+      "coord": {
+        "x": 600,
+        "y": 220
+      },
+      "expected": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_to_station",
+        "trigger_mode": "walk_to_collision"
+      },
+      "actual": {
+        "target_kind": "hotspot",
+        "target_id": "orchard_to_station",
+        "transition_hotspot": true,
+        "trigger_mode": "walk_to_collision"
+      },
+      "pass": true,
+      "note": "To-station transition."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "id": "npc_family_set_v1",
+      "type": "npc_sprite",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": [
+        "pixel-art",
+        "expressive-idle",
+        "family-drama"
+      ],
+      "resolution": "512x512 per character sheet",
+      "description": "Sprite sheets for Tom\u00e1s, Clara, and Lia with idle, talk, point, and worried poses.",
+      "prompt_seed": "retro adventure sprites, readable silhouettes, subtle emotional acting",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "npc_ines_v1",
+      "type": "npc_sprite",
+      "priority": "P1",
+      "scene": "ranger_station|forest",
+      "style_tags": [
+        "pixel-art",
+        "aged-ranger",
+        "grounded"
+      ],
+      "resolution": "512x512",
+      "description": "In\u00eas sprite with cane, map tube, and stern/supportive expression variants.",
+      "prompt_seed": "retired female ranger sprite, weathered but resilient, classic adventure aesthetic",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    }
+  ]
+}

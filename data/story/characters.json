@@ -1,0 +1,55 @@
+{
+  "id": "itw_characters",
+  "characters": [
+    {
+      "id": "father_tomas",
+      "name": "Tomás",
+      "role": "Father; former civil technician turned freelance repairman",
+      "voice_tone": "Low, careful, practical, with pauses when emotions surface",
+      "goal": "Keep his daughters safe while deciding whether to report what they find",
+      "fear": "Losing another family member because he hesitated or chose wrong",
+      "arc": "From protective avoidance to collaborative trust; learns that safety includes truth-telling",
+      "visual_notes": "Early-40s, weathered jacket, oil-stained hands, tired eyes, old wedding band on cord around neck"
+    },
+    {
+      "id": "older_clara",
+      "name": "Clara",
+      "role": "Older daughter; analytical observer and map-keeper",
+      "voice_tone": "Sharp, precise, dry humor under stress",
+      "goal": "Decode the symbols and prove the forest damage is intentional",
+      "fear": "Being dismissed as dramatic or childish when she is actually right",
+      "arc": "From proving herself alone to accepting help and sharing leadership",
+      "visual_notes": "Teen, notebook always in hand, practical boots, patched backpack with hand-drawn map pins"
+    },
+    {
+      "id": "younger_lia",
+      "name": "Lia",
+      "role": "Younger daughter; intuitive pattern-noticer",
+      "voice_tone": "Soft, metaphor-rich, playful then suddenly direct",
+      "goal": "Make sense of the whispers and keep the family together",
+      "fear": "That adults will ignore what she senses until it is too late",
+      "arc": "From underestimated dreamer to emotional compass of the group",
+      "visual_notes": "Child, oversized sweater, chalk in pocket, ribbon bracelet made from trail twine"
+    },
+    {
+      "id": "ranger_ines",
+      "name": "Inês Rocha",
+      "role": "Retired park ranger and local memory-keeper",
+      "voice_tone": "Steady, unsentimental, occasionally wry",
+      "goal": "Protect the forest's legal boundaries and pass on what she knows",
+      "fear": "Dying before she can stop one last theft of the land",
+      "arc": "From guarded outsider to mentor who entrusts evidence to the family",
+      "visual_notes": "Late-60s, faded ranger cap, binoculars with cracked strap, cane carved with contour lines"
+    },
+    {
+      "id": "mateus_driver",
+      "name": "Mateus",
+      "role": "Contract driver/mechanic tied to the extraction network",
+      "voice_tone": "Friendly surface, evasive specifics, clipped when cornered",
+      "goal": "Finish the contract and stay invisible to regulators",
+      "fear": "Becoming the scapegoat if the operation is exposed",
+      "arc": "From ambiguous helper to reluctant witness when faced with family danger",
+      "visual_notes": "30s, reflective work vest, mud-caked pickup, keyring with anonymous numbered tags"
+    }
+  ]
+}

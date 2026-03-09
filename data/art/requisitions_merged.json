@@ -1,0 +1,720 @@
+{
+  "id": "itw_requisitions_merged",
+  "generated_at": "2026-03-01T08:24:17.923684+00:00",
+  "sources": [
+    "engine/data/art/requisitions.json",
+    "engine/data/art/requisitions_addendum.json"
+  ],
+  "entries": [
+    {
+      "id": "bg_cabin_day_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": [
+        "retro-sierra",
+        "pixel-art",
+        "warm-interior",
+        "family-intimacy"
+      ],
+      "resolution": "1920x1080",
+      "description": "Main cabin interior daytime variant with table clue hub, window to tree line, readable interactable hotspots.",
+      "prompt_seed": "cozy but tense woodland cabin, 90s adventure game composition, narrative props on table",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_cabin_night_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": [
+        "retro-sierra",
+        "pixel-art",
+        "blue-hour",
+        "mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Night cabin variant with lamp glow, deep blue exterior, subtle silhouettes at window.",
+      "prompt_seed": "nighttime cabin interior with warm lamp contrast and ominous forest outside, classic point and click mood",
+      "dependencies": [
+        "bg_cabin_day_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_forest_trail_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "forest",
+      "style_tags": [
+        "retro-sierra",
+        "lush-forest",
+        "eco-mystery",
+        "parallax-ready"
+      ],
+      "resolution": "1920x1080",
+      "description": "Primary forest trail with landmark tree, layered depth, clue placement zones.",
+      "prompt_seed": "dense temperate forest trail, atmospheric depth, discoverable adventure game layout",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_001",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin_hearthline_night_variant",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1920x1080",
+      "description": "Cabin interior at blue-hour night with newly stoked fire, clue board on table, daughters in soft silhouette.",
+      "prompt_seed": "retro sierra adventure room, painterly pixel warmth, family-safe mystery ambience, tungsten glow on timber, subtle storyboard readability",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_002",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "brindlewood_verge_moss_bands",
+      "style_tags": [
+        "moonlit_mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Forest verge with visible geometric moss bands around trunks and distant lantern post.",
+      "prompt_seed": "moonlit woodland with readable interactable landmarks, wet bark specular highlights, retro adventure composition",
+      "dependencies": [
+        "rq_add_013"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_007",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P0",
+      "scene": "sleeper_path_fog_reveal",
+      "style_tags": [
+        "twilight_whispers",
+        "moonlit_mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Hidden deer-track path emerging in low fog with barely visible stepping stones.",
+      "prompt_seed": "dusk forest path reveal, soft fog depth layers, interactive path readability, contemplative mood",
+      "dependencies": [
+        "rq_add_002"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_004",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P0",
+      "scene": "clara_field_analysis_posepack",
+      "style_tags": [
+        "cozy_classic"
+      ],
+      "resolution": "1536x2048",
+      "description": "Clara pose pack: notebook-checking, kneeling by tree mark, pointing route overlay.",
+      "prompt_seed": "teen investigator in practical layers, retro adventure portrait proportions, expressive but restrained acting",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_005",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P0",
+      "scene": "mina_intuitive_posepack",
+      "style_tags": [
+        "pastel_storybook",
+        "moonlit_mystery"
+      ],
+      "resolution": "1536x2048",
+      "description": "Mina pose pack: listening-to-trees gesture, scarf clutch, sleepy-road pointing pose.",
+      "prompt_seed": "younger child expressive hands, gentle storybook facial emotion, mystery without fear, silhouette clarity",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "npc_family_set_v1",
+      "type": "npc_sprite",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": [
+        "pixel-art",
+        "expressive-idle",
+        "family-drama"
+      ],
+      "resolution": "512x512 per character sheet",
+      "description": "Sprite sheets for Tom\u00e1s, Clara, and Lia with idle, talk, point, and worried poses.",
+      "prompt_seed": "retro adventure sprites, readable silhouettes, subtle emotional acting",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "prop_clue_pack_v1",
+      "type": "prop",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": [
+        "inventory-icons",
+        "evidence-core",
+        "pixel-art"
+      ],
+      "resolution": "256x256 each",
+      "description": "Notebook, chalk bundle, broken compass, tree marker closeup, survey stake, cassette tape.",
+      "prompt_seed": "adventure game inventory props with strong silhouettes and narrative wear",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_003",
+      "bucket": "NOW",
+      "type": "prop_sheet",
+      "priority": "P0",
+      "scene": "three_circles_glyph_set",
+      "style_tags": [
+        "ink_noir",
+        "moonlit_mystery"
+      ],
+      "resolution": "2048x2048",
+      "description": "Glyph exploration sheet: three circles and one line in carved bark, charcoal notebook sketch, and reflected water form.",
+      "prompt_seed": "symbol design sheet, hand-etched wood and graphite variants, narrative puzzle readability, minimal ornament",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_013",
+      "bucket": "NOW",
+      "type": "prop_sheet",
+      "priority": "P0",
+      "scene": "forest_interactables_core_props",
+      "style_tags": [
+        "moonlit_mystery",
+        "cozy_classic"
+      ],
+      "resolution": "2048x2048",
+      "description": "Core prop atlas: old lantern post, dry wood bundle, mark-tree bark section, moss sample trays.",
+      "prompt_seed": "adventure game prop atlas, consistent paintover style, clean silhouettes for hotspot interaction",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "bg_ranger_station_v1",
+      "type": "background",
+      "priority": "P1",
+      "scene": "ranger_station",
+      "style_tags": [
+        "retro-sierra",
+        "archive-room",
+        "documentary-mystery"
+      ],
+      "resolution": "1920x1080",
+      "description": "Interior ranger station archive with map wall, filing cabinets, and weather console.",
+      "prompt_seed": "old ranger office archive room, investigative mood, classic point-and-click framing",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_008",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P1",
+      "scene": "moonwell_hollow_wide",
+      "style_tags": [
+        "moonlit_mystery",
+        "ink_noir"
+      ],
+      "resolution": "2560x1440",
+      "description": "Moonwell Hollow basin with reflective water film and ringed fungi geometry.",
+      "prompt_seed": "moon basin clearing, silver water mirror, ecological puzzle staging, classic adventure wide shot",
+      "dependencies": [
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_010",
+      "bucket": "NOW",
+      "type": "background",
+      "priority": "P1",
+      "scene": "windfall_orchard_ruin",
+      "style_tags": [
+        "twilight_whispers",
+        "pastel_storybook"
+      ],
+      "resolution": "1920x1080",
+      "description": "Overgrown orchard ruins with grafted trunks, collapsed shed, and ledger clue location.",
+      "prompt_seed": "abandoned orchard narrative set, bittersweet overgrowth, family mystery mood, interactable points clear",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_011",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P1",
+      "scene": "father_reassure_and_record",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1536x2048",
+      "description": "Father acting sheet: kneeling to listen, writing notes by fire, lantern-hold while guiding kids.",
+      "prompt_seed": "tired but kind parent protagonist, practical outdoor clothing, intimate small gestures, retro adventure actor sheet",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_012",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P1",
+      "scene": "ranger_ivo_intro_and_ally",
+      "style_tags": [
+        "cozy_classic",
+        "ink_noir"
+      ],
+      "resolution": "1536x2048",
+      "description": "Ranger Ivo two-phase sheet: skeptical checkpoint stance and later cooperative field posture.",
+      "prompt_seed": "park ranger practical realism, reserved facial acting, shift from caution to solidarity",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "fx_hum_anomaly_v1",
+      "type": "fx",
+      "priority": "P1",
+      "scene": "forest",
+      "style_tags": [
+        "subtle-vfx",
+        "environmental-clue",
+        "diegetic"
+      ],
+      "resolution": "1024x1024 sprite sheet",
+      "description": "Low-frequency hum visual cue: faint concentric distortion near ground roots.",
+      "prompt_seed": "minimalist environmental distortion effect for hidden machinery resonance",
+      "dependencies": [
+        "bg_forest_trail_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "npc_ines_v1",
+      "type": "npc_sprite",
+      "priority": "P1",
+      "scene": "ranger_station|forest",
+      "style_tags": [
+        "pixel-art",
+        "aged-ranger",
+        "grounded"
+      ],
+      "resolution": "512x512",
+      "description": "In\u00eas sprite with cane, map tube, and stern/supportive expression variants.",
+      "prompt_seed": "retired female ranger sprite, weathered but resilient, classic adventure aesthetic",
+      "dependencies": [],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "prop_evidence_board_v1",
+      "type": "prop",
+      "priority": "P1",
+      "scene": "cabin",
+      "style_tags": [
+        "story-prop",
+        "red-string",
+        "investigation"
+      ],
+      "resolution": "1024x1024",
+      "description": "Pinboard asset with strings, notes, and photo placeholders used for progression feedback.",
+      "prompt_seed": "investigation board prop with tactile paper layers, mystery storytelling",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "ui_notebook_overlay_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_014",
+      "bucket": "NOW",
+      "type": "ui_icon_set",
+      "priority": "P1",
+      "scene": "ecology_reciprocity_icons",
+      "style_tags": [
+        "cozy_classic"
+      ],
+      "resolution": "1024x1024",
+      "description": "Icon set for reciprocity actions: take, return, mend, observe, confirm.",
+      "prompt_seed": "minimal iconography with hand-ink charm, readable at small sizes, thematic consistency with notebook art",
+      "dependencies": [
+        "rq_add_006"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "ui_notebook_overlay_v1",
+      "type": "ui_motif",
+      "priority": "P1",
+      "scene": "global",
+      "style_tags": [
+        "diegetic-ui",
+        "paper-texture",
+        "investigation"
+      ],
+      "resolution": "1600x900",
+      "description": "Notebook-style clue overlay with map pins, symbol slots, and handwritten margin area.",
+      "prompt_seed": "diegetic notebook interface, retro adventure clarity, hand-drawn annotations",
+      "dependencies": [
+        "prop_clue_pack_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_006",
+      "bucket": "NOW",
+      "type": "ui_panel",
+      "priority": "P1",
+      "scene": "family_clue_board_interface",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1920x1080",
+      "description": "Interface concept for table-of-three clue board with pin colors and confidence labels.",
+      "prompt_seed": "diegetic corkboard UI, handwritten tags, tactile paper scraps, retro game readable hierarchy",
+      "dependencies": [
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_009",
+      "bucket": "NOW",
+      "type": "vfx_concept",
+      "priority": "P1",
+      "scene": "water_reflection_symbol_states",
+      "style_tags": [
+        "ink_noir"
+      ],
+      "resolution": "2048x1024",
+      "description": "State sheet for reflection puzzle phases: misaligned, nearly aligned, correct triad.",
+      "prompt_seed": "puzzle state visualization, minimalistic water distortion frames, high contrast symbol legibility",
+      "dependencies": [
+        "rq_add_008",
+        "rq_add_003"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "bg_drained_marsh_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "drained_marsh",
+      "style_tags": [
+        "ecological-damage",
+        "somber",
+        "retro-sierra"
+      ],
+      "resolution": "1920x1080",
+      "description": "Marshland turned mudflat with exposed roots and absent wildlife signs.",
+      "prompt_seed": "once-lush marsh now drained, environmental storytelling, classic adventure game composition",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "bg_river_lock_tunnel_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": [
+        "industrial",
+        "claustrophobic",
+        "wet-surfaces"
+      ],
+      "resolution": "1920x1080",
+      "description": "Maintenance tunnel with valves, conduit lines, and floodgate key access point.",
+      "prompt_seed": "underground maintenance tunnel in forest lock system, tense adventure tone",
+      "dependencies": [
+        "prop_floodgate_key_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_015",
+      "bucket": "LATER",
+      "type": "background",
+      "priority": "P2",
+      "scene": "root_choir_cavern_master",
+      "style_tags": [
+        "ink_noir",
+        "moonlit_mystery"
+      ],
+      "resolution": "2560x1440",
+      "description": "Late-game root cavern with bioluminescent lichen choir arcs and central dais.",
+      "prompt_seed": "subterranean root cathedral, glowing lichen, awe not horror, readable ritual focal point",
+      "dependencies": [
+        "rq_add_009"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_017",
+      "bucket": "LATER",
+      "type": "background_variant_pack",
+      "priority": "P2",
+      "scene": "cabin_emotional_progression",
+      "style_tags": [
+        "warm_hearth",
+        "cozy_classic"
+      ],
+      "resolution": "1920x1080",
+      "description": "Five cabin mood variants from cold/uncertain to warm/synchronized investigation space.",
+      "prompt_seed": "same room continuity set, evolving lighting and clutter storytelling, intimate domestic arc",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_006"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_018",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "mother_field_journal_flashback",
+      "style_tags": [
+        "pastel_storybook",
+        "twilight_whispers"
+      ],
+      "resolution": "1536x2048",
+      "description": "Mother memory-vignette poses for journal overlays, careful field gestures and route marking.",
+      "prompt_seed": "documentary-like memory portraits, gentle grain, practical botanist posture",
+      "dependencies": [
+        "rq_add_003",
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_019",
+      "bucket": "LATER",
+      "type": "character_pose",
+      "priority": "P2",
+      "scene": "contractor_voss_dialogue_sheet",
+      "style_tags": [
+        "ink_noir",
+        "cozy_classic"
+      ],
+      "resolution": "1536x2048",
+      "description": "Voss expression sheet balancing civility, deflection, and pressure without cartoon villain framing.",
+      "prompt_seed": "subtle antagonist design, polished field contractor attire, nuanced facial acting",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_020",
+      "bucket": "LATER",
+      "type": "cutscene_board",
+      "priority": "P2",
+      "scene": "storm_night_lantern_lesson",
+      "style_tags": [
+        "twilight_whispers",
+        "warm_hearth"
+      ],
+      "resolution": "2048x1152",
+      "description": "Storyboard panels for storm night where family relights lantern and reconciles conflicting clues.",
+      "prompt_seed": "retro adventure storyboard, rain on window, warm interior contrast, family teamwork beats",
+      "dependencies": [
+        "rq_add_001",
+        "rq_add_011"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "fx_storm_rain_overlay_v1",
+      "type": "fx",
+      "priority": "P2",
+      "scene": "forest|tunnel",
+      "style_tags": [
+        "weather",
+        "dramatic",
+        "gameplay-clarity"
+      ],
+      "resolution": "1920x1080 overlay",
+      "description": "Rain and lightning overlay tuned for legibility during climax sequences.",
+      "prompt_seed": "stylized storm overlay for pixel adventure game with readable foreground",
+      "dependencies": [
+        "bg_forest_trail_v1",
+        "bg_river_lock_tunnel_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "npc_mateus_v1",
+      "type": "npc_sprite",
+      "priority": "P2",
+      "scene": "yard|forest",
+      "style_tags": [
+        "pixel-art",
+        "ambiguous",
+        "working-class"
+      ],
+      "resolution": "512x512",
+      "description": "Mateus sprite set with neutral, evasive, and pressured expressions.",
+      "prompt_seed": "contract driver mechanic character sprite, morally conflicted, retro adventure look",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "prop_floodgate_key_v1",
+      "type": "prop",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": [
+        "inventory",
+        "rusted-metal",
+        "legacy-infrastructure"
+      ],
+      "resolution": "256x256",
+      "description": "Heavy iron floodgate key item icon with aged tag and corrosion details.",
+      "prompt_seed": "old industrial key icon, tactile metal wear, readable silhouette",
+      "dependencies": [],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_016",
+      "bucket": "LATER",
+      "type": "vfx_concept",
+      "priority": "P2",
+      "scene": "lichen_resonance_waveforms",
+      "style_tags": [
+        "ink_noir",
+        "twilight_whispers"
+      ],
+      "resolution": "2048x1024",
+      "description": "Concept pass for lichen glow reacting to footsteps and spoken phrases.",
+      "prompt_seed": "organic waveform light pulses, low-frequency pattern motifs, interactive state layers",
+      "dependencies": [
+        "rq_add_015"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_023",
+      "bucket": "LATER",
+      "type": "background",
+      "priority": "P3",
+      "scene": "stream_restoration_before_after",
+      "style_tags": [
+        "pastel_storybook",
+        "moonlit_mystery"
+      ],
+      "resolution": "2560x1440",
+      "description": "Before/after pair showing blocked streamlet and restored flow feeding Moonwell clarity.",
+      "prompt_seed": "environmental repair comparison shot, same camera framing, ecological consequence visible",
+      "dependencies": [
+        "rq_add_008"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_024",
+      "bucket": "LATER",
+      "type": "marketing_keyart",
+      "priority": "P3",
+      "scene": "family_against_brindlewood_keyart",
+      "style_tags": [
+        "cozy_classic",
+        "moonlit_mystery",
+        "twilight_whispers"
+      ],
+      "resolution": "3840x2160",
+      "description": "Key art: Father and daughters at cabin threshold, lantern glow, three-circle glyph hidden in treeline.",
+      "prompt_seed": "indie narrative adventure key art, heartfelt family composition, ecological mystery atmosphere",
+      "dependencies": [
+        "rq_add_004",
+        "rq_add_005",
+        "rq_add_011",
+        "rq_add_002"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_021",
+      "bucket": "LATER",
+      "type": "prop_sheet",
+      "priority": "P3",
+      "scene": "windfall_ledger_variants",
+      "style_tags": [
+        "ink_noir"
+      ],
+      "resolution": "2048x2048",
+      "description": "Ledger prop variants showing weathering stages, marginal notes, and permit stamp overlays.",
+      "prompt_seed": "forensic document prop design, legible handwriting layers, archival paper textures",
+      "dependencies": [
+        "rq_add_010"
+      ],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "ui_signal_decoder_v1",
+      "type": "ui_motif",
+      "priority": "P3",
+      "scene": "global",
+      "style_tags": [
+        "mini-game-ui",
+        "analog-dial",
+        "audio-clue"
+      ],
+      "resolution": "1600x900",
+      "description": "Radio tuning interface motif for decoding pulse timings and static bands.",
+      "prompt_seed": "retro analog signal decoder interface, tactile knobs, mystery puzzle",
+      "dependencies": [
+        "prop_clue_pack_v1",
+        "fx_hum_anomaly_v1"
+      ],
+      "bucket": "LATER",
+      "_source": "requisitions.json"
+    },
+    {
+      "id": "rq_add_022",
+      "bucket": "LATER",
+      "type": "ui_panel",
+      "priority": "P3",
+      "scene": "route_fragment_assembly_ui",
+      "style_tags": [
+        "cozy_classic",
+        "ink_noir"
+      ],
+      "resolution": "1920x1080",
+      "description": "Puzzle UI for assembling route fragments with confidence markers and source provenance tags.",
+      "prompt_seed": "investigation board UI, draggable clue fragments, notebook aesthetic with clean readability",
+      "dependencies": [
+        "rq_add_006",
+        "rq_add_014"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

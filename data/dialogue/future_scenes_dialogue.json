@@ -1,0 +1,308 @@
+{
+  "id": "future_scenes_dialogue",
+  "conversations": {
+    "future_glass_station_arrival": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "You step into the Glass Station, where trains of light arrive without tracks.",
+          "choices": [
+            { "text": "Speak with the Station Warden", "next": "n1" },
+            { "text": "Inspect departure board", "next": "n2" },
+            { "text": "Keep moving", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Station Warden",
+          "line": "Tickets here are promises. Break one, and the platform remembers.",
+          "choices": [
+            { "text": "Promise to protect both daughters", "next": "n4" },
+            { "text": "Promise to reach the Heartwood Tower", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Older daughter",
+          "line": "Destinations change every breath. We need an anchor point.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "sawShiftingDestinations", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "You pass through a platform where shadows board first.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Station Warden",
+          "line": "Accepted. Platform Seven will open for ninety seconds when needed.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "platformSevenUnlocked", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Station Warden",
+          "line": "Accepted. The tower route appears only when all three of you agree.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "towerRouteConditional", "value": true }
+          ]
+        }
+      }
+    },
+    "future_ash_market_trade": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "In the Ash Market, merchants weigh goods against fragments of memory.",
+          "choices": [
+            { "text": "Trade for a map shard", "next": "n1" },
+            { "text": "Trade for a warding charm", "next": "n2" },
+            { "text": "Refuse all trades", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Cinder Merchant",
+          "line": "A map shard costs one childhood song.",
+          "choices": [
+            { "text": "Pay the song", "next": "n4" },
+            { "text": "Negotiate with a story instead", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Cinder Merchant",
+          "line": "The charm bends luck once, then crumbles at dawn.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "boughtWardingCharm", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Older daughter",
+          "line": "Good. Not every shortcut is worth the shape it leaves on us.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "You cannot remember the melody afterward, only that it once made you feel safe.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "paidSongForMap", "value": true },
+            { "type": "showText", "text": "Obtained item: Charred Map Shard." }
+          ]
+        },
+        "n5": {
+          "speaker": "Cinder Merchant",
+          "line": "A story then. Make it true, and I'll discount the price.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "negotiatedAshTrade", "value": true }
+          ]
+        }
+      }
+    },
+    "future_heartwood_tower_gate": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "At the Heartwood Tower gate, three keyholes pulse like slow heartbeats.",
+          "choices": [
+            { "text": "Insert ring-stone rubbing", "next": "n1" },
+            { "text": "Use bell cadence 7-3-7", "next": "n2" },
+            { "text": "Ask the daughters to decide together", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Gate Voice",
+          "line": "Record recognized. One keyhole sleeps.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "towerGateKeyhole1", "value": true }
+          ]
+        },
+        "n2": {
+          "speaker": "Gate Voice",
+          "line": "Rhythm recognized. One keyhole wakes.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "towerGateKeyhole2", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Younger daughter",
+          "line": "Together, then: we choose the door that keeps all names.",
+          "choices": [
+            { "text": "Confirm the shared choice", "next": "n4" },
+            { "text": "Delay and gather more clues", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n4": {
+          "speaker": "Narrator",
+          "line": "The third keyhole blooms open like a flower of carved oak.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "towerGateKeyhole3", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Older daughter",
+          "line": "Smart. Doors this old are patient, but rarely kind.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    },
+    "future_skybridge_parley": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "On the Skybridge over the fog sea, masked envoys block your path.",
+          "choices": [
+            { "text": "Parley peacefully", "next": "n1" },
+            { "text": "Intimidate them", "next": "n2" },
+            { "text": "Offer shared intel", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Masked Envoy",
+          "line": "Peace requires proof. Show us a truth you regret.",
+          "choices": [
+            { "text": "Reveal the fox bargain", "next": "n4" },
+            { "text": "Reveal fear of losing family", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Masked Envoy",
+          "line": "Threats are loud lies. The bridge dislikes liars.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "The planks tilt dangerously." }
+          ]
+        },
+        "n3": {
+          "speaker": "Older daughter",
+          "line": "We know of root bells, no-bark trunks, and a silent bridge before dawn.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "sharedIntelWithEnvoys", "value": true }
+          ]
+        },
+        "n4": {
+          "speaker": "Masked Envoy",
+          "line": "Payment in memory... yes, now we believe you crossed the old territories.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "envoysTrustFoxProof", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Younger daughter",
+          "line": "That's not weakness. That's why we keep going.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "showText", "text": "Family resolve reinforced." }
+          ]
+        }
+      }
+    },
+    "future_clockwork_glade_choice": {
+      "start": "n0",
+      "nodes": {
+        "n0": {
+          "speaker": "Narrator",
+          "line": "In the Clockwork Glade, mechanical trees rewind and replay moments from your journey.",
+          "choices": [
+            { "text": "Replay the crossroads scene", "next": "n1" },
+            { "text": "Replay the pond vision", "next": "n2" },
+            { "text": "Shut down the glade machinery", "next": "n3" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n1": {
+          "speaker": "Clockwork Tree",
+          "line": "Alternative branch detected: the path not taken still exists.",
+          "choices": [
+            { "text": "Archive this branch", "next": "n4" },
+            { "text": "Erase this branch", "next": "n5" }
+          ],
+          "next": null,
+          "actions": []
+        },
+        "n2": {
+          "speaker": "Clockwork Tree",
+          "line": "The pond future diverges at one decision: whether you split at dawn.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "confirmedNoSplitCritical", "value": true }
+          ]
+        },
+        "n3": {
+          "speaker": "Narrator",
+          "line": "You pull the central pin; every replay freezes mid-breath.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "clockworkGladeOffline", "value": true }
+          ]
+        },
+        "n4": {
+          "speaker": "Older daughter",
+          "line": "Keep it. We may need to learn from who we almost became.",
+          "choices": [],
+          "next": null,
+          "actions": [
+            { "type": "setFlag", "flag": "archivedAltBranch", "value": true }
+          ]
+        },
+        "n5": {
+          "speaker": "Younger daughter",
+          "line": "Goodbye, maybe-us. I hope you found your way too.",
+          "choices": [],
+          "next": null,
+          "actions": []
+        }
+      }
+    }
+  }
+}

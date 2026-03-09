@@ -1,0 +1,69 @@
+{
+  "id": "ranger_station",
+  "background": "assets/bg/requisition_now/bg_bg_ranger_station_v1_640x360.png",
+  "backgrounds": [
+    "assets/bg/requisition_now/bg_bg_ranger_station_v1_640x360.png",
+    "assets/bg/requisition_now/bg_rq_add_001_640x360.png",
+    "assets/bg/requisition_now/bg_rq_add_002_640x360.png"
+  ],
+  "spawn": {
+    "x": 120,
+    "y": 304
+  },
+  "walkable": {
+    "type": "rect",
+    "x": 0,
+    "y": 220,
+    "w": 640,
+    "h": 140
+  },
+  "hotspots": [
+    {
+      "id": "station_board",
+      "rect": [
+        366,
+        136,
+        98,
+        94
+      ],
+      "text": "A faded duty board lists patrol routes that no one follows anymore."
+    },
+    {
+      "id": "station_radio",
+      "rect": [
+        488,
+        198,
+        58,
+        56
+      ],
+      "text": "The radio hisses, then whispers your family name."
+    },
+    {
+      "id": "station_trail_back",
+      "rect": [
+        4,
+        176,
+        78,
+        140
+      ],
+      "action": "goto:forest",
+      "text": "The forest trail leads back to familiar pines.",
+      "approachX": 42,
+      "walkToText": "You walk to the forest trail exit."
+    },
+    {
+      "id": "station_orchard_route",
+      "rect": [
+        568,
+        182,
+        66,
+        136
+      ],
+      "action": "goto:windfall_orchard",
+      "text": "An overgrown service road descends toward an orchard.",
+      "approachX": 600,
+      "walkToText": "You walk down the service road to the orchard."
+    }
+  ],
+  "npcs": []
+}

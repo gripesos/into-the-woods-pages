@@ -1,0 +1,68 @@
+{
+  "count": 4,
+  "entries": [
+    {
+      "id": "rq_add_004",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P0",
+      "scene": "clara_field_analysis_posepack",
+      "style_tags": [
+        "cozy_classic"
+      ],
+      "resolution": "1536x2048",
+      "description": "Clara pose pack: notebook-checking, kneeling by tree mark, pointing route overlay.",
+      "prompt_seed": "teen investigator in practical layers, retro adventure portrait proportions, expressive but restrained acting",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_005",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P0",
+      "scene": "mina_intuitive_posepack",
+      "style_tags": [
+        "pastel_storybook",
+        "moonlit_mystery"
+      ],
+      "resolution": "1536x2048",
+      "description": "Mina pose pack: listening-to-trees gesture, scarf clutch, sleepy-road pointing pose.",
+      "prompt_seed": "younger child expressive hands, gentle storybook facial emotion, mystery without fear, silhouette clarity",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_011",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P1",
+      "scene": "father_reassure_and_record",
+      "style_tags": [
+        "cozy_classic",
+        "warm_hearth"
+      ],
+      "resolution": "1536x2048",
+      "description": "Father acting sheet: kneeling to listen, writing notes by fire, lantern-hold while guiding kids.",
+      "prompt_seed": "tired but kind parent protagonist, practical outdoor clothing, intimate small gestures, retro adventure actor sheet",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    },
+    {
+      "id": "rq_add_012",
+      "bucket": "NOW",
+      "type": "character_pose",
+      "priority": "P1",
+      "scene": "ranger_ivo_intro_and_ally",
+      "style_tags": [
+        "cozy_classic",
+        "ink_noir"
+      ],
+      "resolution": "1536x2048",
+      "description": "Ranger Ivo two-phase sheet: skeptical checkpoint stance and later cooperative field posture.",
+      "prompt_seed": "park ranger practical realism, reserved facial acting, shift from caution to solidarity",
+      "dependencies": [],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

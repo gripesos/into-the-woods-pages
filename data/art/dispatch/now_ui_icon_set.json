@@ -1,0 +1,22 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_014",
+      "bucket": "NOW",
+      "type": "ui_icon_set",
+      "priority": "P1",
+      "scene": "ecology_reciprocity_icons",
+      "style_tags": [
+        "cozy_classic"
+      ],
+      "resolution": "1024x1024",
+      "description": "Icon set for reciprocity actions: take, return, mend, observe, confirm.",
+      "prompt_seed": "minimal iconography with hand-ink charm, readable at small sizes, thematic consistency with notebook art",
+      "dependencies": [
+        "rq_add_006"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

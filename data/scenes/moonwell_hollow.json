@@ -1,0 +1,56 @@
+{
+  "id": "moonwell_hollow",
+  "background": "assets/bg/requisition_now/bg_rq_add_007_640x360.png",
+  "backgrounds": [
+    "assets/bg/requisition_now/bg_rq_add_007_640x360.png",
+    "assets/bg/requisition_now/bg_rq_add_008_640x360.png",
+    "assets/bg/requisition_now/bg_rq_add_010_640x360.png"
+  ],
+  "spawn": {
+    "x": 320,
+    "y": 306
+  },
+  "walkable": {
+    "type": "rect",
+    "x": 0,
+    "y": 228,
+    "w": 640,
+    "h": 132
+  },
+  "hotspots": [
+    {
+      "id": "moonwell_pool",
+      "rect": [
+        258,
+        178,
+        98,
+        78
+      ],
+      "text": "The pool reflects stars that are not in tonight's sky."
+    },
+    {
+      "id": "moonwell_stones",
+      "rect": [
+        118,
+        198,
+        92,
+        74
+      ],
+      "text": "Stone rings pulse faintly under your hand."
+    },
+    {
+      "id": "moonwell_to_forest",
+      "rect": [
+        4,
+        176,
+        74,
+        140
+      ],
+      "action": "goto:forest",
+      "text": "The cedar path climbs back toward the forest trail.",
+      "approachX": 40,
+      "walkToText": "You climb back toward the forest."
+    }
+  ],
+  "npcs": []
+}

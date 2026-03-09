@@ -1,0 +1,183 @@
+{
+  "id": "itw_art_requisitions",
+  "now": [
+    {
+      "id": "bg_cabin_day_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": ["retro-sierra", "pixel-art", "warm-interior", "family-intimacy"],
+      "resolution": "1920x1080",
+      "description": "Main cabin interior daytime variant with table clue hub, window to tree line, readable interactable hotspots.",
+      "prompt_seed": "cozy but tense woodland cabin, 90s adventure game composition, narrative props on table",
+      "dependencies": []
+    },
+    {
+      "id": "bg_cabin_night_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "cabin",
+      "style_tags": ["retro-sierra", "pixel-art", "blue-hour", "mystery"],
+      "resolution": "1920x1080",
+      "description": "Night cabin variant with lamp glow, deep blue exterior, subtle silhouettes at window.",
+      "prompt_seed": "nighttime cabin interior with warm lamp contrast and ominous forest outside, classic point and click mood",
+      "dependencies": ["bg_cabin_day_v1"]
+    },
+    {
+      "id": "bg_forest_trail_v1",
+      "type": "background",
+      "priority": "P0",
+      "scene": "forest",
+      "style_tags": ["retro-sierra", "lush-forest", "eco-mystery", "parallax-ready"],
+      "resolution": "1920x1080",
+      "description": "Primary forest trail with landmark tree, layered depth, clue placement zones.",
+      "prompt_seed": "dense temperate forest trail, atmospheric depth, discoverable adventure game layout",
+      "dependencies": []
+    },
+    {
+      "id": "npc_family_set_v1",
+      "type": "npc_sprite",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": ["pixel-art", "expressive-idle", "family-drama"],
+      "resolution": "512x512 per character sheet",
+      "description": "Sprite sheets for Tomás, Clara, and Lia with idle, talk, point, and worried poses.",
+      "prompt_seed": "retro adventure sprites, readable silhouettes, subtle emotional acting",
+      "dependencies": []
+    },
+    {
+      "id": "npc_ines_v1",
+      "type": "npc_sprite",
+      "priority": "P1",
+      "scene": "ranger_station|forest",
+      "style_tags": ["pixel-art", "aged-ranger", "grounded"],
+      "resolution": "512x512",
+      "description": "Inês sprite with cane, map tube, and stern/supportive expression variants.",
+      "prompt_seed": "retired female ranger sprite, weathered but resilient, classic adventure aesthetic",
+      "dependencies": []
+    },
+    {
+      "id": "prop_clue_pack_v1",
+      "type": "prop",
+      "priority": "P0",
+      "scene": "cabin|forest",
+      "style_tags": ["inventory-icons", "evidence-core", "pixel-art"],
+      "resolution": "256x256 each",
+      "description": "Notebook, chalk bundle, broken compass, tree marker closeup, survey stake, cassette tape.",
+      "prompt_seed": "adventure game inventory props with strong silhouettes and narrative wear",
+      "dependencies": []
+    },
+    {
+      "id": "fx_hum_anomaly_v1",
+      "type": "fx",
+      "priority": "P1",
+      "scene": "forest",
+      "style_tags": ["subtle-vfx", "environmental-clue", "diegetic"],
+      "resolution": "1024x1024 sprite sheet",
+      "description": "Low-frequency hum visual cue: faint concentric distortion near ground roots.",
+      "prompt_seed": "minimalist environmental distortion effect for hidden machinery resonance",
+      "dependencies": ["bg_forest_trail_v1"]
+    },
+    {
+      "id": "ui_notebook_overlay_v1",
+      "type": "ui_motif",
+      "priority": "P1",
+      "scene": "global",
+      "style_tags": ["diegetic-ui", "paper-texture", "investigation"],
+      "resolution": "1600x900",
+      "description": "Notebook-style clue overlay with map pins, symbol slots, and handwritten margin area.",
+      "prompt_seed": "diegetic notebook interface, retro adventure clarity, hand-drawn annotations",
+      "dependencies": ["prop_clue_pack_v1"]
+    },
+    {
+      "id": "bg_ranger_station_v1",
+      "type": "background",
+      "priority": "P1",
+      "scene": "ranger_station",
+      "style_tags": ["retro-sierra", "archive-room", "documentary-mystery"],
+      "resolution": "1920x1080",
+      "description": "Interior ranger station archive with map wall, filing cabinets, and weather console.",
+      "prompt_seed": "old ranger office archive room, investigative mood, classic point-and-click framing",
+      "dependencies": []
+    },
+    {
+      "id": "prop_evidence_board_v1",
+      "type": "prop",
+      "priority": "P1",
+      "scene": "cabin",
+      "style_tags": ["story-prop", "red-string", "investigation"],
+      "resolution": "1024x1024",
+      "description": "Pinboard asset with strings, notes, and photo placeholders used for progression feedback.",
+      "prompt_seed": "investigation board prop with tactile paper layers, mystery storytelling",
+      "dependencies": ["prop_clue_pack_v1", "ui_notebook_overlay_v1"]
+    }
+  ],
+  "later": [
+    {
+      "id": "bg_drained_marsh_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "drained_marsh",
+      "style_tags": ["ecological-damage", "somber", "retro-sierra"],
+      "resolution": "1920x1080",
+      "description": "Marshland turned mudflat with exposed roots and absent wildlife signs.",
+      "prompt_seed": "once-lush marsh now drained, environmental storytelling, classic adventure game composition",
+      "dependencies": []
+    },
+    {
+      "id": "bg_river_lock_tunnel_v1",
+      "type": "background",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": ["industrial", "claustrophobic", "wet-surfaces"],
+      "resolution": "1920x1080",
+      "description": "Maintenance tunnel with valves, conduit lines, and floodgate key access point.",
+      "prompt_seed": "underground maintenance tunnel in forest lock system, tense adventure tone",
+      "dependencies": ["prop_floodgate_key_v1"]
+    },
+    {
+      "id": "npc_mateus_v1",
+      "type": "npc_sprite",
+      "priority": "P2",
+      "scene": "yard|forest",
+      "style_tags": ["pixel-art", "ambiguous", "working-class"],
+      "resolution": "512x512",
+      "description": "Mateus sprite set with neutral, evasive, and pressured expressions.",
+      "prompt_seed": "contract driver mechanic character sprite, morally conflicted, retro adventure look",
+      "dependencies": []
+    },
+    {
+      "id": "prop_floodgate_key_v1",
+      "type": "prop",
+      "priority": "P2",
+      "scene": "river_lock_tunnel",
+      "style_tags": ["inventory", "rusted-metal", "legacy-infrastructure"],
+      "resolution": "256x256",
+      "description": "Heavy iron floodgate key item icon with aged tag and corrosion details.",
+      "prompt_seed": "old industrial key icon, tactile metal wear, readable silhouette",
+      "dependencies": []
+    },
+    {
+      "id": "fx_storm_rain_overlay_v1",
+      "type": "fx",
+      "priority": "P2",
+      "scene": "forest|tunnel",
+      "style_tags": ["weather", "dramatic", "gameplay-clarity"],
+      "resolution": "1920x1080 overlay",
+      "description": "Rain and lightning overlay tuned for legibility during climax sequences.",
+      "prompt_seed": "stylized storm overlay for pixel adventure game with readable foreground",
+      "dependencies": ["bg_forest_trail_v1", "bg_river_lock_tunnel_v1"]
+    },
+    {
+      "id": "ui_signal_decoder_v1",
+      "type": "ui_motif",
+      "priority": "P3",
+      "scene": "global",
+      "style_tags": ["mini-game-ui", "analog-dial", "audio-clue"],
+      "resolution": "1600x900",
+      "description": "Radio tuning interface motif for decoding pulse timings and static bands.",
+      "prompt_seed": "retro analog signal decoder interface, tactile knobs, mystery puzzle",
+      "dependencies": ["prop_clue_pack_v1", "fx_hum_anomaly_v1"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "rq_add_024",
+      "bucket": "LATER",
+      "type": "marketing_keyart",
+      "priority": "P3",
+      "scene": "family_against_brindlewood_keyart",
+      "style_tags": [
+        "cozy_classic",
+        "moonlit_mystery",
+        "twilight_whispers"
+      ],
+      "resolution": "3840x2160",
+      "description": "Key art: Father and daughters at cabin threshold, lantern glow, three-circle glyph hidden in treeline.",
+      "prompt_seed": "indie narrative adventure key art, heartfelt family composition, ecological mystery atmosphere",
+      "dependencies": [
+        "rq_add_004",
+        "rq_add_005",
+        "rq_add_011",
+        "rq_add_002"
+      ],
+      "_source": "requisitions_addendum.json"
+    }
+  ]
+}

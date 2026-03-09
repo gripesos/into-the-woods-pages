@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "entries": [
+    {
+      "id": "fx_hum_anomaly_v1",
+      "type": "fx",
+      "priority": "P1",
+      "scene": "forest",
+      "style_tags": [
+        "subtle-vfx",
+        "environmental-clue",
+        "diegetic"
+      ],
+      "resolution": "1024x1024 sprite sheet",
+      "description": "Low-frequency hum visual cue: faint concentric distortion near ground roots.",
+      "prompt_seed": "minimalist environmental distortion effect for hidden machinery resonance",
+      "dependencies": [
+        "bg_forest_trail_v1"
+      ],
+      "bucket": "NOW",
+      "_source": "requisitions.json"
+    }
+  ]
+}
