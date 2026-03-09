@@ -7,70 +7,44 @@
   <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
-  <div id="intro" class="introOverlay">
-    <div class="introCard">
-      <h1>Into the Woods</h1>
-      <p>A retro point-and-click tale. Step into the cabin, follow the clues, and survive the night.</p>
-      <button id="btnStartIntro" class="primaryBtn">▶ Start Game</button>
-      <small>Tip: 1-9 = dialogue choices • C = chapter panel • D = debug</small>
-    </div>
-  </div>
-
   <div class="wrap">
-    <div class="gameStage">
-      <canvas id="game" width="640" height="420"></canvas>
-      <div id="dialogue" class="dialogue dialogueOverlay hidden">
-        <div id="dlgSpeaker" class="dlgSpeaker"></div>
-        <div id="dlgLine" class="dlgLine"></div>
-        <div id="dlgChoices" class="dlgChoices"></div>
+    <canvas id="game" width="640" height="420"></canvas>
+    <div id="msg" class="msg">Engine v1.0 ready. Chapter panel + refmatch styles online. C=chapter, D=debug, R=reroll, S=style, G=random dialogue.</div>
+    <div id="status" class="status"></div>
+    <div id="chapterPanel" class="chapterPanel chapterPanel--expanded" aria-live="polite">
+      <div class="chapterPanelHeader">
+        <strong id="chapterTitle">Chapter: n/a</strong>
+        <span id="chapterModeHint" class="chapterHint">C=toggle</span>
       </div>
+      <div id="chapterObjective" class="chapterObjective">Objective: n/a</div>
+      <div id="chapterFlags" class="chapterFlags">Unlocks: n/a</div>
     </div>
-
-    <div class="bottomDock">
-      <div class="dockHeader">
-        <div class="dockTitle">Into the Woods <span>Engine v1.0</span></div>
-        <div class="dockActions">
-          <button id="btnCycleStyle" class="iconBtn" data-tip="Cycle through styles">🎨</button>
-          <button id="btnReroll" class="iconBtn" data-tip="Pick alternate art variation">🎲</button>
-          <button id="btnRandomDialogue" class="iconBtn" data-tip="Random dialogue">💬</button>
-          <button id="btnSave" class="iconBtn" data-tip="Download save file">💾</button>
-          <label class="fileBtn iconBtn" data-tip="Load savegame.json">📂 <input id="fileLoad" type="file" accept="application/json" /></label>
-          <button id="btnReset" class="iconBtn danger" data-tip="Clear local save and reload">♻️</button>
-        </div>
-      </div>
-
-      <div class="dockGrid">
-        <div class="dockCol">
-          <div id="msg" class="msg">Engine v1.0 ready.</div>
-          <div id="status" class="status"></div>
-        </div>
-        <div class="dockCol dockCol--controls">
-          <div class="row">
-            <label class="styleLabel">Style
-              <select id="styleSelect"></select>
-            </label>
-            <button id="btnApplyStyle" class="iconBtn" data-tip="Apply selected style">Apply</button>
-          </div>
-          <div class="row">
-            <label class="styleLabel">Dialogue
-              <select id="dialogueSelect"></select>
-            </label>
-            <button id="btnStartDialogue" class="iconBtn" data-tip="Start selected dialogue">Start</button>
-          </div>
-        </div>
-      </div>
-
-      <div id="chapterPanel" class="chapterPanel chapterPanel--expanded" aria-live="polite">
-        <div class="chapterPanelHeader">
-          <strong id="chapterTitle">Chapter: n/a</strong>
-          <span id="chapterModeHint" class="chapterHint">C=toggle</span>
-        </div>
-        <div id="chapterObjective" class="chapterObjective">Objective: n/a</div>
-        <div id="chapterFlags" class="chapterFlags">Unlocks: n/a</div>
-      </div>
+    <div id="dialogue" class="dialogue hidden">
+      <div id="dlgSpeaker" class="dlgSpeaker"></div>
+      <div id="dlgLine" class="dlgLine"></div>
+      <div id="dlgChoices" class="dlgChoices"></div>
+    </div>
+    <div class="row">
+      <label class="styleLabel">Style
+        <select id="styleSelect"></select>
+      </label>
+      <button id="btnApplyStyle">Apply Style</button>
+      <button id="btnCycleStyle">Next Style</button>
+      <button id="btnReroll">Reroll Art</button>
+    </div>
+    <div class="row">
+      <label class="styleLabel">Dialogue Lab
+        <select id="dialogueSelect"></select>
+      </label>
+      <button id="btnStartDialogue">Start Selected Dialogue</button>
+      <button id="btnRandomDialogue">Random Dialogue</button>
+    </div>
+    <div class="row">
+      <button id="btnSave">Save (download savegame.json)</button>
+      <label class="fileBtn">Load savegame.json <input id="fileLoad" type="file" accept="application/json" /></label>
+      <button id="btnReset">Reset</button>
     </div>
   </div>
-
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>

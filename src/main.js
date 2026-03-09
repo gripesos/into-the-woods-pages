@@ -20,8 +20,6 @@ const elBtnCycleStyle = document.getElementById('btnCycleStyle');
 const elDialogueSelect = document.getElementById('dialogueSelect');
 const elBtnStartDialogue = document.getElementById('btnStartDialogue');
 const elBtnRandomDialogue = document.getElementById('btnRandomDialogue');
-const elIntro = document.getElementById('intro');
-const elBtnStartIntro = document.getElementById('btnStartIntro');
 
 const state = {
   scenes: {},
@@ -94,12 +92,6 @@ const state = {
     activeId: null,
     viewId: null,
     panelMode: 'expanded'
-  },
-
-  fx: {
-    fadeAlpha: 1,
-    fadingIn: false,
-    titleUntil: 0
   }
 };
 
@@ -859,19 +851,15 @@ function triggerPendingHotspot() {
   saveLocal();
 }
 
-function prettyId(id) {
-  return String(id || '').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-}
-
 function resolveHoverTarget(x, y) {
   if (y >= UI_Y || state.dialogue.active) return null;
   const scene = getCurrentScene();
 
   const hs = pickBestByRect(scene.hotspots || [], x, y);
-  if (hs) return { kind: 'hotspot', id: hs.id, rect: hs.rect, label: prettyId(hs.id) };
+  if (hs) return { kind: 'hotspot', id: hs.id, rect: hs.rect };
 
   const npc = pickBestByRect(scene.npcs || [], x, y);
-  if (npc) return { kind: 'entity', id: npc.id, rect: npc.rect, label: prettyId(npc.id) };
+  if (npc) return { kind: 'entity', id: npc.id, rect: npc.rect };
 
   return null;
 }
@@ -1114,49 +1102,6 @@ function drawDebug(scene) {
   ctx.restore();
 }
 
-function drawHoverLabel() {
-  if (!state.hover?.label) return;
-  const [x, y, w] = state.hover.rect;
-  const text = `${state.hover.kind === 'entity' ? 'Talk' : 'Inspect'}: ${state.hover.label}`;
-
-  ctx.save();
-  ctx.font = '12px monospace';
-  const tw = ctx.measureText(text).width;
-  const bx = Math.max(6, Math.min(W - tw - 18, x + w / 2 - tw / 2));
-  const by = Math.max(10, y - 22);
-  ctx.fillStyle = 'rgba(10,12,18,0.88)';
-  ctx.fillRect(bx, by, tw + 12, 18);
-  ctx.strokeStyle = '#7aa2ff';
-  ctx.strokeRect(bx, by, tw + 12, 18);
-  ctx.fillStyle = '#e8edf8';
-  ctx.fillText(text, bx + 6, by + 13);
-  ctx.restore();
-}
-
-function drawCinematicOverlay() {
-  if (state.fx.fadeAlpha <= 0.001 && performance.now() > state.fx.titleUntil) return;
-
-  if (performance.now() < state.fx.titleUntil) {
-    ctx.save();
-    ctx.fillStyle = 'rgba(0,0,0,0.42)';
-    ctx.fillRect(0, 0, W, SCENE_H);
-    ctx.fillStyle = '#f3f6ff';
-    ctx.font = 'bold 22px sans-serif';
-    ctx.fillText('INTO THE WOODS', 18, 38);
-    ctx.font = '12px monospace';
-    ctx.fillStyle = '#cbd6f2';
-    ctx.fillText('A quiet cabin. A long night. A fragile fire.', 18, 56);
-    ctx.restore();
-  }
-
-  if (state.fx.fadeAlpha > 0.001) {
-    ctx.save();
-    ctx.fillStyle = `rgba(0,0,0,${state.fx.fadeAlpha})`;
-    ctx.fillRect(0, 0, W, H);
-    ctx.restore();
-  }
-}
-
 function drawHints(scene) {
   if (scene.id === 'cabin' && !hasItem('notebook')) {
     ctx.fillStyle = '#ceb98f';
@@ -1194,18 +1139,11 @@ function draw() {
 
   drawHints(scene);
   drawPlayer();
-  drawHoverLabel();
   drawDebug(scene);
   drawInventory();
-  drawCinematicOverlay();
 }
 
 function update(dt) {
-  if (state.fx.fadingIn) {
-    state.fx.fadeAlpha = Math.max(0, state.fx.fadeAlpha - dt * 1.25);
-    if (state.fx.fadeAlpha <= 0.001) state.fx.fadingIn = false;
-  }
-
   // npc idle animation clock
   state.npcAnim.timer += dt;
   if (state.npcAnim.timer >= (1 / Math.max(1, state.npcAnim.fps))) {
@@ -1289,7 +1227,6 @@ function loadLocal() {
 }
 
 function handleSceneClick(x, y) {
-  if (elIntro && !elIntro.classList.contains('hidden')) return;
   if (state.dialogue.active) return;
 
   const scene = getCurrentScene();
@@ -1362,18 +1299,6 @@ function handleSceneClick(x, y) {
 }
 
 function setupUi() {
-  if (elBtnStartIntro) {
-    elBtnStartIntro.addEventListener('click', () => {
-      AudioBus.resume();
-      AudioBus.startAmbient();
-      elIntro?.classList.add('hidden');
-      state.fx.fadeAlpha = 1;
-      state.fx.fadingIn = true;
-      state.fx.titleUntil = performance.now() + 3500;
-      setMsg('The night begins. Explore the cabin.');
-    });
-  }
-
   canvas.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
     const x = (e.clientX - rect.left) * (canvas.width / rect.width);
@@ -1393,14 +1318,6 @@ function setupUi() {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (elIntro && !elIntro.classList.contains('hidden')) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        elBtnStartIntro?.click();
-      }
-      return;
-    }
-
     if (state.dialogue.active) {
       if (e.key === 'Escape') {
         closeDialogue();
