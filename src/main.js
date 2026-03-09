@@ -20,6 +20,8 @@ const elBtnCycleStyle = document.getElementById('btnCycleStyle');
 const elDialogueSelect = document.getElementById('dialogueSelect');
 const elBtnStartDialogue = document.getElementById('btnStartDialogue');
 const elBtnRandomDialogue = document.getElementById('btnRandomDialogue');
+const elIntro = document.getElementById('intro');
+const elBtnStartIntro = document.getElementById('btnStartIntro');
 
 const state = {
   scenes: {},
@@ -1227,6 +1229,7 @@ function loadLocal() {
 }
 
 function handleSceneClick(x, y) {
+  if (elIntro && !elIntro.classList.contains('hidden')) return;
   if (state.dialogue.active) return;
 
   const scene = getCurrentScene();
@@ -1299,6 +1302,27 @@ function handleSceneClick(x, y) {
 }
 
 function setupUi() {
+  const tabs = [...document.querySelectorAll('.menuTab')];
+  const panels = [...document.querySelectorAll('.menuPanel')];
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const panel = document.getElementById(tab.dataset.panel);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  if (elBtnStartIntro) {
+    elBtnStartIntro.addEventListener('click', () => {
+      AudioBus.resume();
+      AudioBus.startAmbient();
+      elIntro?.classList.add('hidden');
+      setMsg('The night begins. Explore the cabin.');
+    });
+  }
+
   canvas.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
     const x = (e.clientX - rect.left) * (canvas.width / rect.width);
@@ -1318,6 +1342,14 @@ function setupUi() {
   });
 
   window.addEventListener('keydown', (e) => {
+    if (elIntro && !elIntro.classList.contains('hidden')) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        elBtnStartIntro?.click();
+      }
+      return;
+    }
+
     if (state.dialogue.active) {
       if (e.key === 'Escape') {
         closeDialogue();
